@@ -176,9 +176,9 @@ public class SphericalMercator {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class Region : RealmSwift.Object {
-  @objc dynamic public var date: Foundation.Date?
+  @objc dynamic public var date: Foundation.Date
   @objc dynamic public var didEnter: Swift.Bool
-  @objc dynamic public var identifier: Swift.String?
+  @objc dynamic public var identifier: Swift.String
   @objc dynamic public var latitude: Swift.Double
   @objc dynamic public var longitude: Swift.Double
   @objc dynamic public var radius: Swift.Double
@@ -188,6 +188,7 @@ public class SphericalMercator {
   @objc dynamic public var duration: Swift.Int
   @objc dynamic public var durationText: Swift.String
   @objc dynamic public var type: Swift.String
+  @objc dynamic public var origin: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -213,7 +214,8 @@ public class SphericalMercator {
   @objc dynamic public var mode: Swift.String?
   @objc dynamic public var units: Swift.String?
   @objc dynamic public var routing: Swift.String?
-  convenience public init(originLatitude: Swift.Double, originLongitude: Swift.Double, destinationLatitude: Swift.Double, destinationLongitude: Swift.Double, dateCaptured: Foundation.Date, distance: Swift.Int, duration: Swift.Int, mode: Swift.String, units: Swift.String, routing: Swift.String)
+  @objc dynamic public var status: Swift.String?
+  convenience public init(originLatitude: Swift.Double, originLongitude: Swift.Double, destinationLatitude: Swift.Double, destinationLongitude: Swift.Double, dateCaptured: Foundation.Date, distance: Swift.Int, duration: Swift.Int, mode: Swift.String, units: Swift.String, routing: Swift.String, status: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -505,7 +507,7 @@ extension CoreLocation.CLLocationManager : WoosmapGeofencing.LocationManagerProt
   public func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: CoreLocation.CLLocationDistance) -> (isCreate: Swift.Bool, identifier: Swift.String)
   public func removeRegion(identifier: Swift.String)
   public func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: Swift.Int, type: Swift.String) -> (isCreate: Swift.Bool, identifier: Swift.String)
-  public func addRegionIsochrone(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: Swift.Int)
+  public func addRegionIsochrone(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: Swift.Int) -> Swift.Bool
   public func removeRegionIsochrone(identifier: Swift.String)
   public func removeRegion(center: CoreLocation.CLLocationCoordinate2D)
   public func removeRegions(type: WoosmapGeofencing.LocationService.RegionType)

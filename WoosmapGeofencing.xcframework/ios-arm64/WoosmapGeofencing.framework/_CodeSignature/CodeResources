@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/WoosmapGeofencing-Swift.h</key>
 		<data>
-		4SWL96cpK7cl4NUGpiWDwYZoa4I=
+		Wz5FxNtuSg+V2PLCtKIwr0ZfZ3w=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		B3z3f3dhEDCDEpDChxiIsYy16xA=
+		7wt+x01MvsO5ajF3EVIlObmWV+w=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		UGYwOf99l+JRwQU1syUFT5mQ5gU=
+		GXHc2yALzgQ56dIiGWMqUprD2Is=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		p6uwrffOyPANIFqTZDMygZLN6eM=
+		3f0tday9WJ/hRyVCPji6UBRkGwY=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		DmmIIjWBGKyj86aDcbXUpszop9Y=
+		Gnvz1WoRpWm/L5W5f9H7u6frsJ0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>passiveTracking.json</key>
 		<data>
-		ErWEtIgMAr0bf3iK66X4l/dH9us=
+		kSAq3qQq7OgfE90DqXjL77LP0yk=
 		</data>
 		<key>visitsTracking.json</key>
 		<data>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K/g0JWykho9b/axZ0JihsmjBjM8XuH3a3Tvre7TP66U=
+			qQEawaycmVHaKyJJ5Y0mF97mokdq/RheUF0vHsUfxzY=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wgeHOiZA+jChH0hvuHKl+OI3b40sQFPs9ZKVPdZgsH4=
+			DXlkTQP/s5mwoeGSauQ/T08zYp48Yqhra9lszccEyOg=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -76,14 +76,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ou2Z6cSYBBKbXUYk8OBenfAvA9Z2Wv39g9ztfMOXe90=
+			igbS8SCZwknCeRkCdBq0sxX2B6np4wIFOk9U6NatpeI=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gKkb+DKpFxbdxHBy73QT78za4ti/IxNfYD7FdTboXmg=
+			SWWJlbZhgIV3oJEG1UYgi4Bp1ZUXZvgBK/g2hDkKf7Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DOUmohmsq0fgbfS6OvEiLXWHWTTwGDOMBN+5+ksHw08=
+			oKQ/7r73MqwPJHeBjA3b8z3Yw7QlGdMMtQFSnwfAZOo=
 			</data>
 		</dict>
 		<key>visitsTracking.json</key>

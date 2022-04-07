@@ -236,6 +236,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing8Distance")
 @property (nonatomic, copy) NSString * _Nullable mode;
 @property (nonatomic, copy) NSString * _Nullable units;
 @property (nonatomic, copy) NSString * _Nullable routing;
+@property (nonatomic, copy) NSString * _Nullable status;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -317,9 +318,9 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing3POI")
 
 SWIFT_CLASS("_TtC17WoosmapGeofencing6Region")
 @interface Region : RealmSwiftObject
-@property (nonatomic, copy) NSDate * _Nullable date;
+@property (nonatomic, copy) NSDate * _Nonnull date;
 @property (nonatomic) BOOL didEnter;
-@property (nonatomic, copy) NSString * _Nullable identifier;
+@property (nonatomic, copy) NSString * _Nonnull identifier;
 @property (nonatomic) double latitude;
 @property (nonatomic) double longitude;
 @property (nonatomic) double radius;
@@ -329,6 +330,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing6Region")
 @property (nonatomic) NSInteger duration;
 @property (nonatomic, copy) NSString * _Nonnull durationText;
 @property (nonatomic, copy) NSString * _Nonnull type;
+@property (nonatomic, copy) NSString * _Nonnull origin;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -687,6 +689,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing8Distance")
 @property (nonatomic, copy) NSString * _Nullable mode;
 @property (nonatomic, copy) NSString * _Nullable units;
 @property (nonatomic, copy) NSString * _Nullable routing;
+@property (nonatomic, copy) NSString * _Nullable status;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -768,9 +771,9 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing3POI")
 
 SWIFT_CLASS("_TtC17WoosmapGeofencing6Region")
 @interface Region : RealmSwiftObject
-@property (nonatomic, copy) NSDate * _Nullable date;
+@property (nonatomic, copy) NSDate * _Nonnull date;
 @property (nonatomic) BOOL didEnter;
-@property (nonatomic, copy) NSString * _Nullable identifier;
+@property (nonatomic, copy) NSString * _Nonnull identifier;
 @property (nonatomic) double latitude;
 @property (nonatomic) double longitude;
 @property (nonatomic) double radius;
@@ -780,6 +783,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing6Region")
 @property (nonatomic) NSInteger duration;
 @property (nonatomic, copy) NSString * _Nonnull durationText;
 @property (nonatomic, copy) NSString * _Nonnull type;
+@property (nonatomic, copy) NSString * _Nonnull origin;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -1,5 +1,4 @@
 {
-    "woosmapKey": "a440454c-046c-441b-8f87-ac0d207fc298",
     "trackingEnable": true,
     "foregroundLocationServiceEnable": false,
     "modeHighFrequencyLocation": false,
@@ -24,7 +23,7 @@
     "distanceAPIEnable": false,
     
     "distance": {
-        "distanceProvider": "woosmapTraffic",
+        "distanceProvider": "woosmapDistance",
         "distanceMode": "driving",
         "distanceRouting": "fastest",
         "distanceUnits": "metric",
