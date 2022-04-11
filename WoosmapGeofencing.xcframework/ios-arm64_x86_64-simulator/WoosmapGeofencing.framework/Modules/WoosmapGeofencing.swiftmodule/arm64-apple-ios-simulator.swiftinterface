@@ -320,6 +320,8 @@ public var poiRadius: Any
   @objc dynamic public var date: Foundation.Date?
   @objc dynamic public var latitude: Swift.Double
   @objc dynamic public var longitude: Swift.Double
+  @objc dynamic public var lastSearchLocationLatitude: Swift.Double
+  @objc dynamic public var lastSearchLocationLongitude: Swift.Double
   @objc dynamic public var lastPOI_distance: Swift.String?
   @objc dynamic public var distanceLimit: Swift.String?
   @objc dynamic public var locationDescription: Swift.String?
@@ -489,6 +491,9 @@ extension CoreLocation.CLLocationManager : WoosmapGeofencing.LocationManagerProt
     public var rawValue: Swift.String {
       get
     }
+  }
+  @_hasMissingDesignatedInitializers public class LastSearhLocation {
+    @objc deinit
   }
   public var locationManager: WoosmapGeofencing.LocationManagerProtocol?
   weak public var locationServiceDelegate: WoosmapGeofencing.LocationServiceDelegate?

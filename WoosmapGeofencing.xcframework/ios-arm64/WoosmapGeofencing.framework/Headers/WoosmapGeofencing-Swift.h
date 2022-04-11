@@ -275,6 +275,8 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing12LogSearchAPI")
 @property (nonatomic, copy) NSDate * _Nullable date;
 @property (nonatomic) double latitude;
 @property (nonatomic) double longitude;
+@property (nonatomic) double lastSearchLocationLatitude;
+@property (nonatomic) double lastSearchLocationLongitude;
 @property (nonatomic, copy) NSString * _Nullable lastPOI_distance;
 @property (nonatomic, copy) NSString * _Nullable distanceLimit;
 @property (nonatomic, copy) NSString * _Nullable locationDescription;
