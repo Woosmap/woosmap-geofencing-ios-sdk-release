@@ -13,7 +13,7 @@ The SDK simplifies the integration of the location context in your mobile applic
   s.ios.deployment_target = '12.0'
 
   s.swift_versions = ['5.1', '5.2']
-  s.source       = { :git => "https://github.com/Woosmap/woosmap-geofencing-ios-sdk-release.git" }
+  s.source       = { :git => "https://github.com/Woosmap/woosmap-geofencing-ios-sdk-release.git",  :tag => s.version.to_s }
   s.public_header_files = "WoosmapGeofencing.xcframework/ios-arm64/WoosmapGeofencing.framework/Headers/*.h"
   s.source_files = "WoosmapGeofencing.xcframework/ios-arm64/WoosmapGeofencing.framework/Headers/*.h"
   s.resources = 'WoosmapGeofencing/Sources/WoosmapGeofencing/Config/*.json'
