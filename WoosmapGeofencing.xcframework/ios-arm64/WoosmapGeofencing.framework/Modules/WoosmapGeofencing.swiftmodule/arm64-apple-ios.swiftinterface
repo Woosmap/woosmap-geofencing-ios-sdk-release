@@ -2,9 +2,9 @@
 // swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WoosmapGeofencing
 import AdSupport
+import CoreFoundation
 import CoreLocation
 import Foundation
-import JSONSchema
 import RealmSwift
 import Surge
 import Swift
@@ -61,6 +61,11 @@ public struct User_properties : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
+public class Draft4Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class POI : RealmSwift.Object {
   @objc dynamic public var jsonData: Foundation.Data?
   @objc dynamic public var city: Swift.String?
@@ -115,6 +120,11 @@ public struct SFMCConfig : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+public struct JSONPointer {
+  public var path: Swift.String {
+    get
+  }
+}
 public var list_zois: [[Swift.String : Any]]
 public func chi_squared_value(probability: Swift.Double) -> Swift.Double
 public func figmmForVisit(newVisitPoint: WoosmapGeofencing.LoadedVisit) -> [[Swift.String : Any]]
@@ -139,6 +149,16 @@ public class SphericalMercator {
   public func x2lon(aX: Swift.Double) -> Swift.Double
   public func lat2y(aLat: Swift.Double) -> Swift.Double
   public func lon2x(aLong: Swift.Double) -> Swift.Double
+  @objc deinit
+}
+public class Draft7Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+public class Draft202012Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class ZOI : RealmSwift.Object {
@@ -201,6 +221,35 @@ public class SphericalMercator {
   public class func deleteAll()
   @objc deinit
 }
+public class Draft201909Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+public enum Type : Swift.String {
+  case object
+  case array
+  case string
+  case integer
+  case number
+  case boolean
+  case null
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Schema {
+  public let title: Swift.String?
+  public let description: Swift.String?
+  public let type: [WoosmapGeofencing.`Type`]?
+  public init(_ schema: [Swift.String : Any])
+  public func validate(_ data: Any) throws -> WoosmapGeofencing.ValidationResult
+  public func validate(_ data: Any) throws -> Swift.AnySequence<WoosmapGeofencing.ValidationError>
+}
+public func validateSchema(_ value: Any, schema: [Swift.String : Any]) throws -> WoosmapGeofencing.ValidationResult
+public func validate(_ value: Any, schema: Swift.Bool) throws -> WoosmapGeofencing.ValidationResult
 @objc @_inheritsConvenienceInitializers public class Distance : RealmSwift.Object {
   @objc dynamic public var date: Foundation.Date?
   @objc dynamic public var originLatitude: Swift.Double
@@ -225,6 +274,7 @@ public class SphericalMercator {
   public class func deleteAll()
   @objc deinit
 }
+public typealias Draft6Validator = WoosmapGeofencing.Draft7Validator
 public class DataCleaner {
   public init()
   public func cleanOldGeographicData()
@@ -565,6 +615,24 @@ extension Foundation.Date {
   public class func deleteAll()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class ValidationError : Swift.Encodable {
+  final public let description: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  final public let instanceLocation: WoosmapGeofencing.JSONPointer
+  final public let keywordLocation: WoosmapGeofencing.JSONPointer
+  @objc deinit
+}
+public enum ValidationResult : Swift.Encodable {
+  case valid
+  case invalid([WoosmapGeofencing.ValidationError])
+  public func encode(to encoder: Swift.Encoder) throws
+  public var valid: Swift.Bool {
+    get
+  }
+  public var errors: [WoosmapGeofencing.ValidationError]? {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers public class Visit : RealmSwift.Object {
   @objc dynamic public var accuracy: Swift.Double
   @objc dynamic public var arrivalDate: Foundation.Date?
@@ -616,6 +684,9 @@ public func add_first_entry_and_last_exit_to_intervals_if_needed(daily_interval:
 public func extract_daily_presence_intervals_from_weekly_density(weekly_density: [Swift.Double]) -> [Swift.String : Any]
 public func extract_time_and_weeks_from_interval(visitPoint: WoosmapGeofencing.LoadedVisit, zoi_gmminfo: inout [Swift.String : Any])
 public func update_weekly_density(visitPoint: WoosmapGeofencing.LoadedVisit, zoi_gmminfo: inout [Swift.String : Any])
+extension WoosmapGeofencing.`Type` : Swift.Equatable {}
+extension WoosmapGeofencing.`Type` : Swift.Hashable {}
+extension WoosmapGeofencing.`Type` : Swift.RawRepresentable {}
 extension WoosmapGeofencing.ConfigurationProfile : Swift.Equatable {}
 extension WoosmapGeofencing.ConfigurationProfile : Swift.Hashable {}
 extension WoosmapGeofencing.ConfigurationProfile : Swift.RawRepresentable {}
