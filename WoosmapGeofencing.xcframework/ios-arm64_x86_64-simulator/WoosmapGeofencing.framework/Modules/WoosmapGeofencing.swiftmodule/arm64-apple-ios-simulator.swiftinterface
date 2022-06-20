@@ -366,6 +366,7 @@ public var userPropertiesFilter: [Swift.String]
 public var SFMCCredentials: [Swift.String : Swift.String]
 public var SFMCAccesToken: Swift.String
 public var poiRadius: Any
+public var optimizeDistanceRequest: Swift.Bool
 @objc @_inheritsConvenienceInitializers public class LogSearchAPI : RealmSwift.Object {
   @objc dynamic public var date: Foundation.Date?
   @objc dynamic public var latitude: Swift.Double
@@ -466,6 +467,10 @@ public struct DistanceInfo : Swift.Codable {
   @objc public func setUserPropertiesFilter(properties: [Swift.String])
   @objc public func setSFMCCredentials(credentials: [Swift.String : Swift.String])
   @objc public func setPoiRadius(radius: Any)
+  @objc public var OptimizeDistanceRequest: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc public func stopTracking()
   public func startCustomTracking(url: Swift.String) -> (status: Swift.Bool, errors: [Swift.String])
   public func startTracking(configurationProfile: WoosmapGeofencing.ConfigurationProfile)
@@ -603,6 +608,7 @@ extension Foundation.Date {
   @objc dynamic public var duration: Swift.Int
   @objc dynamic public var durationText: Swift.String
   @objc dynamic public var type: Swift.String
+  @objc dynamic public var expectedAverageSpeed: Swift.Double
   @objc override dynamic public init()
   @objc deinit
 }

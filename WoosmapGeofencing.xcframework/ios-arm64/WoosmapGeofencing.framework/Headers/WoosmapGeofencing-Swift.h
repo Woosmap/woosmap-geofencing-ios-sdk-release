@@ -351,6 +351,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing15RegionIsochrone")
 @property (nonatomic) NSInteger duration;
 @property (nonatomic, copy) NSString * _Nonnull durationText;
 @property (nonatomic, copy) NSString * _Nonnull type;
+@property (nonatomic) double expectedAverageSpeed;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -420,6 +421,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 - (void)setUserPropertiesFilterWithProperties:(NSArray<NSString *> * _Nonnull)properties;
 - (void)setSFMCCredentialsWithCredentials:(NSDictionary<NSString *, NSString *> * _Nonnull)credentials;
 - (void)setPoiRadiusWithRadius:(id _Nonnull)radius;
+@property (nonatomic) BOOL OptimizeDistanceRequest;
 - (void)stopTracking;
 @end
 
