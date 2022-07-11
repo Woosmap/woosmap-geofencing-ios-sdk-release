@@ -264,7 +264,8 @@ public func validate(_ value: Any, schema: Swift.Bool) throws -> WoosmapGeofenci
   @objc dynamic public var units: Swift.String?
   @objc dynamic public var routing: Swift.String?
   @objc dynamic public var status: Swift.String?
-  convenience public init(originLatitude: Swift.Double, originLongitude: Swift.Double, destinationLatitude: Swift.Double, destinationLongitude: Swift.Double, dateCaptured: Foundation.Date, distance: Swift.Int, duration: Swift.Int, mode: Swift.String, units: Swift.String, routing: Swift.String, status: Swift.String)
+  @objc dynamic public var locationId: Swift.String?
+  convenience public init(originLatitude: Swift.Double, originLongitude: Swift.Double, destinationLatitude: Swift.Double, destinationLongitude: Swift.Double, dateCaptured: Foundation.Date, distance: Swift.Int, duration: Swift.Int, mode: Swift.String, units: Swift.String, routing: Swift.String, status: Swift.String, locationId: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -673,7 +674,7 @@ public enum ValidationResult : Swift.Encodable {
   public class func add(locations: [CoreLocation.CLLocation]) -> WoosmapGeofencing.Location
   public class func addTest(location: WoosmapGeofencing.Location)
   public class func getAll() -> [WoosmapGeofencing.Location]
-  public class func getLocationByLocationID(locationId: Swift.String) -> WoosmapGeofencing.Location?
+  public class func getLocationFromId(id: Swift.String) -> WoosmapGeofencing.Location?
   public class func deleteAll()
   @objc deinit
 }

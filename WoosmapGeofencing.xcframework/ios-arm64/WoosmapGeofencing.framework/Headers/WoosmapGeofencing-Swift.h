@@ -235,6 +235,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing8Distance")
 @property (nonatomic, copy) NSString * _Nullable units;
 @property (nonatomic, copy) NSString * _Nullable routing;
 @property (nonatomic, copy) NSString * _Nullable status;
+@property (nonatomic, copy) NSString * _Nullable locationId;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
