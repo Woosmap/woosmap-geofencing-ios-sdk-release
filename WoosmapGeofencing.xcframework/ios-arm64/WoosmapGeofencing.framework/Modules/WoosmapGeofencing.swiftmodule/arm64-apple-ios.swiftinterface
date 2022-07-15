@@ -674,6 +674,8 @@ public enum ValidationResult : Swift.Encodable {
   public class func add(locations: [CoreLocation.CLLocation]) -> WoosmapGeofencing.Location
   public class func addTest(location: WoosmapGeofencing.Location)
   public class func getAll() -> [WoosmapGeofencing.Location]
+  @available(*, deprecated, message: "Use getLocationFromId:id instead")
+  public class func getLocationByLocationID(locationId: Swift.String) -> WoosmapGeofencing.Location?
   public class func getLocationFromId(id: Swift.String) -> WoosmapGeofencing.Location?
   public class func deleteAll()
   @objc deinit
