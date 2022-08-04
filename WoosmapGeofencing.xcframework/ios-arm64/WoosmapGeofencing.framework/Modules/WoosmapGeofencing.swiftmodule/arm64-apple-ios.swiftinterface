@@ -209,13 +209,14 @@ public class Draft202012Validator {
   @objc dynamic public var durationText: Swift.String
   @objc dynamic public var type: Swift.String
   @objc dynamic public var origin: Swift.String
+  @objc dynamic public var eventName: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Regions {
-  public class func add(POIregion: CoreLocation.CLRegion, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool) -> WoosmapGeofencing.Region
+  public class func add(POIregion: CoreLocation.CLRegion, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool, eventName: Swift.String) -> WoosmapGeofencing.Region
   public class func add(classifiedRegion: WoosmapGeofencing.Region)
-  public class func add(regionIso: WoosmapGeofencing.RegionIsochrone) -> WoosmapGeofencing.Region
+  public class func add(regionIso: WoosmapGeofencing.RegionIsochrone, eventName: Swift.String) -> WoosmapGeofencing.Region
   public class func getRegionFromId(id: Swift.String) -> WoosmapGeofencing.Region?
   public class func getAll() -> [WoosmapGeofencing.Region]
   public class func deleteAll()

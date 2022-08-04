@@ -332,6 +332,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing6Region")
 @property (nonatomic, copy) NSString * _Nonnull durationText;
 @property (nonatomic, copy) NSString * _Nonnull type;
 @property (nonatomic, copy) NSString * _Nonnull origin;
+@property (nonatomic, copy) NSString * _Nonnull eventName;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
