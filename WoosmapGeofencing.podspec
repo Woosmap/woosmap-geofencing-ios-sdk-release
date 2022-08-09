@@ -10,7 +10,7 @@ The SDK simplifies the integration of the location context in your mobile applic
   s.authors = { 'Web Geo Services' => 'https://developers.woosmap.com/support/contact/'}
   s.documentation_url = 'https://github.com/Woosmap/geofencing-enterprise-ios-sdk'
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '11.0'
 
   s.swift_versions = ['5.1', '5.2']
   s.source       = { :git => "https://github.com/Woosmap/geofencing-ios-sdk-release.git",  :tag => s.version.to_s }
