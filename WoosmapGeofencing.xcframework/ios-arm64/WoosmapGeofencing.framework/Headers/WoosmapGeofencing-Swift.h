@@ -195,10 +195,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
 @import Realm;
+@import WoosmapGeofencingCore;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -217,125 +217,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+SWIFT_CLASS("_TtC17WoosmapGeofencing19LocationServiceImpl")
+@interface LocationServiceImpl : LocationServiceCoreImpl
+@end
+
 @class NSDate;
 @class NSString;
-
-SWIFT_CLASS("_TtC17WoosmapGeofencing8Distance")
-@interface Distance : RealmSwiftObject
-@property (nonatomic, copy) NSDate * _Nullable date;
-@property (nonatomic) double originLatitude;
-@property (nonatomic) double originLongitude;
-@property (nonatomic) double destinationLatitude;
-@property (nonatomic) double destinationLongitude;
-@property (nonatomic) NSInteger distance;
-@property (nonatomic, copy) NSString * _Nullable distanceText;
-@property (nonatomic) NSInteger duration;
-@property (nonatomic, copy) NSString * _Nullable durationText;
-@property (nonatomic, copy) NSString * _Nullable mode;
-@property (nonatomic, copy) NSString * _Nullable units;
-@property (nonatomic, copy) NSString * _Nullable routing;
-@property (nonatomic, copy) NSString * _Nullable status;
-@property (nonatomic, copy) NSString * _Nullable locationId;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC17WoosmapGeofencing8Location")
-@interface Location : RealmSwiftObject
-@property (nonatomic, copy) NSDate * _Nullable date;
-@property (nonatomic) double latitude;
-@property (nonatomic, copy) NSString * _Nullable locationDescription;
-@property (nonatomic, copy) NSString * _Nullable locationId;
-@property (nonatomic) double longitude;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class CLLocationManager;
-@class CLVisit;
-@class CLLocation;
-@class CLRegion;
-
-SWIFT_CLASS("_TtC17WoosmapGeofencing15LocationService")
-@interface LocationService : NSObject <CLLocationManagerDelegate>
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didVisit:(CLVisit * _Nonnull)visit;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didExitRegion:(CLRegion * _Nonnull)region;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didEnterRegion:(CLRegion * _Nonnull)region;
-- (void)locationManagerDidPauseLocationUpdates:(CLLocationManager * _Nonnull)manager;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didStartMonitoringForRegion:(CLRegion * _Nonnull)region;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager monitoringDidFailForRegion:(CLRegion * _Nullable)region withError:(NSError * _Nonnull)error;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC17WoosmapGeofencing12LogSearchAPI")
-@interface LogSearchAPI : RealmSwiftObject
-@property (nonatomic, copy) NSDate * _Nullable date;
-@property (nonatomic) double latitude;
-@property (nonatomic) double longitude;
-@property (nonatomic) double lastSearchLocationLatitude;
-@property (nonatomic) double lastSearchLocationLongitude;
-@property (nonatomic, copy) NSString * _Nullable lastPOI_distance;
-@property (nonatomic, copy) NSString * _Nullable distanceLimit;
-@property (nonatomic, copy) NSString * _Nullable locationDescription;
-@property (nonatomic, copy) NSString * _Nullable distanceTraveled;
-@property (nonatomic, copy) NSString * _Nullable distanceToFurthestMonitoredPOI;
-@property (nonatomic, copy) NSString * _Nullable distanceTraveledLastRefreshPOIRegion;
-@property (nonatomic) double searchAPILastRequestTimeStampValue;
-@property (nonatomic) BOOL sendSearchAPIRequest;
-@property (nonatomic, copy) NSString * _Nullable woosmapAPIKey;
-@property (nonatomic) BOOL searchAPIRequestEnable;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSData;
-
-SWIFT_CLASS("_TtC17WoosmapGeofencing3POI")
-@interface POI : RealmSwiftObject
-@property (nonatomic, copy) NSData * _Nullable jsonData;
-@property (nonatomic, copy) NSString * _Nullable city;
-@property (nonatomic, copy) NSString * _Nullable idstore;
-@property (nonatomic, copy) NSString * _Nullable name;
-@property (nonatomic, copy) NSDate * _Nullable date;
-@property (nonatomic) double distance;
-@property (nonatomic, copy) NSString * _Nullable duration;
-@property (nonatomic) double latitude;
-@property (nonatomic, copy) NSString * _Nullable locationId;
-@property (nonatomic) double longitude;
-@property (nonatomic, copy) NSString * _Nullable zipCode;
-@property (nonatomic) double radius;
-@property (nonatomic, copy) NSString * _Nullable address;
-@property (nonatomic) BOOL openNow;
-@property (nonatomic, copy) NSString * _Nullable countryCode;
-@property (nonatomic, copy) NSString * _Nullable tags;
-@property (nonatomic, copy) NSString * _Nullable types;
-@property (nonatomic, copy) NSString * _Nullable contact;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC17WoosmapGeofencing6Region")
-@interface Region : RealmSwiftObject
-@property (nonatomic, copy) NSDate * _Nonnull date;
-@property (nonatomic) BOOL didEnter;
-@property (nonatomic, copy) NSString * _Nonnull identifier;
-@property (nonatomic) double latitude;
-@property (nonatomic) double longitude;
-@property (nonatomic) double radius;
-@property (nonatomic) BOOL fromPositionDetection;
-@property (nonatomic) NSInteger distance;
-@property (nonatomic, copy) NSString * _Nonnull distanceText;
-@property (nonatomic) NSInteger duration;
-@property (nonatomic, copy) NSString * _Nonnull durationText;
-@property (nonatomic, copy) NSString * _Nonnull type;
-@property (nonatomic, copy) NSString * _Nonnull origin;
-@property (nonatomic, copy) NSString * _Nonnull eventName;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 SWIFT_CLASS("_TtC17WoosmapGeofencing15RegionIsochrone")
 @interface RegionIsochrone : RealmSwiftObject
@@ -358,29 +245,14 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing15RegionIsochrone")
 @end
 
 
-SWIFT_CLASS("_TtC17WoosmapGeofencing5Visit")
-@interface Visit : RealmSwiftObject
-@property (nonatomic) double accuracy;
-@property (nonatomic, copy) NSDate * _Nullable arrivalDate;
-@property (nonatomic, copy) NSDate * _Nullable date;
-@property (nonatomic, copy) NSDate * _Nullable departureDate;
-@property (nonatomic) double latitude;
-@property (nonatomic) double longitude;
-@property (nonatomic, copy) NSString * _Nullable visitId;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-/// WoosmapGeofencing main class. Cannot be instanciated, use <code>shared</code> property to access singleton
 SWIFT_CLASS("_TtC17WoosmapGeofencing17WoosmapGeofencing")
 @interface WoosmapGeofencing : NSObject
-@property (nonatomic, strong) LocationService * _Null_unspecified locationService;
 /// Access singleton of Now object
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofencing * _Nonnull shared;)
 + (WoosmapGeofencing * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (LocationService * _Nonnull)getLocationService SWIFT_WARN_UNUSED_RESULT;
+- (LocationServiceImpl * _Nonnull)getLocationService SWIFT_WARN_UNUSED_RESULT;
 - (void)initServices SWIFT_METHOD_FAMILY(none);
 - (void)setTrackingEnableWithEnable:(BOOL)enable;
 - (BOOL)getTrackingState SWIFT_WARN_UNUSED_RESULT;
@@ -424,30 +296,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 - (void)setSFMCCredentialsWithCredentials:(NSDictionary<NSString *, NSString *> * _Nonnull)credentials;
 - (void)setPoiRadiusWithRadius:(id _Nonnull)radius;
 @property (nonatomic) BOOL OptimizeDistanceRequest;
-- (void)stopTracking;
 @end
 
 
-SWIFT_CLASS("_TtC17WoosmapGeofencing3ZOI")
-@interface ZOI : RealmSwiftObject
-@property (nonatomic) double accumulator;
-@property (nonatomic) double age;
-@property (nonatomic) double covariance_det;
-@property (nonatomic) int64_t duration;
-@property (nonatomic, copy) NSDate * _Nullable endTime;
-@property (nonatomic) double latMean;
-@property (nonatomic) double lngMean;
-@property (nonatomic, copy) NSString * _Nullable period;
-@property (nonatomic) double prior_probability;
-@property (nonatomic, copy) NSDate * _Nullable startTime;
-@property (nonatomic, copy) NSString * _Nullable wktPolygon;
-@property (nonatomic) double x00Covariance_matrix_inverse;
-@property (nonatomic) double x01Covariance_matrix_inverse;
-@property (nonatomic) double x10Covariance_matrix_inverse;
-@property (nonatomic) double x11Covariance_matrix_inverse;
-@property (nonatomic, copy) NSString * _Nullable zoiId;
-+ (NSString * _Nullable)primaryKey SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@interface WoosmapGeofencing (SWIFT_EXTENSION(WoosmapGeofencing))
+- (void)stopTracking;
 @end
 
 #if __has_attribute(external_source_symbol)
