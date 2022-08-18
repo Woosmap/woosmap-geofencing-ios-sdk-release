@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 The SDK simplifies the integration of the location context in your mobile application by taking care of lower-level functionalities such as data collection or battery management.'
   s.homepage = 'https://github.com/Woosmap/geofencing-ios-sdk'
   s.authors = { 'Web Geo Services' => 'https://developers.woosmap.com/support/contact/'}
-  s.documentation_url = 'https://github.com/Woosmap/geofencing-enterprise-ios-sdk'
+  s.documentation_url = 'https://github.com/Woosmap/geofencing-ios-sdk-release'
 
   s.ios.deployment_target = '11.0'
 
