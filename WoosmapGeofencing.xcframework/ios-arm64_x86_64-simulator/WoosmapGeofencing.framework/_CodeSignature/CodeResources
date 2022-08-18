@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		SWeV7xRRoTKLP2l7mCJF6UjNxSg=
+		N0Z6mu3D2klVbx5eor85z6wJp/g=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		/SLt7rTghhMwRdLqSu2jGi5EBW8=
+		UNpbBGbXPx+RwK94HjScRNKxcf0=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wabDSLixcg85xZJhfdrID8ITkJ8=
+		46ZBQJ6VAvJGrb0qLnRf6ePAUXQ=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		90fLhSX9Yp2QHiDNeBoFYERVQPg=
+		a0Nr7/ldXvvRR9fa7Tr8iFRpVUw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,14 +70,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JITdrciUZfJzQAeBx4c3pCy9PiwGA8tExsSoemVjVdE=
+			VmSGAXMcRoFfLp3KXN/2kL5H4D+W14P60M87XqgdZE8=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iIJhpauuPh1xosqcGxeUAu5QrWBGeQM7aGPwSE9Xybc=
+			bHjN5KZfR5BYtG5jQOS3Y3t0gBjB0xWlriNh2WMotCw=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eQiWT3Hp9QJkS3YXverXHO4G1m3D9XuTE4IvJcwpGto=
+			5dM/thi3AlXpnTvIzIycrzvtGx9H8Uz+oc7ANCMDF7M=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VcBmCWVZAA+iY9VH0wINNJwxSXTeFLa1qGDAFqnUbDg=
+			ju4aK+jc+t4cWEzVSsJtiSIaUYyKgO01usnup2gBgag=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
