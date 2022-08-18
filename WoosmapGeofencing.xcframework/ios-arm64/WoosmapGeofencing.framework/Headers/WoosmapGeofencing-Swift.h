@@ -217,6 +217,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+/// Interacts with Core Location to collect user location and monitor region.
+/// This class efficiently gathers user location and triggers events based on region monitoring and provides categorised zones of Interests and temporal clusters.
 SWIFT_CLASS("_TtC17WoosmapGeofencing19LocationServiceImpl")
 @interface LocationServiceImpl : LocationServiceCoreImpl
 @end
@@ -224,82 +226,423 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing19LocationServiceImpl")
 @class NSDate;
 @class NSString;
 
+/// Offline Database object: RegionIsochrone
 SWIFT_CLASS("_TtC17WoosmapGeofencing15RegionIsochrone")
 @interface RegionIsochrone : RealmSwiftObject
+/// date
 @property (nonatomic, copy) NSDate * _Nullable date;
+/// didEnter
 @property (nonatomic) BOOL didEnter;
+/// identifier
 @property (nonatomic, copy) NSString * _Nullable identifier;
+/// locationId
 @property (nonatomic, copy) NSString * _Nullable locationId;
+/// idStore
 @property (nonatomic, copy) NSString * _Nullable idStore;
+/// latitude
 @property (nonatomic) double latitude;
+/// longitude
 @property (nonatomic) double longitude;
+/// radius
 @property (nonatomic) NSInteger radius;
+/// fromPositionDetection
 @property (nonatomic) BOOL fromPositionDetection;
+/// distance
 @property (nonatomic) NSInteger distance;
+/// distanceText
 @property (nonatomic, copy) NSString * _Nonnull distanceText;
+/// duration
 @property (nonatomic) NSInteger duration;
+/// durationText
 @property (nonatomic, copy) NSString * _Nonnull durationText;
+/// type
 @property (nonatomic, copy) NSString * _Nonnull type;
+/// expectedAverageSpeed
 @property (nonatomic) double expectedAverageSpeed;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+/// Woosmap Geofencing SDK
+/// The Woosmap Geofencing SDK allows you to monitor Geofences, track your user’s location and connect with the Woosmap Search and Distance APIs.
 SWIFT_CLASS("_TtC17WoosmapGeofencing17WoosmapGeofencing")
 @interface WoosmapGeofencing : NSObject
 /// Access singleton of Now object
+/// Usage Example:
+/// \code
+/// let obj = WoosmapGeofencing.shared
+///
+/// \endcode
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofencing * _Nonnull shared;)
 + (WoosmapGeofencing * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// Initialize of WoosmapGeofencing
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Location service Connector
+/// Usage Example:
+/// \code
+/// let locationService: LocationServiceImpl = WoosmapGeofencing.shared.getLocationService()
+///
+/// \endcode
+/// returns:
+/// LocationService
 - (LocationServiceImpl * _Nonnull)getLocationService SWIFT_WARN_UNUSED_RESULT;
+/// Activate location service to capture device location
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.initServices()
+///
+/// \endcode
 - (void)initServices SWIFT_METHOD_FAMILY(none);
+/// Activate tracking with SDK
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setTrackingEnable(enable: true)
+///
+/// \endcode\param enable True/False
+///
 - (void)setTrackingEnableWithEnable:(BOOL)enable;
+/// Fetch tracking status in SDK
+/// Usage Example:
+/// \code
+/// let state = WoosmapGeofencing.shared.getTrackingState()
+///
+/// \endcode
+/// returns:
+/// True/False
 - (BOOL)getTrackingState SWIFT_WARN_UNUSED_RESULT;
+/// Configure Woosmap API with SDK
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setWoosmapAPIKey(key: "<Woosmap Key>")
+///
+/// \endcode\param key API key
+///
 - (void)setWoosmapAPIKeyWithKey:(NSString * _Nonnull)key;
+/// Configure Google map key with SDK
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setGMPAPIKey(key: "<custom GMS Key>")
+///
+/// \endcode\param key Google Map key from google api console
+///
 - (void)setGMPAPIKeyWithKey:(NSString * _Nonnull)key;
+/// Custom endpoint for Woosmap Search API
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setSearchWoosmapAPI(api: "<custom URL>")
+///
+/// \endcode\param api Custome URL for Search API
+///
 - (void)setSearchWoosmapAPIWithApi:(NSString * _Nonnull)api;
+/// Custom endpoint for Woosmap Distance API
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setDistanceWoosmapAPI(api: "<custom URL>")
+///
+/// \endcode\param api Custome URL for Distance API
+///
 - (void)setDistanceWoosmapAPIWithApi:(NSString * _Nonnull)api;
+/// Custom endpoint for Woosmap Traffic API
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setTrafficDistanceWoosmapAPI(api: "<custom URL>")
+///
+/// \endcode\param api Custome URL for traffic API
+///
 - (void)setTrafficDistanceWoosmapAPIWithApi:(NSString * _Nonnull)api;
+/// Configure distance API language
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setDistanceAPILanguage(language: "fr")
+///
+/// \endcode\param language language with ISO 639-1 codes
+///
 - (void)setDistanceAPILanguageWithLanguage:(NSString * _Nonnull)language;
+/// Filter Max Air Distance
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setDistanceMaxAirDistanceFilter(distance: 120)
+///
+/// \endcode\param distance numaric value in specify DistanceAPIUnits
+///
 - (void)setDistanceMaxAirDistanceFilterWithDistance:(NSInteger)distance;
+/// Filter distance time
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setDistanceTimeFilter(time: 120)
+///
+/// \endcode\param time number of second
+///
 - (void)setDistanceTimeFilterWithTime:(NSInteger)time;
+/// Filter POI location with CurrentPosition
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setCurrentPositionFilter(distance: 10, time: 120)
+///
+/// \endcode\param distance distance specify with unit
+///
+/// \param time number of seconds
+///
 - (void)setCurrentPositionFilterWithDistance:(double)distance time:(NSInteger)time;
+/// switch to enable Search API Request
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setSearchAPIRequestEnable(enable:true)
+///
+/// \endcode\param enable True to enable search API, False to disable search API
+///
 - (void)setSearchAPIRequestEnableWithEnable:(BOOL)enable;
+/// Fetch activation status  search api  with SDK
+/// Usage Example:
+/// \code
+/// let  status = WoosmapGeofencing.shared.getSearchAPIRequestEnable()
+///
+/// \endcode
+/// returns:
+/// Yes/No
 - (BOOL)getSearchAPIRequestEnable SWIFT_WARN_UNUSED_RESULT;
+/// switch to enable auto region creation when search api called
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setSearchAPICreationRegionEnable(enable:true)
+///
+/// \endcode\param enable True/False
+///
 - (void)setSearchAPICreationRegionEnableWithEnable:(BOOL)enable;
+/// Get status of enabling auto region creation when search API called
+/// Usage Example:
+/// \code
+/// let  status = WoosmapGeofencing.shared.getSearchAPICreationRegionEnable()
+///
+/// \endcode
+/// returns:
+/// True/False
 - (BOOL)getSearchAPICreationRegionEnable SWIFT_WARN_UNUSED_RESULT;
+/// Search API Last Request Time Stamp
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setSearchAPILastRequestTimeStamp(time:now())
+///
+/// \endcode\param time Capture last search api get caled from SDK
+///
 - (void)setSearchAPILastRequestTimeStampWithTime:(double)time;
+/// Fetch Search API Last Request Time Stamp
+/// Usage Example:
+/// \code
+/// let  lastTimeStamp = WoosmapGeofencing.shared.getSearchAPILastRequestTimeStamp()
+///
+/// \endcode
+/// returns:
+/// Capture last search api get caled from SDK
 - (double)getSearchAPILastRequestTimeStamp SWIFT_WARN_UNUSED_RESULT;
+/// Switch Distance API Request Enable
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setDistanceAPIRequestEnable(enable: true)
+///
+/// \endcode\param enable True / False
+///
 - (void)setDistanceAPIRequestEnableWithEnable:(BOOL)enable;
+/// Fetch Distance API Request Enable with SDK
+/// Usage Example:
+/// \code
+/// let status = WoosmapGeofencing.shared.getDistanceAPIRequestEnable()
+///
+/// \endcode
+/// returns:
+/// True / False
 - (BOOL)getDistanceAPIRequestEnable SWIFT_WARN_UNUSED_RESULT;
+/// Search API Filter parameters
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setSearchAPIFilter(distance: 10, time: 120)
+///
+/// \endcode\param distance radius for search boundry
+///
+/// \param time time for search boundry
+///
 - (void)setSearchAPIFilterWithDistance:(double)distance time:(NSInteger)time;
+/// Configure SearchAPI Refresh Delay Day
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setSearchAPIRefreshDelayDay(day: 5)
+///
+/// \endcode\param day Number of days
+///
 - (void)setSearchAPIRefreshDelayDayWithDay:(NSInteger)day;
+/// Fetch SearchAPI Refresh Delay Day
+/// Usage Example:
+/// \code
+/// let days = WoosmapGeofencing.shared.getSearchAPIRefreshDelayDay()
+///
+/// \endcode
+/// returns:
+/// Number of days. Default: 1 day
 - (NSInteger)getSearchAPIRefreshDelayDay SWIFT_WARN_UNUSED_RESULT;
+/// Configure visit enable with SDK
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setVisitEnable(enable: true)
+///
+/// \endcode\param enable True / False
+///
 - (void)setVisitEnableWithEnable:(BOOL)enable;
+/// Fetch visit enable with SDK
+/// Usage Example:
+/// \code
+/// let status = WoosmapGeofencing.shared.getVisitEnable()
+///
+/// \endcode
+/// returns:
+/// True / False
 - (BOOL)getVisitEnable SWIFT_WARN_UNUSED_RESULT;
+/// Configure Accuracy Visit Filter
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.setAccuracyVisitFilter(accuracy:true)
+///
+/// \endcode\param accuracy Unit meters
+///
 - (void)setAccuracyVisitFilterWithAccuracy:(double)accuracy;
+/// Switch to enable Zone of interest with SDK
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.setCreationOfZOIEnable(enable:true)
+///
+/// \endcode\param enable True / False
+///
 - (void)setCreationOfZOIEnableWithEnable:(BOOL)enable;
+/// Configuration classificaton
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.setClassification(enable:true)
+///
+/// \endcode\param enable True / False
+///
 - (void)setClassificationWithEnable:(BOOL)enable;
+/// Configure Radius Detection ClassifiedZOI
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.setRadiusDetectionClassifiedZOI(radius:10.5)
+///
+/// \endcode\param radius Radius in meter
+///
 - (void)setRadiusDetectionClassifiedZOIWithRadius:(double)radius;
+/// Enable location monitoring in Foreground
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.startMonitoringInForeGround()
+///
+/// \endcode
 - (void)startMonitoringInForeGround;
 /// Call this method from the DidFinishLaunchWithOptions method of your App Delegate
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.startMonitoringInBackground()
+///
+/// \endcode
 - (void)startMonitoringInBackground;
 /// Call this method from the applicationDidBecomeActive method of your App Delegate
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.didBecomeActive()
+///
+/// \endcode
 - (void)didBecomeActive;
+/// Switch to change tracking mode
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.trackingChanged(tracking: true)
+///
+/// \endcode\param tracking True / False
+///
 - (void)trackingChangedWithTracking:(BOOL)tracking;
+/// Configure high frequency mode with location service
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.setModeHighfrequencyLocation(enable: true)
+///
+/// \endcode\param enable True / False
+///
 - (void)setModeHighfrequencyLocationWithEnable:(BOOL)enable;
+/// Fetch high frequency mode of location service
+/// Usage Example:
+/// \code
+///  let status = WoosmapGeofencing.shared.getModeHighfrequencyLocation()
+///
+/// \endcode
+/// returns:
+/// True / False
 - (BOOL)getModeHighfrequencyLocation SWIFT_WARN_UNUSED_RESULT;
+/// Refresh Location to fetch new location explicitly
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.refreshLocation(allTime: true)
+///
+/// \endcode\param allTime Enable HighfrequencyLocation mode
+///
 - (void)refreshLocationWithAllTime:(BOOL)allTime;
+/// Collect SearchAPI Parameters
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.setSearchAPIParameters(["property1":"<custom value>",
+///                             "property2":"<custom value>"])
+///
+/// \endcode\param parameters API parameter list
+///
 - (void)setSearchAPIParametersWithParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)parameters;
+/// Configure User Properties Filter
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.setUserPropertiesFilter(["property1",
+///                             "property2"])
+///
+/// \endcode\param properties Filter properties
+///
 - (void)setUserPropertiesFilterWithProperties:(NSArray<NSString *> * _Nonnull)properties;
+/// Configure SFMC Credentials
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setSFMCCredentials(["authenticationBaseURI":"<custom value>",
+///    "restBaseURI":"<custom value>",
+///    "client_id":"<custom value>",
+///    "client_secret":"<custom value>",
+///    "regionEnteredEventDefinitionKey":"<custom value>",
+///    "regionExitedEventDefinitionKey":"<custom value>",
+///    "poiEventDefinitionKey":"<custom value>",
+///    "zoiClassifiedEnteredEventDefinitionKey":"<custom value>",
+///    "zoiClassifiedExitedEventDefinitionKey":"<custom value>",
+///    "visitEventDefinitionKey":"<custom value>"])
+///
+/// \endcode\param credentials SFMC Credentials settings
+///
 - (void)setSFMCCredentialsWithCredentials:(NSDictionary<NSString *, NSString *> * _Nonnull)credentials;
+/// Configure radius of POI region
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.setPoiRadius(10)
+///
+/// \endcode\param radius numbers
+///
 - (void)setPoiRadiusWithRadius:(id _Nonnull)radius;
+/// Configuration to set optimize distance logic. default: false
+/// Usage Example:
+/// \code
+///  WoosmapGeofencing.shared.OptimizeDistanceRequest = true
+///
+/// \endcode
 @property (nonatomic) BOOL OptimizeDistanceRequest;
 @end
 
 
 @interface WoosmapGeofencing (SWIFT_EXTENSION(WoosmapGeofencing))
+/// Disable tracking on SDK
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.stopTracking()
+///
+/// \endcode
 - (void)stopTracking;
 @end
 
