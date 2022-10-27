@@ -6,23 +6,27 @@
 	<dict>
 		<key>Headers/WoosmapGeofencing-Swift.h</key>
 		<data>
-		DHvWOy6rj9bguLlWdrcS5Mz/d4I=
+		j6VsYPy1Le2Bf9pnMEFOOr54Awk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ERrMgURrZiykLhr9/IIJFcQmJtI=
+		jr1EC9GeCfTZ73ydvZX0Y9LWBrk=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Sm+ApuL2VezTWR1t5Q156XER/+c=
+		LGcNyroNchx9VSz4kxBZ8X3pvaA=
+		</data>
+		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		MqKH+2yd5tSN7gJPhLUTq3rqsRM=
+		sf3MQrNqEcztD6qF66cdnAcdigk=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		geqi8Ds6beek2srhWx7cQVRRToc=
+		9qDAtBZURQhUmBdVx6vD6ShV9ss=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,28 +55,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pKh5Q4hR8LTDu8YeIhb0g1majq18GePNgpQ75WP4+NE=
+			ypUMGM5ic3L3URZzwKGQV7m7TDty5kXnkH/v/PrAPXk=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e7jTQShNbu5gDyOfXVoK+QJQuiWnKP8i+wDNMtSnpos=
+			OnO1ALZBVfcdSz0T7nvNDn70fCjqT9NRHEMfC+VfbS8=
+			</data>
+		</dict>
+		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f31pCDu9peZx6qte3Kf6cIpfiZuYi8VO8Jucura4mrI=
+			IxB68K9cGsJn7RObtMYclC9hPldVwdm1tB46giMXh/Y=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JB5R/emvpC44tgk0FJACd6x24h2Y2pMdO7cD4Me0iSE=
+			Wan6ojLwVUvZsOheiyKa6eRm+Gy/M4MBAu6J07axlx8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
