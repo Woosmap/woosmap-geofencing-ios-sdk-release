@@ -1,0 +1,246 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WoosmapGeofencing
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AdSupport
+import CoreFoundation
+import CoreLocation
+import Foundation
+import RealmSwift
+import Swift
+@_exported import WoosmapGeofencingCore
+import _Concurrency
+import _StringProcessing
+public class Draft4Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class LocationServiceImpl : WoosmapGeofencingCore.LocationServiceCoreImpl {
+  weak public var airshipEventsDelegate: WoosmapGeofencing.AirshipEventsDelegate?
+  weak public var marketingCloudEventsDelegate: WoosmapGeofencing.MarketingCloudEventsDelegate?
+  override public func handleRefreshSystemGeofence(addCustomGeofence: Swift.Bool = false, locationId: Swift.String)
+  override public func searchAPIRequest(location: WoosmapGeofencingCore.Location)
+  override public func removeOldPOIRegions(newPOIS: [WoosmapGeofencingCore.POI])
+  override public func checkIfUserIsInRegion(region: CoreLocation.CLCircularRegion)
+  override public func addRegionLogTransition(region: CoreLocation.CLRegion, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool)
+  override public func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: Swift.Int, type: Swift.String) -> (isCreate: Swift.Bool, identifier: Swift.String)
+  override public func updateLocation(locations: [CoreLocation.CLLocation])
+  override public func handleZOIClassifiedEvent(region: WoosmapGeofencingCore.Region)
+  override public func handleVisitEvent(visit: WoosmapGeofencingCore.Visit)
+  override public func handlePOIEvent(poi: WoosmapGeofencingCore.POI)
+  required public init(locationManger: WoosmapGeofencingCore.LocationManagerProtocol?)
+  @objc deinit
+}
+public protocol MarketingCloudEventsDelegate : AnyObject {
+  func poiEvent(POIEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func regionEnterEvent(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func regionExitEvent(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func visitEvent(visitEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func ZOIclassifiedEnter(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func ZOIclassifiedExit(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+}
+public protocol AirshipEventsDelegate : AnyObject {
+  func poiEvent(POIEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func regionEnterEvent(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func regionExitEvent(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func visitEvent(visitEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func ZOIclassifiedEnter(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func ZOIclassifiedExit(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+}
+extension WoosmapGeofencingCore.Regions {
+  public class func add(regionIso: WoosmapGeofencing.RegionIsochrone) -> WoosmapGeofencingCore.Region
+}
+public struct ConfigModel : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct DistanceConfig : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SearchAPIConfig : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SearchAPIParameters : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SFMCConfig : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct JSONPointer {
+  public var path: Swift.String {
+    get
+  }
+}
+public class Draft7Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+public class Draft202012Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+public class Draft201909Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+public enum Type : Swift.String {
+  case object
+  case array
+  case string
+  case integer
+  case number
+  case boolean
+  case null
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Schema {
+  public let title: Swift.String?
+  public let description: Swift.String?
+  public let type: [WoosmapGeofencing.`Type`]?
+  public init(_ schema: [Swift.String : Any])
+  public func validate(_ data: Any) throws -> WoosmapGeofencing.ValidationResult
+  public func validate(_ data: Any) throws -> Swift.AnySequence<WoosmapGeofencing.ValidationError>
+}
+public func validateSchema(_ value: Any, schema: [Swift.String : Any]) throws -> WoosmapGeofencing.ValidationResult
+public func validate(_ value: Any, schema: Swift.Bool) throws -> WoosmapGeofencing.ValidationResult
+public enum ConfigurationProfile : Swift.String {
+  case liveTracking
+  case passiveTracking
+  case visitsTracking
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public var SFMCCredentials: [Swift.String : Swift.String]
+public var SFMCAccesToken: Swift.String
+public var optimizeDistanceRequest: Swift.Bool
+public typealias Draft6Validator = WoosmapGeofencing.Draft7Validator
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class WoosmapGeofencing : ObjectiveC.NSObject {
+  public var locationService: WoosmapGeofencingCore.LocationService!
+  public var sphericalMercator: WoosmapGeofencingCore.SphericalMercator!
+  public var visitPoint: WoosmapGeofencingCore.LoadedVisit!
+  @objc public static let shared: WoosmapGeofencing.WoosmapGeofencing
+  public func getLocationService() -> WoosmapGeofencing.LocationServiceImpl
+  public func getSphericalMercator() -> WoosmapGeofencingCore.SphericalMercator
+  public func getVisitPoint() -> WoosmapGeofencingCore.LoadedVisit
+  @objc public func initServices()
+  @objc public func setTrackingEnable(enable: Swift.Bool)
+  @objc public func getTrackingState() -> Swift.Bool
+  @objc public func setWoosmapAPIKey(key: Swift.String)
+  @objc public func setGMPAPIKey(key: Swift.String)
+  @objc public func setSearchWoosmapAPI(api: Swift.String)
+  @objc public func setDistanceWoosmapAPI(api: Swift.String)
+  @objc public func setTrafficDistanceWoosmapAPI(api: Swift.String)
+  public func setDistanceProvider(provider: WoosmapGeofencingCore.DistanceProvider)
+  public func setDistanceAPIMode(mode: WoosmapGeofencingCore.DistanceMode)
+  public func setTrafficDistanceAPIRouting(routing: WoosmapGeofencingCore.TrafficDistanceRouting)
+  public func setDistanceAPIUnits(units: WoosmapGeofencingCore.DistanceUnits)
+  @objc public func setDistanceAPILanguage(language: Swift.String)
+  @objc public func setDistanceMaxAirDistanceFilter(distance: Swift.Int)
+  @objc public func setDistanceTimeFilter(time: Swift.Int)
+  @objc public func setCurrentPositionFilter(distance: Swift.Double, time: Swift.Int)
+  @objc public func setSearchAPIRequestEnable(enable: Swift.Bool)
+  @objc public func getSearchAPIRequestEnable() -> Swift.Bool
+  @objc public func setSearchAPICreationRegionEnable(enable: Swift.Bool)
+  @objc public func getSearchAPICreationRegionEnable() -> Swift.Bool
+  @objc public func setSearchAPILastRequestTimeStamp(time: Swift.Double)
+  @objc public func getSearchAPILastRequestTimeStamp() -> Swift.Double
+  @objc public func setDistanceAPIRequestEnable(enable: Swift.Bool)
+  @objc public func getDistanceAPIRequestEnable() -> Swift.Bool
+  @objc public func setSearchAPIFilter(distance: Swift.Double, time: Swift.Int)
+  @objc public func setSearchAPIRefreshDelayDay(day: Swift.Int)
+  @objc public func getSearchAPIRefreshDelayDay() -> Swift.Int
+  @objc public func setVisitEnable(enable: Swift.Bool)
+  @objc public func getVisitEnable() -> Swift.Bool
+  @objc public func setAccuracyVisitFilter(accuracy: Swift.Double)
+  @objc public func setCreationOfZOIEnable(enable: Swift.Bool)
+  @objc public func setClassification(enable: Swift.Bool)
+  @objc public func setRadiusDetectionClassifiedZOI(radius: Swift.Double)
+  @objc public func startMonitoringInForeGround()
+  @objc public func startMonitoringInBackground()
+  @objc public func didBecomeActive()
+  @objc public func trackingChanged(tracking: Swift.Bool)
+  @objc public func setModeHighfrequencyLocation(enable: Swift.Bool)
+  @objc public func getModeHighfrequencyLocation() -> Swift.Bool
+  @objc public func refreshLocation(allTime: Swift.Bool)
+  @objc public func setSearchAPIParameters(parameters: [Swift.String : Swift.String])
+  @objc public func setUserPropertiesFilter(properties: [Swift.String])
+  @objc public func setSFMCCredentials(credentials: [Swift.String : Swift.String])
+  @objc public func setPoiRadius(radius: Any)
+  @objc public var OptimizeDistanceRequest: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+extension WoosmapGeofencing.WoosmapGeofencing {
+  public func startTracking(configurationProfile: WoosmapGeofencing.ConfigurationProfile)
+  @objc dynamic public func stopTracking()
+  public func startCustomTracking(url: Swift.String) -> (status: Swift.Bool, errors: [Swift.String])
+}
+@objc @_inheritsConvenienceInitializers public class RegionIsochrone : RealmSwift.Object {
+  @objc dynamic public var date: Foundation.Date?
+  @objc dynamic public var didEnter: Swift.Bool
+  @objc dynamic public var identifier: Swift.String?
+  @objc dynamic public var locationId: Swift.String?
+  @objc dynamic public var idStore: Swift.String?
+  @objc dynamic public var latitude: Swift.Double
+  @objc dynamic public var longitude: Swift.Double
+  @objc dynamic public var radius: Swift.Int
+  @objc dynamic public var fromPositionDetection: Swift.Bool
+  @objc dynamic public var distance: Swift.Int
+  @objc dynamic public var distanceText: Swift.String
+  @objc dynamic public var duration: Swift.Int
+  @objc dynamic public var durationText: Swift.String
+  @objc dynamic public var type: Swift.String
+  @objc dynamic public var expectedAverageSpeed: Swift.Double
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RegionIsochrones {
+  public class func add(regionIsochrone: WoosmapGeofencing.RegionIsochrone)
+  public class func updateRegion(id: Swift.String, didEnter: Swift.Bool, distanceInfo: WoosmapGeofencingCore.Distance) -> WoosmapGeofencing.RegionIsochrone
+  public class func getRegionFromId(id: Swift.String) -> WoosmapGeofencing.RegionIsochrone?
+  public class func removeRegionIsochrone(id: Swift.String)
+  public class func getAll() -> [WoosmapGeofencing.RegionIsochrone]
+  public class func deleteAll()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ValidationError : Swift.Encodable {
+  final public let description: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  final public let instanceLocation: WoosmapGeofencing.JSONPointer
+  final public let keywordLocation: WoosmapGeofencing.JSONPointer
+  @objc deinit
+}
+public enum ValidationResult : Swift.Encodable {
+  case valid
+  case invalid([WoosmapGeofencing.ValidationError])
+  public func encode(to encoder: Swift.Encoder) throws
+  public var valid: Swift.Bool {
+    get
+  }
+  public var errors: [WoosmapGeofencing.ValidationError]? {
+    get
+  }
+}
+extension WoosmapGeofencing.`Type` : Swift.Equatable {}
+extension WoosmapGeofencing.`Type` : Swift.Hashable {}
+extension WoosmapGeofencing.`Type` : Swift.RawRepresentable {}
+extension WoosmapGeofencing.ConfigurationProfile : Swift.Equatable {}
+extension WoosmapGeofencing.ConfigurationProfile : Swift.Hashable {}
+extension WoosmapGeofencing.ConfigurationProfile : Swift.RawRepresentable {}
