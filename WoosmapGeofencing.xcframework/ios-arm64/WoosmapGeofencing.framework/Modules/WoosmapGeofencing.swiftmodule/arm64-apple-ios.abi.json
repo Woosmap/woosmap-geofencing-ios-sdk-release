@@ -7792,1764 +7792,1764 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Validator.swift",
       "kind": "StringLiteral",
       "offset": 172,
       "length": 3,
       "value": "\"#\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 159,
       "length": 40,
       "value": "\"http:\/\/json-schema.org\/draft-04\/schema\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 276,
       "length": 6,
       "value": "\"$ref\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 293,
       "length": 9,
       "value": "\"pattern\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 317,
       "length": 12,
       "value": "\"multipleOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 347,
       "length": 10,
       "value": "\"contains\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 373,
       "length": 13,
       "value": "\"uniqueItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 405,
       "length": 6,
       "value": "\"enum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 425,
       "length": 7,
       "value": "\"const\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 445,
       "length": 14,
       "value": "\"dependencies\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 479,
       "length": 11,
       "value": "\"minLength\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 507,
       "length": 11,
       "value": "\"maxLength\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 535,
       "length": 9,
       "value": "\"minimum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 565,
       "length": 9,
       "value": "\"maximum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 10,
       "value": "\"minItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 621,
       "length": 10,
       "value": "\"maxItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 647,
       "length": 15,
       "value": "\"minProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 683,
       "length": 15,
       "value": "\"maxProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 719,
       "length": 7,
       "value": "\"items\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 739,
       "length": 17,
       "value": "\"additionalItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 779,
       "length": 19,
       "value": "\"patternProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 823,
       "length": 22,
       "value": "\"additionalProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 873,
       "length": 5,
       "value": "\"not\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 889,
       "length": 7,
       "value": "\"allOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 909,
       "length": 7,
       "value": "\"oneOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 929,
       "length": 7,
       "value": "\"anyOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 949,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 967,
       "length": 10,
       "value": "\"required\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 999,
       "length": 15,
       "value": "\"propertyNames\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 1035,
       "length": 8,
       "value": "\"format\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 1057,
       "length": 12,
       "value": "\"properties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 1087,
       "length": 4,
       "value": "\"if\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 1189,
       "length": 6,
       "value": "\"ipv4\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 1215,
       "length": 6,
       "value": "\"ipv6\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 1241,
       "length": 5,
       "value": "\"uri\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "StringLiteral",
       "offset": 1775,
       "length": 4664,
       "value": "\"{\n    \"id\": \"http:\/\/json-schema.org\/draft-04\/schema#\",\n    \"$schema\": \"http:\/\/json-schema.org\/draft-04\/schema#\",\n    \"description\": \"Core schema meta-schema\",\n    \"definitions\": {\n        \"schemaArray\": {\n            \"type\": \"array\",\n            \"minItems\": 1,\n            \"items\": { \"$ref\": \"#\" }\n        },\n        \"positiveInteger\": {\n            \"type\": \"integer\",\n            \"minimum\": 0\n        },\n        \"positiveIntegerDefault0\": {\n            \"allOf\": [ { \"$ref\": \"#\/definitions\/positiveInteger\" }, { \"default\": 0 } ]\n        },\n        \"simpleTypes\": {\n            \"enum\": [ \"array\", \"boolean\", \"integer\", \"null\", \"number\", \"object\", \"string\" ]\n        },\n        \"stringArray\": {\n            \"type\": \"array\",\n            \"items\": { \"type\": \"string\" },\n            \"minItems\": 1,\n            \"uniqueItems\": true\n        }\n    },\n    \"type\": \"object\",\n    \"properties\": {\n        \"id\": {\n            \"type\": \"string\"\n        },\n        \"$schema\": {\n            \"type\": \"string\"\n        },\n        \"title\": {\n            \"type\": \"string\"\n        },\n        \"description\": {\n            \"type\": \"string\"\n        },\n        \"default\": {},\n        \"multipleOf\": {\n            \"type\": \"number\",\n            \"minimum\": 0,\n            \"exclusiveMinimum\": true\n        },\n        \"maximum\": {\n            \"type\": \"number\"\n        },\n        \"exclusiveMaximum\": {\n            \"type\": \"boolean\",\n            \"default\": false\n        },\n        \"minimum\": {\n            \"type\": \"number\"\n        },\n        \"exclusiveMinimum\": {\n            \"type\": \"boolean\",\n            \"default\": false\n        },\n        \"maxLength\": { \"$ref\": \"#\/definitions\/positiveInteger\" },\n        \"minLength\": { \"$ref\": \"#\/definitions\/positiveIntegerDefault0\" },\n        \"pattern\": {\n            \"type\": \"string\",\n            \"format\": \"regex\"\n        },\n        \"additionalItems\": {\n            \"anyOf\": [\n                { \"type\": \"boolean\" },\n                { \"$ref\": \"#\" }\n            ],\n            \"default\": {}\n        },\n        \"items\": {\n            \"anyOf\": [\n                { \"$ref\": \"#\" },\n                { \"$ref\": \"#\/definitions\/schemaArray\" }\n            ],\n            \"default\": {}\n        },\n        \"maxItems\": { \"$ref\": \"#\/definitions\/positiveInteger\" },\n        \"minItems\": { \"$ref\": \"#\/definitions\/positiveIntegerDefault0\" },\n        \"uniqueItems\": {\n            \"type\": \"boolean\",\n            \"default\": false\n        },\n        \"maxProperties\": { \"$ref\": \"#\/definitions\/positiveInteger\" },\n        \"minProperties\": { \"$ref\": \"#\/definitions\/positiveIntegerDefault0\" },\n        \"required\": { \"$ref\": \"#\/definitions\/stringArray\" },\n        \"additionalProperties\": {\n            \"anyOf\": [\n                { \"type\": \"boolean\" },\n                { \"$ref\": \"#\" }\n            ],\n            \"default\": {}\n        },\n        \"definitions\": {\n            \"type\": \"object\",\n            \"additionalProperties\": { \"$ref\": \"#\" },\n            \"default\": {}\n        },\n        \"properties\": {\n            \"type\": \"object\",\n            \"additionalProperties\": { \"$ref\": \"#\" },\n            \"default\": {}\n        },\n        \"patternProperties\": {\n            \"type\": \"object\",\n            \"additionalProperties\": { \"$ref\": \"#\" },\n            \"default\": {}\n        },\n        \"dependencies\": {\n            \"type\": \"object\",\n            \"additionalProperties\": {\n                \"anyOf\": [\n                    { \"$ref\": \"#\" },\n                    { \"$ref\": \"#\/definitions\/stringArray\" }\n                ]\n            }\n        },\n        \"enum\": {\n            \"type\": \"array\",\n            \"minItems\": 1,\n            \"uniqueItems\": true\n        },\n        \"type\": {\n            \"anyOf\": [\n                { \"$ref\": \"#\/definitions\/simpleTypes\" },\n                {\n                    \"type\": \"array\",\n                    \"items\": { \"$ref\": \"#\/definitions\/simpleTypes\" },\n                    \"minItems\": 1,\n                    \"uniqueItems\": true\n                }\n            ]\n        },\n        \"format\": { \"type\": \"string\" },\n        \"allOf\": { \"$ref\": \"#\/definitions\/schemaArray\" },\n        \"anyOf\": { \"$ref\": \"#\/definitions\/schemaArray\" },\n        \"oneOf\": { \"$ref\": \"#\/definitions\/schemaArray\" },\n        \"not\": { \"$ref\": \"#\" }\n    },\n    \"dependencies\": {\n        \"exclusiveMaximum\": [ \"maximum\" ],\n        \"exclusiveMinimum\": [ \"minimum\" ]\n    },\n    \"default\": {}\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft4Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 6575,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/LocationServiceImpl.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/LocationServiceImpl.swift",
       "kind": "BooleanLiteral",
       "offset": 1210,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/LocationServiceImpl.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/LocationServiceImpl.swift",
       "kind": "StringLiteral",
       "offset": 18934,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/LocationServiceImpl.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/LocationServiceImpl.swift",
       "kind": "StringLiteral",
       "offset": 23478,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/LocationServiceImpl.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/LocationServiceImpl.swift",
       "kind": "StringLiteral",
       "offset": 35328,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/LocationServiceImpl.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/LocationServiceImpl.swift",
       "kind": "BooleanLiteral",
       "offset": 35402,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 159,
       "length": 40,
       "value": "\"http:\/\/json-schema.org\/draft-06\/schema\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 227,
       "length": 40,
       "value": "\"http:\/\/json-schema.org\/draft-07\/schema\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 6,
       "value": "\"$ref\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 361,
       "length": 5,
       "value": "\"not\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 377,
       "length": 7,
       "value": "\"allOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 397,
       "length": 7,
       "value": "\"oneOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 7,
       "value": "\"anyOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 437,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 455,
       "length": 10,
       "value": "\"required\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 487,
       "length": 15,
       "value": "\"propertyNames\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 523,
       "length": 8,
       "value": "\"format\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 545,
       "length": 12,
       "value": "\"properties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 575,
       "length": 4,
       "value": "\"if\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 591,
       "length": 9,
       "value": "\"pattern\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 12,
       "value": "\"multipleOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 645,
       "length": 10,
       "value": "\"contains\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 671,
       "length": 13,
       "value": "\"uniqueItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 703,
       "length": 6,
       "value": "\"enum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 723,
       "length": 7,
       "value": "\"const\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 14,
       "value": "\"dependencies\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 777,
       "length": 11,
       "value": "\"minLength\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 805,
       "length": 11,
       "value": "\"maxLength\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 833,
       "length": 9,
       "value": "\"minimum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 857,
       "length": 9,
       "value": "\"maximum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 881,
       "length": 18,
       "value": "\"exclusiveMinimum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 923,
       "length": 18,
       "value": "\"exclusiveMaximum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 965,
       "length": 10,
       "value": "\"minItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 991,
       "length": 10,
       "value": "\"maxItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1017,
       "length": 15,
       "value": "\"minProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1053,
       "length": 15,
       "value": "\"maxProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1089,
       "length": 7,
       "value": "\"items\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1109,
       "length": 17,
       "value": "\"additionalItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1149,
       "length": 19,
       "value": "\"patternProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1193,
       "length": 22,
       "value": "\"additionalProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1329,
       "length": 6,
       "value": "\"ipv4\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1355,
       "length": 6,
       "value": "\"ipv6\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1381,
       "length": 5,
       "value": "\"uri\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1405,
       "length": 14,
       "value": "\"json-pointer\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1446,
       "length": 7,
       "value": "\"regex\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "StringLiteral",
       "offset": 1959,
       "length": 5230,
       "value": "\"{\n    \"$schema\": \"http:\/\/json-schema.org\/draft-07\/schema#\",\n    \"$id\": \"http:\/\/json-schema.org\/draft-07\/schema#\",\n    \"title\": \"Core schema meta-schema\",\n    \"definitions\": {\n        \"schemaArray\": {\n            \"type\": \"array\",\n            \"minItems\": 1,\n            \"items\": { \"$ref\": \"#\" }\n        },\n        \"nonNegativeInteger\": {\n            \"type\": \"integer\",\n            \"minimum\": 0\n        },\n        \"nonNegativeIntegerDefault0\": {\n            \"allOf\": [\n                { \"$ref\": \"#\/definitions\/nonNegativeInteger\" },\n                { \"default\": 0 }\n            ]\n        },\n        \"simpleTypes\": {\n            \"enum\": [\n                \"array\",\n                \"boolean\",\n                \"integer\",\n                \"null\",\n                \"number\",\n                \"object\",\n                \"string\"\n            ]\n        },\n        \"stringArray\": {\n            \"type\": \"array\",\n            \"items\": { \"type\": \"string\" },\n            \"uniqueItems\": true,\n            \"default\": []\n        }\n    },\n    \"type\": [\"object\", \"boolean\"],\n    \"properties\": {\n        \"$id\": {\n            \"type\": \"string\",\n            \"format\": \"uri-reference\"\n        },\n        \"$schema\": {\n            \"type\": \"string\",\n            \"format\": \"uri\"\n        },\n        \"$ref\": {\n            \"type\": \"string\",\n            \"format\": \"uri-reference\"\n        },\n        \"$comment\": {\n            \"type\": \"string\"\n        },\n        \"title\": {\n            \"type\": \"string\"\n        },\n        \"description\": {\n            \"type\": \"string\"\n        },\n        \"default\": true,\n        \"readOnly\": {\n            \"type\": \"boolean\",\n            \"default\": false\n        },\n        \"examples\": {\n            \"type\": \"array\",\n            \"items\": true\n        },\n        \"multipleOf\": {\n            \"type\": \"number\",\n            \"exclusiveMinimum\": 0\n        },\n        \"maximum\": {\n            \"type\": \"number\"\n        },\n        \"exclusiveMaximum\": {\n            \"type\": \"number\"\n        },\n        \"minimum\": {\n            \"type\": \"number\"\n        },\n        \"exclusiveMinimum\": {\n            \"type\": \"number\"\n        },\n        \"maxLength\": { \"$ref\": \"#\/definitions\/nonNegativeInteger\" },\n        \"minLength\": { \"$ref\": \"#\/definitions\/nonNegativeIntegerDefault0\" },\n        \"pattern\": {\n            \"type\": \"string\",\n            \"format\": \"regex\"\n        },\n        \"additionalItems\": { \"$ref\": \"#\" },\n        \"items\": {\n            \"anyOf\": [\n                { \"$ref\": \"#\" },\n                { \"$ref\": \"#\/definitions\/schemaArray\" }\n            ],\n            \"default\": true\n        },\n        \"maxItems\": { \"$ref\": \"#\/definitions\/nonNegativeInteger\" },\n        \"minItems\": { \"$ref\": \"#\/definitions\/nonNegativeIntegerDefault0\" },\n        \"uniqueItems\": {\n            \"type\": \"boolean\",\n            \"default\": false\n        },\n        \"contains\": { \"$ref\": \"#\" },\n        \"maxProperties\": { \"$ref\": \"#\/definitions\/nonNegativeInteger\" },\n        \"minProperties\": { \"$ref\": \"#\/definitions\/nonNegativeIntegerDefault0\" },\n        \"required\": { \"$ref\": \"#\/definitions\/stringArray\" },\n        \"additionalProperties\": { \"$ref\": \"#\" },\n        \"definitions\": {\n            \"type\": \"object\",\n            \"additionalProperties\": { \"$ref\": \"#\" },\n            \"default\": {}\n        },\n        \"properties\": {\n            \"type\": \"object\",\n            \"additionalProperties\": { \"$ref\": \"#\" },\n            \"default\": {}\n        },\n        \"patternProperties\": {\n            \"type\": \"object\",\n            \"additionalProperties\": { \"$ref\": \"#\" },\n            \"propertyNames\": { \"format\": \"regex\" },\n            \"default\": {}\n        },\n        \"dependencies\": {\n            \"type\": \"object\",\n            \"additionalProperties\": {\n                \"anyOf\": [\n                    { \"$ref\": \"#\" },\n                    { \"$ref\": \"#\/definitions\/stringArray\" }\n                ]\n            }\n        },\n        \"propertyNames\": { \"$ref\": \"#\" },\n        \"const\": true,\n        \"enum\": {\n            \"type\": \"array\",\n            \"items\": true,\n            \"minItems\": 1,\n            \"uniqueItems\": true\n        },\n        \"type\": {\n            \"anyOf\": [\n                { \"$ref\": \"#\/definitions\/simpleTypes\" },\n                {\n                    \"type\": \"array\",\n                    \"items\": { \"$ref\": \"#\/definitions\/simpleTypes\" },\n                    \"minItems\": 1,\n                    \"uniqueItems\": true\n                }\n            ]\n        },\n        \"format\": { \"type\": \"string\" },\n        \"contentMediaType\": { \"type\": \"string\" },\n        \"contentEncoding\": { \"type\": \"string\" },\n        \"if\": { \"$ref\": \"#\" },\n        \"then\": { \"$ref\": \"#\" },\n        \"else\": { \"$ref\": \"#\" },\n        \"allOf\": { \"$ref\": \"#\/definitions\/schemaArray\" },\n        \"anyOf\": { \"$ref\": \"#\/definitions\/schemaArray\" },\n        \"oneOf\": { \"$ref\": \"#\/definitions\/schemaArray\" },\n        \"not\": { \"$ref\": \"#\" }\n    },\n    \"default\": true\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft7Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 7325,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 164,
       "length": 46,
       "value": "\"https:\/\/json-schema.org\/draft\/2020-12\/schema\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 50,
       "value": "\"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/core\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 331,
       "length": 56,
       "value": "\"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/applicator\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 431,
       "length": 57,
       "value": "\"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/unevaluated\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 533,
       "length": 56,
       "value": "\"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/validation\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 633,
       "length": 55,
       "value": "\"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/meta-data\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 730,
       "length": 63,
       "value": "\"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/format-annotation\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 844,
       "length": 53,
       "value": "\"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/content\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 987,
       "length": 19,
       "value": "\"dependentRequired\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1031,
       "length": 9,
       "value": "\"pattern\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1055,
       "length": 12,
       "value": "\"multipleOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1085,
       "length": 10,
       "value": "\"contains\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1111,
       "length": 13,
       "value": "\"uniqueItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1143,
       "length": 6,
       "value": "\"enum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1163,
       "length": 7,
       "value": "\"const\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1183,
       "length": 14,
       "value": "\"dependencies\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1217,
       "length": 18,
       "value": "\"dependentSchemas\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1259,
       "length": 11,
       "value": "\"minLength\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1287,
       "length": 11,
       "value": "\"maxLength\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1315,
       "length": 9,
       "value": "\"minimum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1339,
       "length": 9,
       "value": "\"maximum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1363,
       "length": 18,
       "value": "\"exclusiveMinimum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1405,
       "length": 18,
       "value": "\"exclusiveMaximum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1447,
       "length": 10,
       "value": "\"minItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1473,
       "length": 10,
       "value": "\"maxItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1499,
       "length": 15,
       "value": "\"minProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1535,
       "length": 15,
       "value": "\"maxProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1571,
       "length": 7,
       "value": "\"items\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1591,
       "length": 17,
       "value": "\"additionalItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1631,
       "length": 19,
       "value": "\"patternProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1675,
       "length": 22,
       "value": "\"additionalProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1725,
       "length": 6,
       "value": "\"$ref\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1742,
       "length": 5,
       "value": "\"not\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1758,
       "length": 7,
       "value": "\"allOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1778,
       "length": 7,
       "value": "\"oneOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1798,
       "length": 7,
       "value": "\"anyOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1818,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1836,
       "length": 10,
       "value": "\"required\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1868,
       "length": 15,
       "value": "\"propertyNames\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1905,
       "length": 12,
       "value": "\"properties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1935,
       "length": 8,
       "value": "\"format\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1957,
       "length": 4,
       "value": "\"if\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 1974,
       "length": 18,
       "value": "\"unevaluatedItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 2006,
       "length": 18,
       "value": "\"unevaluatedItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 2031,
       "length": 23,
       "value": "\"unevaluatedProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 2068,
       "length": 23,
       "value": "\"unevaluatedProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 2184,
       "length": 6,
       "value": "\"ipv4\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 2210,
       "length": 6,
       "value": "\"ipv6\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 2236,
       "length": 5,
       "value": "\"uri\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 2260,
       "length": 6,
       "value": "\"uuid\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 2286,
       "length": 7,
       "value": "\"regex\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 2314,
       "length": 14,
       "value": "\"json-pointer\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 2794,
       "length": 2707,
       "value": "\"  {\n      \"$schema\": \"https:\/\/json-schema.org\/draft\/2020-12\/schema\",\n      \"$id\": \"https:\/\/json-schema.org\/draft\/2020-12\/schema\",\n      \"$vocabulary\": {\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/core\": true,\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/applicator\": true,\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/unevaluated\": true,\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/validation\": true,\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/meta-data\": true,\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/format-annotation\": true,\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/content\": true\n      },\n      \"$dynamicAnchor\": \"meta\",\n\n      \"title\": \"Core and Validation specifications meta-schema\",\n      \"allOf\": [\n          {\"$ref\": \"meta\/core\"},\n          {\"$ref\": \"meta\/applicator\"},\n          {\"$ref\": \"meta\/unevaluated\"},\n          {\"$ref\": \"meta\/validation\"},\n          {\"$ref\": \"meta\/meta-data\"},\n          {\"$ref\": \"meta\/format-annotation\"},\n          {\"$ref\": \"meta\/content\"}\n      ],\n      \"type\": [\"object\", \"boolean\"],\n      \"$comment\": \"This meta-schema also defines keywords that have appeared in previous drafts in order to prevent incompatible extensions as they remain in common use.\",\n      \"properties\": {\n          \"definitions\": {\n              \"$comment\": \"\\\"definitions\\\" has been replaced by \\\"$defs\\\".\",\n              \"type\": \"object\",\n              \"additionalProperties\": { \"$dynamicRef\": \"#meta\" },\n              \"deprecated\": true,\n              \"default\": {}\n          },\n          \"dependencies\": {\n              \"$comment\": \"\\\"dependencies\\\" has been split and replaced by \\\"dependentSchemas\\\" and \\\"dependentRequired\\\" in order to serve their differing semantics.\",\n              \"type\": \"object\",\n              \"additionalProperties\": {\n                  \"anyOf\": [\n                      { \"$dynamicRef\": \"#meta\" },\n                      { \"$ref\": \"meta\/validation#\/$defs\/stringArray\" }\n                  ]\n              },\n              \"deprecated\": true,\n              \"default\": {}\n          },\n          \"$recursiveAnchor\": {\n              \"$comment\": \"\\\"$recursiveAnchor\\\" has been replaced by \\\"$dynamicAnchor\\\".\",\n              \"$ref\": \"meta\/core#\/$defs\/anchorString\",\n              \"deprecated\": true\n          },\n          \"$recursiveRef\": {\n              \"$comment\": \"\\\"$recursiveRef\\\" has been replaced by \\\"$dynamicRef\\\".\",\n              \"$ref\": \"meta\/core#\/$defs\/uriReferenceString\",\n              \"deprecated\": true\n          }\n      }\n  }\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 5637,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 5750,
       "length": 1773,
       "value": "\"  {\n      \"$schema\": \"https:\/\/json-schema.org\/draft\/2020-12\/schema\",\n      \"$id\": \"https:\/\/json-schema.org\/draft\/2020-12\/meta\/core\",\n      \"$vocabulary\": {\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/core\": true\n      },\n      \"$dynamicAnchor\": \"meta\",\n\n      \"title\": \"Core vocabulary meta-schema\",\n      \"type\": [\"object\", \"boolean\"],\n      \"properties\": {\n          \"$id\": {\n              \"$ref\": \"#\/$defs\/uriReferenceString\",\n              \"$comment\": \"Non-empty fragments not allowed.\",\n              \"pattern\": \"^[^#]*#?$\"\n          },\n          \"$schema\": { \"$ref\": \"#\/$defs\/uriString\" },\n          \"$ref\": { \"$ref\": \"#\/$defs\/uriReferenceString\" },\n          \"$anchor\": { \"$ref\": \"#\/$defs\/anchorString\" },\n          \"$dynamicRef\": { \"$ref\": \"#\/$defs\/uriReferenceString\" },\n          \"$dynamicAnchor\": { \"$ref\": \"#\/$defs\/anchorString\" },\n          \"$vocabulary\": {\n              \"type\": \"object\",\n              \"propertyNames\": { \"$ref\": \"#\/$defs\/uriString\" },\n              \"additionalProperties\": {\n                  \"type\": \"boolean\"\n              }\n          },\n          \"$comment\": {\n              \"type\": \"string\"\n          },\n          \"$defs\": {\n              \"type\": \"object\",\n              \"additionalProperties\": { \"$dynamicRef\": \"#meta\" }\n          }\n      },\n      \"$defs\": {\n          \"anchorString\": {\n              \"type\": \"string\",\n              \"pattern\": \"^[A-Za-z_][-A-Za-z0-9._]*$\"\n          },\n          \"uriString\": {\n              \"type\": \"string\",\n              \"format\": \"uri\"\n          },\n          \"uriReferenceString\": {\n              \"type\": \"string\",\n              \"format\": \"uri-reference\"\n          }\n      }\n  }\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 7659,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 7777,
       "length": 1856,
       "value": "\"  {\n      \"$schema\": \"https:\/\/json-schema.org\/draft\/2020-12\/schema\",\n      \"$id\": \"https:\/\/json-schema.org\/draft\/2020-12\/meta\/applicator\",\n      \"$vocabulary\": {\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/applicator\": true\n      },\n      \"$dynamicAnchor\": \"meta\",\n\n      \"title\": \"Applicator vocabulary meta-schema\",\n      \"type\": [\"object\", \"boolean\"],\n      \"properties\": {\n          \"prefixItems\": { \"$ref\": \"#\/$defs\/schemaArray\" },\n          \"items\": { \"$dynamicRef\": \"#meta\" },\n          \"contains\": { \"$dynamicRef\": \"#meta\" },\n          \"additionalProperties\": { \"$dynamicRef\": \"#meta\" },\n          \"properties\": {\n              \"type\": \"object\",\n              \"additionalProperties\": { \"$dynamicRef\": \"#meta\" },\n              \"default\": {}\n          },\n          \"patternProperties\": {\n              \"type\": \"object\",\n              \"additionalProperties\": { \"$dynamicRef\": \"#meta\" },\n              \"propertyNames\": { \"format\": \"regex\" },\n              \"default\": {}\n          },\n          \"dependentSchemas\": {\n              \"type\": \"object\",\n              \"additionalProperties\": { \"$dynamicRef\": \"#meta\" },\n              \"default\": {}\n          },\n          \"propertyNames\": { \"$dynamicRef\": \"#meta\" },\n          \"if\": { \"$dynamicRef\": \"#meta\" },\n          \"then\": { \"$dynamicRef\": \"#meta\" },\n          \"else\": { \"$dynamicRef\": \"#meta\" },\n          \"allOf\": { \"$ref\": \"#\/$defs\/schemaArray\" },\n          \"anyOf\": { \"$ref\": \"#\/$defs\/schemaArray\" },\n          \"oneOf\": { \"$ref\": \"#\/$defs\/schemaArray\" },\n          \"not\": { \"$dynamicRef\": \"#meta\" }\n      },\n      \"$defs\": {\n          \"schemaArray\": {\n              \"type\": \"array\",\n              \"minItems\": 1,\n              \"items\": { \"$dynamicRef\": \"#meta\" }\n          }\n      }\n  }\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 9769,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 9889,
       "length": 573,
       "value": "\"    {\n      \"$schema\": \"https:\/\/json-schema.org\/draft\/2020-12\/schema\",\n      \"$id\": \"https:\/\/json-schema.org\/draft\/2020-12\/meta\/unevaluated\",\n      \"$vocabulary\": {\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/unevaluated\": true\n      },\n      \"$dynamicAnchor\": \"meta\",\n\n      \"title\": \"Unevaluated applicator vocabulary meta-schema\",\n      \"type\": [\"object\", \"boolean\"],\n      \"properties\": {\n          \"unevaluatedItems\": { \"$dynamicRef\": \"#meta\" },\n          \"unevaluatedProperties\": { \"$dynamicRef\": \"#meta\" }\n      }\n  }\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 10598,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 10717,
       "length": 2847,
       "value": "\"{\n  \"$schema\": \"https:\/\/json-schema.org\/draft\/2020-12\/schema\",\n  \"$id\": \"https:\/\/json-schema.org\/draft\/2020-12\/meta\/validation\",\n  \"$vocabulary\": {\n      \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/validation\": true\n  },\n  \"$dynamicAnchor\": \"meta\",\n\n  \"title\": \"Validation vocabulary meta-schema\",\n  \"type\": [\"object\", \"boolean\"],\n  \"properties\": {\n      \"type\": {\n          \"anyOf\": [\n              { \"$ref\": \"#\/$defs\/simpleTypes\" },\n              {\n                  \"type\": \"array\",\n                  \"items\": { \"$ref\": \"#\/$defs\/simpleTypes\" },\n                  \"minItems\": 1,\n                  \"uniqueItems\": true\n              }\n          ]\n      },\n      \"const\": true,\n      \"enum\": {\n          \"type\": \"array\",\n          \"items\": true\n      },\n      \"multipleOf\": {\n          \"type\": \"number\",\n          \"exclusiveMinimum\": 0\n      },\n      \"maximum\": {\n          \"type\": \"number\"\n      },\n      \"exclusiveMaximum\": {\n          \"type\": \"number\"\n      },\n      \"minimum\": {\n          \"type\": \"number\"\n      },\n      \"exclusiveMinimum\": {\n          \"type\": \"number\"\n      },\n      \"maxLength\": { \"$ref\": \"#\/$defs\/nonNegativeInteger\" },\n      \"minLength\": { \"$ref\": \"#\/$defs\/nonNegativeIntegerDefault0\" },\n      \"pattern\": {\n          \"type\": \"string\",\n          \"format\": \"regex\"\n      },\n      \"maxItems\": { \"$ref\": \"#\/$defs\/nonNegativeInteger\" },\n      \"minItems\": { \"$ref\": \"#\/$defs\/nonNegativeIntegerDefault0\" },\n      \"uniqueItems\": {\n          \"type\": \"boolean\",\n          \"default\": false\n      },\n      \"maxContains\": { \"$ref\": \"#\/$defs\/nonNegativeInteger\" },\n      \"minContains\": {\n          \"$ref\": \"#\/$defs\/nonNegativeInteger\",\n          \"default\": 1\n      },\n      \"maxProperties\": { \"$ref\": \"#\/$defs\/nonNegativeInteger\" },\n      \"minProperties\": { \"$ref\": \"#\/$defs\/nonNegativeIntegerDefault0\" },\n      \"required\": { \"$ref\": \"#\/$defs\/stringArray\" },\n      \"dependentRequired\": {\n          \"type\": \"object\",\n          \"additionalProperties\": {\n              \"$ref\": \"#\/$defs\/stringArray\"\n          }\n      }\n  },\n  \"$defs\": {\n      \"nonNegativeInteger\": {\n          \"type\": \"integer\",\n          \"minimum\": 0\n      },\n      \"nonNegativeIntegerDefault0\": {\n          \"$ref\": \"#\/$defs\/nonNegativeInteger\",\n          \"default\": 0\n      },\n      \"simpleTypes\": {\n          \"enum\": [\n              \"array\",\n              \"boolean\",\n              \"integer\",\n              \"null\",\n              \"number\",\n              \"object\",\n              \"string\"\n          ]\n      },\n      \"stringArray\": {\n          \"type\": \"array\",\n          \"items\": { \"type\": \"string\" },\n          \"uniqueItems\": true,\n          \"default\": []\n      }\n  }\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 13700,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 13817,
       "length": 1041,
       "value": "\"  {\n      \"$schema\": \"https:\/\/json-schema.org\/draft\/2020-12\/schema\",\n      \"$id\": \"https:\/\/json-schema.org\/draft\/2020-12\/meta\/meta-data\",\n      \"$vocabulary\": {\n          \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/meta-data\": true\n      },\n      \"$dynamicAnchor\": \"meta\",\n\n      \"title\": \"Meta-data vocabulary meta-schema\",\n\n      \"type\": [\"object\", \"boolean\"],\n      \"properties\": {\n          \"title\": {\n              \"type\": \"string\"\n          },\n          \"description\": {\n              \"type\": \"string\"\n          },\n          \"default\": true,\n          \"deprecated\": {\n              \"type\": \"boolean\",\n              \"default\": false\n          },\n          \"readOnly\": {\n              \"type\": \"boolean\",\n              \"default\": false\n          },\n          \"writeOnly\": {\n              \"type\": \"boolean\",\n              \"default\": false\n          },\n          \"examples\": {\n              \"type\": \"array\",\n              \"items\": true\n          }\n      }\n  }\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 14994,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 15120,
       "length": 461,
       "value": "\"{\n  \"$schema\": \"https:\/\/json-schema.org\/draft\/2020-12\/schema\",\n  \"$id\": \"https:\/\/json-schema.org\/draft\/2020-12\/meta\/format-annotation\",\n  \"$vocabulary\": {\n      \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/format-annotation\": true\n  },\n  \"$dynamicAnchor\": \"meta\",\n\n  \"title\": \"Format vocabulary meta-schema for annotation results\",\n  \"type\": [\"object\", \"boolean\"],\n  \"properties\": {\n      \"format\": { \"type\": \"string\" }\n  }\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 15717,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "StringLiteral",
       "offset": 15833,
       "length": 532,
       "value": "\"{\n  \"$schema\": \"https:\/\/json-schema.org\/draft\/2020-12\/schema\",\n  \"$id\": \"https:\/\/json-schema.org\/draft\/2020-12\/meta\/content\",\n  \"$vocabulary\": {\n      \"https:\/\/json-schema.org\/draft\/2020-12\/vocab\/content\": true\n  },\n  \"$dynamicAnchor\": \"meta\",\n\n  \"title\": \"Content vocabulary meta-schema\",\n\n  \"type\": [\"object\", \"boolean\"],\n  \"properties\": {\n      \"contentEncoding\": { \"type\": \"string\" },\n      \"contentMediaType\": { \"type\": \"string\" },\n      \"contentSchema\": { \"$dynamicRef\": \"#meta\" }\n  }\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft202012Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 16501,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/RefResolver.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/RefResolver.swift",
       "kind": "StringLiteral",
       "offset": 882,
       "length": 5,
       "value": "\"$id\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/RefResolver.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/RefResolver.swift",
       "kind": "StringLiteral",
       "offset": 909,
       "length": 7,
       "value": "\"$defs\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 164,
       "length": 46,
       "value": "\"https:\/\/json-schema.org\/draft\/2019-09\/schema\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 49,
       "value": "\"https:\/\/json-schema.org\/draft\/2019-09\/meta\/core\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 330,
       "length": 55,
       "value": "\"https:\/\/json-schema.org\/draft\/2019-09\/meta\/applicator\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 429,
       "length": 55,
       "value": "\"https:\/\/json-schema.org\/draft\/2019-09\/meta\/validation\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 528,
       "length": 54,
       "value": "\"https:\/\/json-schema.org\/draft\/2019-09\/meta\/meta-data\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 624,
       "length": 51,
       "value": "\"https:\/\/json-schema.org\/draft\/2019-09\/meta\/format\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 715,
       "length": 52,
       "value": "\"https:\/\/json-schema.org\/draft\/2019-09\/meta\/content\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 857,
       "length": 19,
       "value": "\"dependentRequired\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 901,
       "length": 9,
       "value": "\"pattern\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 925,
       "length": 12,
       "value": "\"multipleOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 955,
       "length": 10,
       "value": "\"contains\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 981,
       "length": 13,
       "value": "\"uniqueItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1013,
       "length": 6,
       "value": "\"enum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1033,
       "length": 7,
       "value": "\"const\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1053,
       "length": 14,
       "value": "\"dependencies\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1087,
       "length": 18,
       "value": "\"dependentSchemas\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1129,
       "length": 11,
       "value": "\"minLength\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1157,
       "length": 11,
       "value": "\"maxLength\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1185,
       "length": 9,
       "value": "\"minimum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1209,
       "length": 9,
       "value": "\"maximum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1233,
       "length": 18,
       "value": "\"exclusiveMinimum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1275,
       "length": 18,
       "value": "\"exclusiveMaximum\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1317,
       "length": 10,
       "value": "\"minItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1343,
       "length": 10,
       "value": "\"maxItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1369,
       "length": 15,
       "value": "\"minProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1405,
       "length": 15,
       "value": "\"maxProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1441,
       "length": 7,
       "value": "\"items\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1461,
       "length": 17,
       "value": "\"additionalItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1501,
       "length": 19,
       "value": "\"patternProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1545,
       "length": 22,
       "value": "\"additionalProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1595,
       "length": 6,
       "value": "\"$ref\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1612,
       "length": 5,
       "value": "\"not\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1628,
       "length": 7,
       "value": "\"allOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1648,
       "length": 7,
       "value": "\"oneOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1668,
       "length": 7,
       "value": "\"anyOf\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1688,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1706,
       "length": 10,
       "value": "\"required\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1738,
       "length": 15,
       "value": "\"propertyNames\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1775,
       "length": 12,
       "value": "\"properties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1805,
       "length": 8,
       "value": "\"format\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1827,
       "length": 4,
       "value": "\"if\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1844,
       "length": 18,
       "value": "\"unevaluatedItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1876,
       "length": 18,
       "value": "\"unevaluatedItems\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1901,
       "length": 23,
       "value": "\"unevaluatedProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 1938,
       "length": 23,
       "value": "\"unevaluatedProperties\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 2054,
       "length": 6,
       "value": "\"ipv4\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 2080,
       "length": 6,
       "value": "\"ipv6\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 2106,
       "length": 5,
       "value": "\"uri\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 2130,
       "length": 6,
       "value": "\"uuid\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 2156,
       "length": 7,
       "value": "\"regex\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 2184,
       "length": 14,
       "value": "\"json-pointer\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 2663,
       "length": 1882,
       "value": "\"{\n    \"$schema\": \"https:\/\/json-schema.org\/draft\/2019-09\/schema\",\n    \"$id\": \"https:\/\/json-schema.org\/draft\/2019-09\/schema\",\n    \"$vocabulary\": {\n        \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/core\": true,\n        \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/applicator\": true,\n        \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/validation\": true,\n        \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/meta-data\": true,\n        \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/format\": false,\n        \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/content\": true\n    },\n    \"$recursiveAnchor\": true,\n\n    \"title\": \"Core and Validation specifications meta-schema\",\n    \"allOf\": [\n        {\"$ref\": \"meta\/core\"},\n        {\"$ref\": \"meta\/applicator\"},\n        {\"$ref\": \"meta\/validation\"},\n        {\"$ref\": \"meta\/meta-data\"},\n        {\"$ref\": \"meta\/format\"},\n        {\"$ref\": \"meta\/content\"}\n    ],\n    \"type\": [\"object\", \"boolean\"],\n    \"properties\": {\n        \"definitions\": {\n            \"$comment\": \"While no longer an official keyword as it is replaced by $defs, this keyword is retained in the meta-schema to prevent incompatible extensions as it remains in common use.\",\n            \"type\": \"object\",\n            \"additionalProperties\": { \"$recursiveRef\": \"#\" },\n            \"default\": {}\n        },\n        \"dependencies\": {\n            \"$comment\": \"\\\"dependencies\\\" is no longer a keyword, but schema authors should avoid redefining it to facilitate a smooth transition to \\\"dependentSchemas\\\" and \\\"dependentRequired\\\"\",\n            \"type\": \"object\",\n            \"additionalProperties\": {\n                \"anyOf\": [\n                    { \"$recursiveRef\": \"#\" },\n                    { \"$ref\": \"meta\/validation#\/$defs\/stringArray\" }\n                ]\n            }\n        }\n    }\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 4681,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 4794,
       "length": 1544,
       "value": "\"{\n  \"$schema\": \"https:\/\/json-schema.org\/draft\/2019-09\/schema\",\n  \"$id\": \"https:\/\/json-schema.org\/draft\/2019-09\/meta\/core\",\n  \"$vocabulary\": {\n      \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/core\": true\n  },\n  \"$recursiveAnchor\": true,\n\n  \"title\": \"Core vocabulary meta-schema\",\n  \"type\": [\"object\", \"boolean\"],\n  \"properties\": {\n      \"$id\": {\n          \"type\": \"string\",\n          \"format\": \"uri-reference\",\n          \"$comment\": \"Non-empty fragments not allowed.\",\n          \"pattern\": \"^[^#]*#?$\"\n      },\n      \"$schema\": {\n          \"type\": \"string\",\n          \"format\": \"uri\"\n      },\n      \"$anchor\": {\n          \"type\": \"string\",\n          \"pattern\": \"^[A-Za-z][-A-Za-z0-9.:_]*$\"\n      },\n      \"$ref\": {\n          \"type\": \"string\",\n          \"format\": \"uri-reference\"\n      },\n      \"$recursiveRef\": {\n          \"type\": \"string\",\n          \"format\": \"uri-reference\"\n      },\n      \"$recursiveAnchor\": {\n          \"type\": \"boolean\",\n          \"default\": false\n      },\n      \"$vocabulary\": {\n          \"type\": \"object\",\n          \"propertyNames\": {\n              \"type\": \"string\",\n              \"format\": \"uri\"\n          },\n          \"additionalProperties\": {\n              \"type\": \"boolean\"\n          }\n      },\n      \"$comment\": {\n          \"type\": \"string\"\n      },\n      \"$defs\": {\n          \"type\": \"object\",\n          \"additionalProperties\": { \"$recursiveRef\": \"#\" },\n          \"default\": {}\n      }\n  }\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 6474,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 6593,
       "length": 1873,
       "value": "\"{\n  \"$schema\": \"https:\/\/json-schema.org\/draft\/2019-09\/schema\",\n  \"$id\": \"https:\/\/json-schema.org\/draft\/2019-09\/meta\/applicator\",\n  \"$vocabulary\": {\n      \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/applicator\": true\n  },\n  \"$recursiveAnchor\": true,\n\n  \"title\": \"Applicator vocabulary meta-schema\",\n  \"type\": [\"object\", \"boolean\"],\n  \"properties\": {\n      \"additionalItems\": { \"$recursiveRef\": \"#\" },\n      \"unevaluatedItems\": { \"$recursiveRef\": \"#\" },\n      \"items\": {\n          \"anyOf\": [\n              { \"$recursiveRef\": \"#\" },\n              { \"$ref\": \"#\/$defs\/schemaArray\" }\n          ]\n      },\n      \"contains\": { \"$recursiveRef\": \"#\" },\n      \"additionalProperties\": { \"$recursiveRef\": \"#\" },\n      \"unevaluatedProperties\": { \"$recursiveRef\": \"#\" },\n      \"properties\": {\n          \"type\": \"object\",\n          \"additionalProperties\": { \"$recursiveRef\": \"#\" },\n          \"default\": {}\n      },\n      \"patternProperties\": {\n          \"type\": \"object\",\n          \"additionalProperties\": { \"$recursiveRef\": \"#\" },\n          \"propertyNames\": { \"format\": \"regex\" },\n          \"default\": {}\n      },\n      \"dependentSchemas\": {\n          \"type\": \"object\",\n          \"additionalProperties\": {\n              \"$recursiveRef\": \"#\"\n          }\n      },\n      \"propertyNames\": { \"$recursiveRef\": \"#\" },\n      \"if\": { \"$recursiveRef\": \"#\" },\n      \"then\": { \"$recursiveRef\": \"#\" },\n      \"else\": { \"$recursiveRef\": \"#\" },\n      \"allOf\": { \"$ref\": \"#\/$defs\/schemaArray\" },\n      \"anyOf\": { \"$ref\": \"#\/$defs\/schemaArray\" },\n      \"oneOf\": { \"$ref\": \"#\/$defs\/schemaArray\" },\n      \"not\": { \"$recursiveRef\": \"#\" }\n  },\n  \"$defs\": {\n      \"schemaArray\": {\n          \"type\": \"array\",\n          \"minItems\": 1,\n          \"items\": { \"$recursiveRef\": \"#\" }\n      }\n  }\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 8602,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 8721,
       "length": 2847,
       "value": "\"{\n  \"$schema\": \"https:\/\/json-schema.org\/draft\/2019-09\/schema\",\n  \"$id\": \"https:\/\/json-schema.org\/draft\/2019-09\/meta\/validation\",\n  \"$vocabulary\": {\n      \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/validation\": true\n  },\n  \"$recursiveAnchor\": true,\n\n  \"title\": \"Validation vocabulary meta-schema\",\n  \"type\": [\"object\", \"boolean\"],\n  \"properties\": {\n      \"multipleOf\": {\n          \"type\": \"number\",\n          \"exclusiveMinimum\": 0\n      },\n      \"maximum\": {\n          \"type\": \"number\"\n      },\n      \"exclusiveMaximum\": {\n          \"type\": \"number\"\n      },\n      \"minimum\": {\n          \"type\": \"number\"\n      },\n      \"exclusiveMinimum\": {\n          \"type\": \"number\"\n      },\n      \"maxLength\": { \"$ref\": \"#\/$defs\/nonNegativeInteger\" },\n      \"minLength\": { \"$ref\": \"#\/$defs\/nonNegativeIntegerDefault0\" },\n      \"pattern\": {\n          \"type\": \"string\",\n          \"format\": \"regex\"\n      },\n      \"maxItems\": { \"$ref\": \"#\/$defs\/nonNegativeInteger\" },\n      \"minItems\": { \"$ref\": \"#\/$defs\/nonNegativeIntegerDefault0\" },\n      \"uniqueItems\": {\n          \"type\": \"boolean\",\n          \"default\": false\n      },\n      \"maxContains\": { \"$ref\": \"#\/$defs\/nonNegativeInteger\" },\n      \"minContains\": {\n          \"$ref\": \"#\/$defs\/nonNegativeInteger\",\n          \"default\": 1\n      },\n      \"maxProperties\": { \"$ref\": \"#\/$defs\/nonNegativeInteger\" },\n      \"minProperties\": { \"$ref\": \"#\/$defs\/nonNegativeIntegerDefault0\" },\n      \"required\": { \"$ref\": \"#\/$defs\/stringArray\" },\n      \"dependentRequired\": {\n          \"type\": \"object\",\n          \"additionalProperties\": {\n              \"$ref\": \"#\/$defs\/stringArray\"\n          }\n      },\n      \"const\": true,\n      \"enum\": {\n          \"type\": \"array\",\n          \"items\": true\n      },\n      \"type\": {\n          \"anyOf\": [\n              { \"$ref\": \"#\/$defs\/simpleTypes\" },\n              {\n                  \"type\": \"array\",\n                  \"items\": { \"$ref\": \"#\/$defs\/simpleTypes\" },\n                  \"minItems\": 1,\n                  \"uniqueItems\": true\n              }\n          ]\n      }\n  },\n  \"$defs\": {\n      \"nonNegativeInteger\": {\n          \"type\": \"integer\",\n          \"minimum\": 0\n      },\n      \"nonNegativeIntegerDefault0\": {\n          \"$ref\": \"#\/$defs\/nonNegativeInteger\",\n          \"default\": 0\n      },\n      \"simpleTypes\": {\n          \"enum\": [\n              \"array\",\n              \"boolean\",\n              \"integer\",\n              \"null\",\n              \"number\",\n              \"object\",\n              \"string\"\n          ]\n      },\n      \"stringArray\": {\n          \"type\": \"array\",\n          \"items\": { \"type\": \"string\" },\n          \"uniqueItems\": true,\n          \"default\": []\n      }\n  }\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 11704,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 11821,
       "length": 905,
       "value": "\"{\n  \"$schema\": \"https:\/\/json-schema.org\/draft\/2019-09\/schema\",\n  \"$id\": \"https:\/\/json-schema.org\/draft\/2019-09\/meta\/meta-data\",\n  \"$vocabulary\": {\n      \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/meta-data\": true\n  },\n  \"$recursiveAnchor\": true,\n\n  \"title\": \"Meta-data vocabulary meta-schema\",\n\n  \"type\": [\"object\", \"boolean\"],\n  \"properties\": {\n      \"title\": {\n          \"type\": \"string\"\n      },\n      \"description\": {\n          \"type\": \"string\"\n      },\n      \"default\": true,\n      \"deprecated\": {\n          \"type\": \"boolean\",\n          \"default\": false\n      },\n      \"readOnly\": {\n          \"type\": \"boolean\",\n          \"default\": false\n      },\n      \"writeOnly\": {\n          \"type\": \"boolean\",\n          \"default\": false\n      },\n      \"examples\": {\n          \"type\": \"array\",\n          \"items\": true\n      }\n  }\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 12862,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 12977,
       "length": 416,
       "value": "\"{\n  \"$schema\": \"https:\/\/json-schema.org\/draft\/2019-09\/schema\",\n  \"$id\": \"https:\/\/json-schema.org\/draft\/2019-09\/meta\/format\",\n  \"$vocabulary\": {\n      \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/format\": true\n  },\n  \"$recursiveAnchor\": true,\n\n  \"title\": \"Format vocabulary meta-schema\",\n  \"type\": [\"object\", \"boolean\"],\n  \"properties\": {\n      \"format\": { \"type\": \"string\" }\n  }\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 13529,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "StringLiteral",
       "offset": 13645,
       "length": 530,
       "value": "\"{\n  \"$schema\": \"https:\/\/json-schema.org\/draft\/2019-09\/schema\",\n  \"$id\": \"https:\/\/json-schema.org\/draft\/2019-09\/meta\/content\",\n  \"$vocabulary\": {\n      \"https:\/\/json-schema.org\/draft\/2019-09\/vocab\/content\": true\n  },\n  \"$recursiveAnchor\": true,\n\n  \"title\": \"Content vocabulary meta-schema\",\n\n  \"type\": [\"object\", \"boolean\"],\n  \"properties\": {\n      \"contentMediaType\": { \"type\": \"string\" },\n      \"contentEncoding\": { \"type\": \"string\" },\n      \"contentSchema\": { \"$recursiveRef\": \"#\" }\n  }\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft201909Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 14311,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 69,
       "length": 8,
       "value": "\"object\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 93,
       "length": 7,
       "value": "\"array\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 117,
       "length": 8,
       "value": "\"string\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 143,
       "length": 9,
       "value": "\"integer\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 169,
       "length": 8,
       "value": "\"number\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 195,
       "length": 9,
       "value": "\"boolean\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 6,
       "value": "\"null\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 69,
       "length": 8,
       "value": "\"object\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 93,
       "length": 7,
       "value": "\"array\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 117,
       "length": 8,
       "value": "\"string\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 143,
       "length": 9,
       "value": "\"integer\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 169,
       "length": 8,
       "value": "\"number\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 195,
       "length": 9,
       "value": "\"boolean\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/JSONSchema.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 6,
       "value": "\"null\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Settings.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Settings.swift",
       "kind": "Dictionary",
       "offset": 356,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Settings.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Settings.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Settings.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Settings.swift",
       "kind": "BooleanLiteral",
       "offset": 552,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft6Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft6Validator.swift",
       "kind": "StringLiteral",
       "offset": 130,
       "length": 4762,
       "value": "\"{\n    \"$schema\": \"http:\/\/json-schema.org\/draft-06\/schema#\",\n    \"$id\": \"http:\/\/json-schema.org\/draft-06\/schema#\",\n    \"title\": \"Core schema meta-schema\",\n    \"definitions\": {\n        \"schemaArray\": {\n            \"type\": \"array\",\n            \"minItems\": 1,\n            \"items\": { \"$ref\": \"#\" }\n        },\n        \"nonNegativeInteger\": {\n            \"type\": \"integer\",\n            \"minimum\": 0\n        },\n        \"nonNegativeIntegerDefault0\": {\n            \"allOf\": [\n                { \"$ref\": \"#\/definitions\/nonNegativeInteger\" },\n                { \"default\": 0 }\n            ]\n        },\n        \"simpleTypes\": {\n            \"enum\": [\n                \"array\",\n                \"boolean\",\n                \"integer\",\n                \"null\",\n                \"number\",\n                \"object\",\n                \"string\"\n            ]\n        },\n        \"stringArray\": {\n            \"type\": \"array\",\n            \"items\": { \"type\": \"string\" },\n            \"uniqueItems\": true,\n            \"default\": []\n        }\n    },\n    \"type\": [\"object\", \"boolean\"],\n    \"properties\": {\n        \"$id\": {\n            \"type\": \"string\",\n            \"format\": \"uri-reference\"\n        },\n        \"$schema\": {\n            \"type\": \"string\",\n            \"format\": \"uri\"\n        },\n        \"$ref\": {\n            \"type\": \"string\",\n            \"format\": \"uri-reference\"\n        },\n        \"title\": {\n            \"type\": \"string\"\n        },\n        \"description\": {\n            \"type\": \"string\"\n        },\n        \"default\": {},\n        \"examples\": {\n            \"type\": \"array\",\n            \"items\": {}\n        },\n        \"multipleOf\": {\n            \"type\": \"number\",\n            \"exclusiveMinimum\": 0\n        },\n        \"maximum\": {\n            \"type\": \"number\"\n        },\n        \"exclusiveMaximum\": {\n            \"type\": \"number\"\n        },\n        \"minimum\": {\n            \"type\": \"number\"\n        },\n        \"exclusiveMinimum\": {\n            \"type\": \"number\"\n        },\n        \"maxLength\": { \"$ref\": \"#\/definitions\/nonNegativeInteger\" },\n        \"minLength\": { \"$ref\": \"#\/definitions\/nonNegativeIntegerDefault0\" },\n        \"pattern\": {\n            \"type\": \"string\",\n            \"format\": \"regex\"\n        },\n        \"additionalItems\": { \"$ref\": \"#\" },\n        \"items\": {\n            \"anyOf\": [\n                { \"$ref\": \"#\" },\n                { \"$ref\": \"#\/definitions\/schemaArray\" }\n            ],\n            \"default\": {}\n        },\n        \"maxItems\": { \"$ref\": \"#\/definitions\/nonNegativeInteger\" },\n        \"minItems\": { \"$ref\": \"#\/definitions\/nonNegativeIntegerDefault0\" },\n        \"uniqueItems\": {\n            \"type\": \"boolean\",\n            \"default\": false\n        },\n        \"contains\": { \"$ref\": \"#\" },\n        \"maxProperties\": { \"$ref\": \"#\/definitions\/nonNegativeInteger\" },\n        \"minProperties\": { \"$ref\": \"#\/definitions\/nonNegativeIntegerDefault0\" },\n        \"required\": { \"$ref\": \"#\/definitions\/stringArray\" },\n        \"additionalProperties\": { \"$ref\": \"#\" },\n        \"definitions\": {\n            \"type\": \"object\",\n            \"additionalProperties\": { \"$ref\": \"#\" },\n            \"default\": {}\n        },\n        \"properties\": {\n            \"type\": \"object\",\n            \"additionalProperties\": { \"$ref\": \"#\" },\n            \"default\": {}\n        },\n        \"patternProperties\": {\n            \"type\": \"object\",\n            \"additionalProperties\": { \"$ref\": \"#\" },\n            \"default\": {}\n        },\n        \"dependencies\": {\n            \"type\": \"object\",\n            \"additionalProperties\": {\n                \"anyOf\": [\n                    { \"$ref\": \"#\" },\n                    { \"$ref\": \"#\/definitions\/stringArray\" }\n                ]\n            }\n        },\n        \"propertyNames\": { \"$ref\": \"#\" },\n        \"const\": {},\n        \"enum\": {\n            \"type\": \"array\",\n            \"minItems\": 1,\n            \"uniqueItems\": true\n        },\n        \"type\": {\n            \"anyOf\": [\n                { \"$ref\": \"#\/definitions\/simpleTypes\" },\n                {\n                    \"type\": \"array\",\n                    \"items\": { \"$ref\": \"#\/definitions\/simpleTypes\" },\n                    \"minItems\": 1,\n                    \"uniqueItems\": true\n                }\n            ]\n        },\n        \"format\": { \"type\": \"string\" },\n        \"allOf\": { \"$ref\": \"#\/definitions\/schemaArray\" },\n        \"anyOf\": { \"$ref\": \"#\/definitions\/schemaArray\" },\n        \"oneOf\": { \"$ref\": \"#\/definitions\/schemaArray\" },\n        \"not\": { \"$ref\": \"#\" }\n    },\n    \"default\": {}\n}\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft6Validator.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/JSONSchema\/Draft6Validator.swift",
       "kind": "IntegerLiteral",
       "offset": 5028,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/WoosmapGeofencing.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/WoosmapGeofencing.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 34,
       "value": "\"WebGeoServices.WoosmapGeofencing\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/WoosmapGeofencing.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/WoosmapGeofencing.swift",
       "kind": "StringLiteral",
       "offset": 318,
       "length": 16,
       "value": "\"TrackingSchema\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/WoosmapGeofencing.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/WoosmapGeofencing.swift",
       "kind": "StringLiteral",
       "offset": 351,
       "length": 7,
       "value": "\".json\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/WoosmapGeofencing.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/WoosmapGeofencing.swift",
       "kind": "IntegerLiteral",
       "offset": 526,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "BooleanLiteral",
       "offset": 323,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "FloatLiteral",
       "offset": 612,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "FloatLiteral",
       "offset": 688,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "IntegerLiteral",
       "offset": 755,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "BooleanLiteral",
       "offset": 851,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "IntegerLiteral",
       "offset": 919,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "StringLiteral",
       "offset": 992,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "IntegerLiteral",
       "offset": 1058,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "StringLiteral",
       "offset": 1131,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "StringLiteral",
       "offset": 1189,
       "length": 11,
       "value": "\"isochrone\""
     },
     {
-      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.6\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
+      "filePath": "\/Volumes\/livestuff\/Clients\/woosmap\/geofenceSDK\/ReleaseSDK\/EnterpriseSDK\/3.0.7\/sdk\/WoosmapGeofencing\/Sources\/WoosmapGeofencing\/Business Logic\/RegionIsochrone.swift",
       "kind": "IntegerLiteral",
       "offset": 1295,
       "length": 2,
