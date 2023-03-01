@@ -18,7 +18,7 @@ The SDK simplifies the integration of the location context in your mobile applic
   s.source_files = "WoosmapGeofencing.xcframework/ios-arm64/WoosmapGeofencing.framework/Headers/*.h"
   s.resources = 'WoosmapGeofencing.xcframework/ios-arm64/WoosmapGeofencing.framework/*.json'
   s.vendored_frameworks = "WoosmapGeofencing.xcframework"
-  s.dependency 'WoosmapGeofencingCore'
+  #s.dependency 'WoosmapGeofencingCore'
   s.dependency 'Realm'
   s.dependency 'RealmSwift'
   s.dependency 'Surge'
