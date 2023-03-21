@@ -233,7 +233,7 @@ using UInt = size_t;
 @import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
-@import Realm;
+@import Realm.Swift;
 #endif
 
 #endif
@@ -1242,7 +1242,7 @@ using UInt = size_t;
 @import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
-@import Realm;
+@import Realm.Swift;
 #endif
 
 #endif
