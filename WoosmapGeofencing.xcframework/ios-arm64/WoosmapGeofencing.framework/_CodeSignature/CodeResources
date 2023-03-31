@@ -14,15 +14,15 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		0Gqo7LAv2rXBwu7CZDfU0tQHyNI=
+		ex5hLKYHNlUb0TZasDCTnCrhIMo=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		WqJzM3ZRoXYfcA5Dk1E3B/tK6wU=
+		WByH7RnVM1xRN1uAnusU3tTIozw=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		hRyyDDB0DkHgLFObQSBn7+yBj0s=
+		RtNRhWrXBwdlql2LjwNfFt4okCM=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		hRyyDDB0DkHgLFObQSBn7+yBj0s=
+		RtNRhWrXBwdlql2LjwNfFt4okCM=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		vhYLGY9JKfNImemzr4btxP1EFrE=
+		yoZm5h3s2q9ohcsWoCBK+ZSRbno=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,21 +70,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ezP02qTF+d+FWSGHFqzJEznPvDMiY52lftI6WNN7Kao=
+			mnD9ZZNzvO9Ih7p5hkkFjCZw8EFyX9XvbOZWvv90fAo=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q7J3SpMNnqaZJpAUGXl+itQkvKEdcA5Mpg6iddkXAOE=
+			58JBwo5bR5zcysJULmKlrYcgUVYXd1Ft49nIvb2oEbI=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hWKwwN703+4iU8BqcRZ9kqHkZIqcMxpJjIPsCyGsV5g=
+			XRcWDYWF+70iYwe+17g1i1aiYVZGccqUXYOjFGnOsSo=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hWKwwN703+4iU8BqcRZ9kqHkZIqcMxpJjIPsCyGsV5g=
+			XRcWDYWF+70iYwe+17g1i1aiYVZGccqUXYOjFGnOsSo=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OwsnynU9IiF+CnQhX/EAKc0xaqa7dgFSba253MlXVcQ=
+			52PhI7I7qGh7A8FS2iU6b39HJnrBcTsYQNXr05ef0Bs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

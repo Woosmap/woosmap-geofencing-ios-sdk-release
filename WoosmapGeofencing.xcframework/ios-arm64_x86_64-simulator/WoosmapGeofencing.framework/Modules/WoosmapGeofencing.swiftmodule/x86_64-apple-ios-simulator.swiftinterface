@@ -123,7 +123,7 @@ public class Draft202012Validator {
   public class func getWorkHomeZOI() -> [WoosmapGeofencing.ZOI]
   @objc deinit
 }
-@objc open class LocationServiceCoreImpl : ObjectiveC.NSObject, WoosmapGeofencing.LocationService, CoreLocation.CLLocationManagerDelegate {
+@objc public class LocationServiceCoreImpl : ObjectiveC.NSObject, WoosmapGeofencing.LocationService, CoreLocation.CLLocationManagerDelegate {
   public var locationManager: WoosmapGeofencing.LocationManagerProtocol?
   public var currentLocation: CoreLocation.CLLocation?
   public var lastSearchLocation: WoosmapGeofencing.LastSearhLocation
@@ -167,6 +167,9 @@ public class Draft202012Validator {
   public func checkIfPositionIsInsideGeofencingRegions(location: CoreLocation.CLLocation)
   open func addRegionLogTransition(region: CoreLocation.CLRegion, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool)
   public func setDataFromPOI(poi: WoosmapGeofencing.POI, propertyDictionary: inout Swift.Dictionary<Swift.String, Any>)
+  #if compiler(>=5.3) && $Sendable
+  public func woosApiCall(with url: Foundation.URL, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void)
+  #endif
   open func handleRefreshSystemGeofence(addCustomGeofence: Swift.Bool = false, locationId: Swift.String)
   open func handleVisitEvent(visit: WoosmapGeofencing.Visit)
   open func handlePOIEvent(poi: WoosmapGeofencing.POI)
@@ -431,6 +434,9 @@ public protocol LocationService : ObjectiveC.NSObject {
   func locationManager(_ manager: CoreLocation.CLLocationManager, didEnterRegion region: CoreLocation.CLRegion)
   func locationManagerDidPauseLocationUpdates(_ manager: CoreLocation.CLLocationManager)
   func locationManager(_ manager: CoreLocation.CLLocationManager, didStartMonitoringFor region: CoreLocation.CLRegion)
+  #if compiler(>=5.3) && $Sendable
+  func woosApiCall(with url: Foundation.URL, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void)
+  #endif
 }
 extension WoosmapGeofencing.LocationService {
   public func handleRefreshSystemGeofence(locationId: Swift.String)
