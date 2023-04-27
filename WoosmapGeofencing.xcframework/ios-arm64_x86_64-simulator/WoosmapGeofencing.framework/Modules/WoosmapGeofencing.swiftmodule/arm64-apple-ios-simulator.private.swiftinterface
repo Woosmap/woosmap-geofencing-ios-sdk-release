@@ -161,7 +161,7 @@ public class Draft202012Validator {
   @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, monitoringDidFailFor region: CoreLocation.CLRegion?, withError error: Swift.Error)
   open func removeOldPOIRegions(newPOIS: [WoosmapGeofencing.POI])
   public func calculateDistance(locationOrigin: CoreLocation.CLLocation, coordinatesDest: [(Swift.Double, Swift.Double)], locationId: Swift.String)
-  public func calculateDistance(locationOrigin: CoreLocation.CLLocation, coordinatesDest: [(Swift.Double, Swift.Double)], distanceProvider: WoosmapGeofencing.DistanceProvider = distanceProvider, distanceMode: WoosmapGeofencing.DistanceMode = distanceMode, distanceUnits: WoosmapGeofencing.DistanceUnits = distanceUnits, distanceLanguage: Swift.String = distanceLanguage)
+  public func calculateDistance(locationOrigin: CoreLocation.CLLocation, coordinatesDest: [(Swift.Double, Swift.Double)], distanceWithTraffic: Swift.Bool = distanceWithTraffic, distanceMode: WoosmapGeofencing.DistanceMode = distanceMode, distanceUnits: WoosmapGeofencing.DistanceUnits = distanceUnits, distanceLanguage: Swift.String = distanceLanguage)
   public func tracingLocationDidFailWithError(error: Swift.Error)
   public func getRegionType(identifier: Swift.String) -> WoosmapGeofencing.RegionType
   public func checkIfPositionIsInsideGeofencingRegions(location: CoreLocation.CLLocation)
@@ -334,7 +334,7 @@ public var optimizeDistanceRequest: Swift.Bool
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Distances {
-  public class func addFromResponseJson(APIResponse: Foundation.Data, locationId: Swift.String, origin: CoreLocation.CLLocation, destination: [(Swift.Double, Swift.Double)], distanceProvider: WoosmapGeofencing.DistanceProvider = distanceProvider, distanceMode: WoosmapGeofencing.DistanceMode = distanceMode, distanceUnits: WoosmapGeofencing.DistanceUnits = distanceUnits, distanceLanguage: Swift.String = distanceLanguage, trafficDistanceRouting: WoosmapGeofencing.TrafficDistanceRouting = trafficDistanceRouting) -> [WoosmapGeofencing.Distance]
+  public class func addFromResponseJson(APIResponse: Foundation.Data, locationId: Swift.String, origin: CoreLocation.CLLocation, destination: [(Swift.Double, Swift.Double)], distanceMode: WoosmapGeofencing.DistanceMode = distanceMode, distanceUnits: WoosmapGeofencing.DistanceUnits = distanceUnits, distanceLanguage: Swift.String = distanceLanguage, distanceMethod: WoosmapGeofencing.DistanceMethod = distanceMethod) -> [WoosmapGeofencing.Distance]
   public class func getAll() -> [WoosmapGeofencing.Distance]
   public class func deleteAll()
   @objc deinit
@@ -456,10 +456,15 @@ extension WoosmapGeofencing.LocationService {
   @objc public func setGMPAPIKey(key: Swift.String)
   @objc public func setSearchWoosmapAPI(api: Swift.String)
   @objc public func setDistanceWoosmapAPI(api: Swift.String)
-  @objc public func setTrafficDistanceWoosmapAPI(api: Swift.String)
+  @objc @available(*, deprecated, message: "Call distance matrix api with DistanceProvider as woosmapTraffic")
+  public func setTrafficDistanceWoosmapAPI(api: Swift.String)
+  @available(*, deprecated, message: "This feature was disabled; use the setDistanceWithTraffic")
   public func setDistanceProvider(provider: WoosmapGeofencing.DistanceProvider)
+  @objc public func setDistanceWithTraffic(trafficMode: Swift.Bool)
   public func setDistanceAPIMode(mode: WoosmapGeofencing.DistanceMode)
+  @available(*, deprecated, message: "This feature was disabled; use the DistanceMethod")
   public func setTrafficDistanceAPIRouting(routing: WoosmapGeofencing.TrafficDistanceRouting)
+  public func setDistanceMethod(method: WoosmapGeofencing.DistanceMethod)
   public func setDistanceAPIUnits(units: WoosmapGeofencing.DistanceUnits)
   @objc public func setDistanceAPILanguage(language: Swift.String)
   @objc public func setDistanceMaxAirDistanceFilter(distance: Swift.Int)
@@ -657,6 +662,7 @@ public enum ValidationResult : Swift.Encodable {
 public var trackingEnable: Swift.Bool
 public var WoosmapAPIKey: Swift.String
 public var searchWoosmapAPI: Swift.String
+@available(*, deprecated, message: "This feature was disabled; use the distanceWithTraffic flag")
 public enum DistanceProvider : Swift.String {
   case woosmapTraffic
   case woosmapDistance
@@ -666,7 +672,7 @@ public enum DistanceProvider : Swift.String {
     get
   }
 }
-public var distanceProvider: WoosmapGeofencing.DistanceProvider
+public var distanceWithTraffic: Swift.Bool
 public enum DistanceMode : Swift.String {
   case driving
   case cycling
@@ -680,9 +686,19 @@ public enum DistanceMode : Swift.String {
 }
 public var distanceMode: WoosmapGeofencing.DistanceMode
 public var distanceWoosmapAPI: Swift.String
+@available(*, deprecated, message: "This feature was disabled; use the DistanceMethod")
 public enum TrafficDistanceRouting : Swift.String {
   case fastest
   case balanced
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DistanceMethod : Swift.String {
+  case time
+  case distance
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -698,10 +714,9 @@ public enum DistanceUnits : Swift.String {
     get
   }
 }
-public var trafficDistanceRouting: WoosmapGeofencing.TrafficDistanceRouting
+public var distanceMethod: WoosmapGeofencing.DistanceMethod
 public var distanceUnits: WoosmapGeofencing.DistanceUnits
 public var distanceLanguage: Swift.String
-public var trafficDistanceWoosmapAPI: Swift.String
 public var distanceMaxAirDistanceFilter: Swift.Int
 public var distanceTimeFilter: Swift.Int
 public var currentLocationDistanceFilter: Swift.Double
@@ -797,15 +812,24 @@ extension WoosmapGeofencing.ConfigurationProfile : Swift.RawRepresentable {}
 extension WoosmapGeofencing.RegionType : Swift.Equatable {}
 extension WoosmapGeofencing.RegionType : Swift.Hashable {}
 extension WoosmapGeofencing.RegionType : Swift.RawRepresentable {}
+@available(*, deprecated, message: "This feature was disabled; use the distanceWithTraffic flag")
 extension WoosmapGeofencing.DistanceProvider : Swift.Equatable {}
+@available(*, deprecated, message: "This feature was disabled; use the distanceWithTraffic flag")
 extension WoosmapGeofencing.DistanceProvider : Swift.Hashable {}
+@available(*, deprecated, message: "This feature was disabled; use the distanceWithTraffic flag")
 extension WoosmapGeofencing.DistanceProvider : Swift.RawRepresentable {}
 extension WoosmapGeofencing.DistanceMode : Swift.Equatable {}
 extension WoosmapGeofencing.DistanceMode : Swift.Hashable {}
 extension WoosmapGeofencing.DistanceMode : Swift.RawRepresentable {}
+@available(*, deprecated, message: "This feature was disabled; use the DistanceMethod")
 extension WoosmapGeofencing.TrafficDistanceRouting : Swift.Equatable {}
+@available(*, deprecated, message: "This feature was disabled; use the DistanceMethod")
 extension WoosmapGeofencing.TrafficDistanceRouting : Swift.Hashable {}
+@available(*, deprecated, message: "This feature was disabled; use the DistanceMethod")
 extension WoosmapGeofencing.TrafficDistanceRouting : Swift.RawRepresentable {}
+extension WoosmapGeofencing.DistanceMethod : Swift.Equatable {}
+extension WoosmapGeofencing.DistanceMethod : Swift.Hashable {}
+extension WoosmapGeofencing.DistanceMethod : Swift.RawRepresentable {}
 extension WoosmapGeofencing.DistanceUnits : Swift.Equatable {}
 extension WoosmapGeofencing.DistanceUnits : Swift.Hashable {}
 extension WoosmapGeofencing.DistanceUnits : Swift.RawRepresentable {}

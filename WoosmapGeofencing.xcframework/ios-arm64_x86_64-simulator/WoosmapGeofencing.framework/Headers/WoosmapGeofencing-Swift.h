@@ -659,7 +659,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 ///
 /// \endcode\param api Custome URL for traffic API
 ///
-- (void)setTrafficDistanceWoosmapAPIWithApi:(NSString * _Nonnull)api;
+- (void)setTrafficDistanceWoosmapAPIWithApi:(NSString * _Nonnull)api SWIFT_DEPRECATED_MSG("Call distance matrix api with DistanceProvider as woosmapTraffic");
+/// Configure Traffic mode with distance matrix
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setDistanceWithTraffic(trafficMode: true)
+///
+/// \endcode\param trafficMode true/false
+///
+- (void)setDistanceWithTrafficWithTrafficMode:(BOOL)trafficMode;
 /// Configure distance API language
 /// Usage Example:
 /// \code
@@ -1668,7 +1676,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 ///
 /// \endcode\param api Custome URL for traffic API
 ///
-- (void)setTrafficDistanceWoosmapAPIWithApi:(NSString * _Nonnull)api;
+- (void)setTrafficDistanceWoosmapAPIWithApi:(NSString * _Nonnull)api SWIFT_DEPRECATED_MSG("Call distance matrix api with DistanceProvider as woosmapTraffic");
+/// Configure Traffic mode with distance matrix
+/// Usage Example:
+/// \code
+/// WoosmapGeofencing.shared.setDistanceWithTraffic(trafficMode: true)
+///
+/// \endcode\param trafficMode true/false
+///
+- (void)setDistanceWithTrafficWithTrafficMode:(BOOL)trafficMode;
 /// Configure distance API language
 /// Usage Example:
 /// \code

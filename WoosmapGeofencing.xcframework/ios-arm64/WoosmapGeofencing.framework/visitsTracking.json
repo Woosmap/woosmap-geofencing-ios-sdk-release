@@ -26,9 +26,9 @@
     "distanceAPIEnable": false,
 
     "distance": {
-        "distanceProvider": "woosmapDistance",
+        "distanceWithTraffic": false,
         "distanceMode": "driving",
-        "distanceRouting": "fastest",
+        "distanceMethod": "time",
         "distanceUnits": "metric",
         "distanceLanguage": "fr",
         "distanceMaxAirDistanceFilter": 1000000,
