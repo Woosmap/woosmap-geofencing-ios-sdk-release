@@ -306,6 +306,47 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing11DurationLog")
 @end
 
 
+SWIFT_CLASS("_TtC17WoosmapGeofencing12IndoorBeacon")
+@interface IndoorBeacon : RealmSwiftObject
+/// date
+@property (nonatomic, copy) NSDate * _Nonnull date;
+/// Id
+@property (nonatomic, copy) NSString * _Nonnull identifier;
+@property (nonatomic, copy) NSString * _Nonnull BeaconID;
+/// name
+@property (nonatomic, copy) NSString * _Nonnull Major;
+@property (nonatomic, copy) NSString * _Nonnull Minor;
+/// latitude
+@property (nonatomic) double latitude;
+/// longitude
+@property (nonatomic) double longitude;
+/// distance
+@property (nonatomic) double distance;
+@property (nonatomic, copy) NSString * _Nonnull venue_id;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17WoosmapGeofencing11IndoorVenue")
+@interface IndoorVenue : RealmSwiftObject
+/// date
+@property (nonatomic, copy) NSDate * _Nonnull date;
+/// Id
+@property (nonatomic, copy) NSString * _Nonnull identifier;
+/// name
+@property (nonatomic, copy) NSString * _Nonnull name;
+/// latitude
+@property (nonatomic) double latitude;
+/// longitude
+@property (nonatomic) double longitude;
+/// distance
+@property (nonatomic) double distance;
+/// distance
+@property (nonatomic, copy) NSString * _Nonnull boundingBox;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 /// Location Object
 SWIFT_CLASS("_TtC17WoosmapGeofencing8Location")
 @interface Location : RealmSwiftObject
@@ -393,6 +434,18 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing23LocationServiceCoreImpl")
 /// This class efficiently gathers user location and triggers events based on region monitoring and provides categorised zones of Interests and temporal clusters.
 SWIFT_CLASS("_TtC17WoosmapGeofencing19LocationServiceImpl")
 @interface LocationServiceImpl : LocationServiceCoreImpl
+@end
+
+
+
+SWIFT_CLASS("_TtC17WoosmapGeofencing12LogIndoorAPI")
+@interface LogIndoorAPI : RealmSwiftObject
+/// Date
+@property (nonatomic, copy) NSDate * _Nullable date;
+/// message
+@property (nonatomic, copy) NSString * _Nullable message;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -961,6 +1014,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 ///
 /// \endcode
 - (void)stopTracking;
+/// Update Indoor Search  API Status
+/// \param enable Bool
+///
+- (void)setIndoorSearchAPIEnableWithEnable:(BOOL)enable;
+/// Status of Indoor Search API Request Enable
+///
+/// returns:
+/// Bool
+- (BOOL)getIndoorSearchAPIEnable SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1323,6 +1385,47 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing11DurationLog")
 @end
 
 
+SWIFT_CLASS("_TtC17WoosmapGeofencing12IndoorBeacon")
+@interface IndoorBeacon : RealmSwiftObject
+/// date
+@property (nonatomic, copy) NSDate * _Nonnull date;
+/// Id
+@property (nonatomic, copy) NSString * _Nonnull identifier;
+@property (nonatomic, copy) NSString * _Nonnull BeaconID;
+/// name
+@property (nonatomic, copy) NSString * _Nonnull Major;
+@property (nonatomic, copy) NSString * _Nonnull Minor;
+/// latitude
+@property (nonatomic) double latitude;
+/// longitude
+@property (nonatomic) double longitude;
+/// distance
+@property (nonatomic) double distance;
+@property (nonatomic, copy) NSString * _Nonnull venue_id;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17WoosmapGeofencing11IndoorVenue")
+@interface IndoorVenue : RealmSwiftObject
+/// date
+@property (nonatomic, copy) NSDate * _Nonnull date;
+/// Id
+@property (nonatomic, copy) NSString * _Nonnull identifier;
+/// name
+@property (nonatomic, copy) NSString * _Nonnull name;
+/// latitude
+@property (nonatomic) double latitude;
+/// longitude
+@property (nonatomic) double longitude;
+/// distance
+@property (nonatomic) double distance;
+/// distance
+@property (nonatomic, copy) NSString * _Nonnull boundingBox;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 /// Location Object
 SWIFT_CLASS("_TtC17WoosmapGeofencing8Location")
 @interface Location : RealmSwiftObject
@@ -1410,6 +1513,18 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing23LocationServiceCoreImpl")
 /// This class efficiently gathers user location and triggers events based on region monitoring and provides categorised zones of Interests and temporal clusters.
 SWIFT_CLASS("_TtC17WoosmapGeofencing19LocationServiceImpl")
 @interface LocationServiceImpl : LocationServiceCoreImpl
+@end
+
+
+
+SWIFT_CLASS("_TtC17WoosmapGeofencing12LogIndoorAPI")
+@interface LogIndoorAPI : RealmSwiftObject
+/// Date
+@property (nonatomic, copy) NSDate * _Nullable date;
+/// message
+@property (nonatomic, copy) NSString * _Nullable message;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -1978,6 +2093,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 ///
 /// \endcode
 - (void)stopTracking;
+/// Update Indoor Search  API Status
+/// \param enable Bool
+///
+- (void)setIndoorSearchAPIEnableWithEnable:(BOOL)enable;
+/// Status of Indoor Search API Request Enable
+///
+/// returns:
+/// Bool
+- (BOOL)getIndoorSearchAPIEnable SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

@@ -51,9 +51,6 @@ public protocol AirshipEventsDelegate : AnyObject {
   func ZOIclassifiedEnter(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
   func ZOIclassifiedExit(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
 }
-extension WoosmapGeofencing.Regions {
-  public class func add(regionIso: WoosmapGeofencing.RegionIsochrone) -> WoosmapGeofencing.Region
-}
 public struct ConfigModel : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
@@ -63,6 +60,10 @@ public struct DistanceConfig : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SearchAPIConfig : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct IndoorSearchAPIConfig : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -88,6 +89,30 @@ public class Draft202012Validator {
   required public init(schema: Swift.Bool)
   required public init(schema: [Swift.String : Any])
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class IndoorBeacon : RealmSwift.Object {
+  @objc dynamic public var date: Foundation.Date
+  @objc dynamic public var identifier: Swift.String
+  @objc dynamic public var BeaconID: Swift.String
+  @objc dynamic public var Major: Swift.String
+  @objc dynamic public var Minor: Swift.String
+  @objc dynamic public var latitude: Swift.Double
+  @objc dynamic public var longitude: Swift.Double
+  @objc dynamic public var distance: Swift.Double
+  dynamic public var properties: RealmSwift.Map<Swift.String, Swift.String>
+  @objc dynamic public var venue_id: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class IndoorBeacons {
+  public class func getAll(venue: Swift.String? = nil) -> [WoosmapGeofencing.IndoorBeacon]
+  public class func getByID(id: Swift.String) -> WoosmapGeofencing.IndoorBeacon?
+  public class func clearExplicitCache()
+  @objc deinit
+}
+extension Foundation.Data {
+  public func hexEncodedString() -> Swift.String
+  public static func dataWithHexString(hex: Swift.String) -> Foundation.Data
 }
 @objc @_inheritsConvenienceInitializers public class ZOI : RealmSwift.Object {
   @objc dynamic public var accumulator: Swift.Double
@@ -305,6 +330,7 @@ public enum ConfigurationProfile : Swift.String {
   case liveTracking
   case passiveTracking
   case visitsTracking
+  case beaconTracking
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -314,6 +340,10 @@ public enum ConfigurationProfile : Swift.String {
 public var SFMCCredentials: [Swift.String : Swift.String]
 public var SFMCAccesToken: Swift.String
 public var optimizeDistanceRequest: Swift.Bool
+public var indoorVenueAPI: Swift.String
+public var indoorSearchAPI: Swift.String
+public var indoorVenueAPIRefreshDelayDay: Swift.Int
+public var indoorSearchAPIEnable: Swift.Bool
 @objc @_inheritsConvenienceInitializers public class Distance : RealmSwift.Object {
   @objc dynamic public var date: Foundation.Date?
   @objc dynamic public var originLatitude: Swift.Double
@@ -508,6 +538,8 @@ extension WoosmapGeofencing.WoosmapGeofencing {
   public func startTracking(configurationProfile: WoosmapGeofencing.ConfigurationProfile)
   @objc dynamic public func stopTracking()
   public func startCustomTracking(url: Swift.String) -> (status: Swift.Bool, errors: [Swift.String])
+  @objc dynamic public func setIndoorSearchAPIEnable(enable: Swift.Bool)
+  @objc dynamic public func getIndoorSearchAPIEnable() -> Swift.Bool
 }
 public struct SearchAPIData : Swift.Codable {
   public let type: Swift.String?
@@ -559,6 +591,22 @@ public struct User_properties : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
+@objc @_inheritsConvenienceInitializers public class IndoorVenue : RealmSwift.Object {
+  @objc dynamic public var date: Foundation.Date
+  @objc dynamic public var identifier: Swift.String
+  @objc dynamic public var name: Swift.String
+  @objc dynamic public var latitude: Swift.Double
+  @objc dynamic public var longitude: Swift.Double
+  @objc dynamic public var distance: Swift.Double
+  @objc dynamic public var boundingBox: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class IndoorVenues {
+  public class func getVenueFromId(id: Swift.String) -> WoosmapGeofencing.IndoorVenue?
+  public class func getAll() -> [WoosmapGeofencing.IndoorVenue]
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class Visit : RealmSwift.Object {
   @objc dynamic public var accuracy: Swift.Double
   @objc dynamic public var arrivalDate: Foundation.Date?
@@ -605,6 +653,17 @@ public struct User_properties : Swift.Codable {
   public class func removeRegionIsochrone(id: Swift.String)
   public class func getAll() -> [WoosmapGeofencing.RegionIsochrone]
   public class func deleteAll()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class LogIndoorAPI : RealmSwift.Object {
+  @objc dynamic public var date: Foundation.Date?
+  @objc dynamic public var message: Swift.String?
+  dynamic public var eventStatus: RealmSwift.Map<Swift.String, Swift.String>
+  dynamic public var log: RealmSwift.Map<Swift.String, Swift.String>
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class POI : RealmSwift.Object {

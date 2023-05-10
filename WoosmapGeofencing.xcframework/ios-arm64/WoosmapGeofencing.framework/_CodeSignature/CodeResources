@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/WoosmapGeofencing-Swift.h</key>
 		<data>
-		aaXmUAVdzWLxyd3ByflcXaG4zXk=
+		XtyzJ12pIkjU5fAaWHzQDLg7Qc8=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		W5a2RnuTkoqqB952USpohm0sfj4=
+		GsxHVlyBRA65YvLQ3Je1D39SL+4=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		owgA+1hE9NsVoGDrv//KEwz4r20=
+		CQlFUQRpInFzSXFNrcOUAz8idv8=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		KLLtLMvhlqRKkiI7vX5RTlWP50E=
+		O6V2x1GrM/j/kk/UMCy/K59nMrQ=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		tKtadlOYRX0HYUImXDG30aJhjG8=
+		nelEGmLT4ByMMLMFLozJJ88d2Rw=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		KLLtLMvhlqRKkiI7vX5RTlWP50E=
+		O6V2x1GrM/j/kk/UMCy/K59nMrQ=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		goCavl0YqfoWY9pMb1JUKh6B360=
+		lkpRk1AV7zOfNxpbaKyNDHeCshY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,11 @@
 		</data>
 		<key>TrackingSchema.json</key>
 		<data>
-		wecZVS45s+9ADwxWBKt+2jA9KfY=
+		WkGVI6Bxw7Sf2bHJ3bM/vUoioeQ=
+		</data>
+		<key>beaconTracking.json</key>
+		<data>
+		I2kjQXlISVhV7T6Fk7qm2ydNGRc=
 		</data>
 		<key>liveTracking.json</key>
 		<data>
@@ -63,49 +67,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zD8T6vNyRKcsPAAUzL3G7qUTmzovXBSw9nxX3vXYqWg=
+			r5fvS30XIe4pEnlYL6dZOS4JeBWeRqQAmICnwREk92s=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WFpTkqkGZZ+e96Wbvh8TL+uIjTloGGjEjdHZfqsS5Os=
+			sYJKSZyYagPGB5UHMNx53ha/b0+XGDaVd2ISNmKdO1k=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			keUGQqhuu63WYB0IR1A95KCN+MdQWXCCG5ZC/CryhZM=
+			BABo44pvo+i9OqlGfxzzv6VIlwtQZSP4sD9xOkeu15s=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2tDYuN3eMHF79Xj+ZsqDL1bTU8FaDLZ/Im02Q5iWCNY=
+			ZCy4J6jKKnJ/XWXkwmgcFr4sVRfFaHneIQTG5AovdCs=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C1KUDeWnjb9llLHMFkxKjjYNrCN1yiV6u1fZ2AVcnc0=
+			HRv2bsVn3u7ml3Epnb565Wg94Oldq2GQI1odDsr+uOQ=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2tDYuN3eMHF79Xj+ZsqDL1bTU8FaDLZ/Im02Q5iWCNY=
+			ZCy4J6jKKnJ/XWXkwmgcFr4sVRfFaHneIQTG5AovdCs=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z9d0ELzKPLuQvFW9XYiiejvINZGf0Tnkujh3tgkenxY=
+			YpgUstVuf9oPhFt+Qqlm/MEQnW4ww0t2OujbAGZKZvg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -119,7 +123,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3czjbV1n9ErLJq2Qigu6f931uX2qmAsu+3xZExeJjbE=
+			+MLcQJ5B5nG4o/KHd0qsC0MnUY0xjHYTgKfSsx9FChY=
+			</data>
+		</dict>
+		<key>beaconTracking.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+BvCHTTH7wkDH1OsTwP71WiQmy4wrkQqDe0khI/oypk=
 			</data>
 		</dict>
 		<key>liveTracking.json</key>
