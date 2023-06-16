@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
   s.description = 'The Woosmap Geofencing SDK is a mobile cross-platform software development kit focused on gathering efficiently the users’ location, triggering events based on region monitoring, and providing categorized users’ zone of interest from geographical and temporal clusters.
 
 The SDK simplifies the integration of the location context in your mobile application by taking care of lower-level functionalities such as data collection or battery management.'
-  s.homepage = 'https://github.com/Woosmap/geofencing-ios-sdk'
+  s.homepage = 'https://www.woosmap.com/en/products/geofencing-sdk'
   s.authors = { 'Web Geo Services' => 'https://developers.woosmap.com/support/contact/'}
-  s.documentation_url = 'https://github.com/Woosmap/geofencing-ios-sdk-release'
+  s.documentation_url = 'https://developers.woosmap.com/products/geofencing-sdk/get-started'
 
   s.ios.deployment_target = '12.0'
 
