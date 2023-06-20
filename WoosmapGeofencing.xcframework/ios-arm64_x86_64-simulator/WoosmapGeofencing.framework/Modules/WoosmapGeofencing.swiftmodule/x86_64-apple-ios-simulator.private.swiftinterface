@@ -8,35 +8,11 @@ import CoreFoundation
 import CoreLocation
 import Foundation
 import Network
-import Realm/*.Realm*/
-import RealmSwift
 import Swift
 import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
-public struct UnsafeMemory<Element> : Swift.Sequence {
-  public var pointer: Swift.UnsafePointer<Element>
-  public var stride: Swift.Int
-  public var count: Swift.Int
-  public init(pointer: Swift.UnsafePointer<Element>, stride: Swift.Int = 1, count: Swift.Int)
-  public func makeIterator() -> WoosmapGeofencing.UnsafeMemoryIterator<Element>
-  public typealias Iterator = WoosmapGeofencing.UnsafeMemoryIterator<Element>
-}
-public struct UnsafeMemoryIterator<Element> : Swift.IteratorProtocol {
-  public init(_ base: WoosmapGeofencing.UnsafeMemory<Element>)
-  public mutating func next() -> Element?
-}
-public protocol UnsafeMemoryAccessible : Swift.Collection {
-  func withUnsafeMemory<Result>(_ body: (WoosmapGeofencing.UnsafeMemory<Self.Element>) throws -> Result) rethrows -> Result
-}
-public func withUnsafeMemory<L, Result>(_ lhs: L, _ body: (WoosmapGeofencing.UnsafeMemory<L.Element>) throws -> Result) rethrows -> Result where L : WoosmapGeofencing.UnsafeMemoryAccessible
-public func withUnsafeMemory<L, R, Result>(_ lhs: L, _ rhs: R, _ body: (WoosmapGeofencing.UnsafeMemory<L.Element>, WoosmapGeofencing.UnsafeMemory<R.Element>) throws -> Result) rethrows -> Result where L : WoosmapGeofencing.UnsafeMemoryAccessible, R : WoosmapGeofencing.UnsafeMemoryAccessible
-public class Draft4Validator {
-  required public init(schema: Swift.Bool)
-  required public init(schema: [Swift.String : Any])
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers public class LocationServiceImpl : WoosmapGeofencing.LocationServiceCoreImpl {
   weak public var airshipEventsDelegate: (any WoosmapGeofencing.AirshipEventsDelegate)?
   weak public var marketingCloudEventsDelegate: (any WoosmapGeofencing.MarketingCloudEventsDelegate)?
@@ -112,32 +88,6 @@ public struct SFMCConfig : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct JSONPointer {
-  public var path: Swift.String {
-    get
-  }
-}
-extension Swift.Array : WoosmapGeofencing.UnsafeMemoryAccessible, WoosmapGeofencing.UnsafeMutableMemoryAccessible {
-  public func withUnsafeMemory<Result>(_ action: (WoosmapGeofencing.UnsafeMemory<Element>) throws -> Result) rethrows -> Result
-  public mutating func withUnsafeMutableMemory<Result>(_ action: (WoosmapGeofencing.UnsafeMutableMemory<Element>) throws -> Result) rethrows -> Result
-}
-public class Draft7Validator {
-  required public init(schema: Swift.Bool)
-  required public init(schema: [Swift.String : Any])
-  @objc deinit
-}
-public class Draft202012Validator {
-  required public init(schema: Swift.Bool)
-  required public init(schema: [Swift.String : Any])
-  @objc deinit
-}
-public struct MatrixEigenDecompositionResult<Scalar> where Scalar : Swift.ExpressibleByFloatLiteral, Scalar : Swift.FloatingPoint {
-  public let eigenValues: [(Scalar, Scalar)]
-  public let leftEigenVectors: [[(Scalar, Scalar)]]
-  public let rightEigenVectors: [[(Scalar, Scalar)]]
-  public init(eigenValues: [(Scalar, Scalar)], leftEigenVectors: [[(Scalar, Scalar)]], rightEigenVectors: [[(Scalar, Scalar)]])
-  public init(rowCount: Swift.Int, eigenValueRealParts: [Scalar], eigenValueImaginaryParts: [Scalar], leftEigenVectorWork: [Scalar], rightEigenVectorWork: [Scalar])
-}
 public enum EigenDecompositionError : Swift.Error {
   case matrixNotSquare
   case matrixNotDecomposable
@@ -148,27 +98,26 @@ public enum EigenDecompositionError : Swift.Error {
   }
 }
 infix operator • : MultiplicationPrecedence
-@objc @_inheritsConvenienceInitializers public class ZOI : RealmSwift.Object {
-  @objc dynamic public var accumulator: Swift.Double
-  @objc dynamic public var age: Swift.Double
-  @objc dynamic public var covariance_det: Swift.Double
-  @objc dynamic public var duration: Swift.Int64
-  @objc dynamic public var endTime: Foundation.Date?
-  dynamic public var idVisits: RealmSwift.List<Swift.String>
-  @objc dynamic public var latMean: Swift.Double
-  @objc dynamic public var lngMean: Swift.Double
-  @objc dynamic public var period: Swift.String?
-  @objc dynamic public var prior_probability: Swift.Double
-  @objc dynamic public var startTime: Foundation.Date?
-  dynamic public var weekly_density: RealmSwift.List<Swift.Double>
-  @objc dynamic public var wktPolygon: Swift.String?
-  @objc dynamic public var x00Covariance_matrix_inverse: Swift.Double
-  @objc dynamic public var x01Covariance_matrix_inverse: Swift.Double
-  @objc dynamic public var x10Covariance_matrix_inverse: Swift.Double
-  @objc dynamic public var x11Covariance_matrix_inverse: Swift.Double
-  @objc dynamic public var zoiId: Swift.String?
-  @objc override dynamic public class func primaryKey() -> Swift.String?
-  @objc override dynamic public init()
+@_hasMissingDesignatedInitializers public class ZOI {
+  public var accumulator: Swift.Double
+  public var age: Swift.Double
+  public var covariance_det: Swift.Double
+  public var duration: Swift.Int64
+  public var endTime: Foundation.Date?
+  public var idVisits: [Swift.String]
+  public var latMean: Swift.Double
+  public var lngMean: Swift.Double
+  public var period: Swift.String?
+  public var prior_probability: Swift.Double
+  public var startTime: Foundation.Date?
+  public var weekly_density: [Swift.Double]
+  public var wktPolygon: Swift.String?
+  public var x00Covariance_matrix_inverse: Swift.Double
+  public var x01Covariance_matrix_inverse: Swift.Double
+  public var x10Covariance_matrix_inverse: Swift.Double
+  public var x11Covariance_matrix_inverse: Swift.Double
+  public var zoiId: Swift.String?
+  public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ZOIs {
@@ -235,12 +184,6 @@ infix operator • : MultiplicationPrecedence
   open func handleZOIClassifiedEvent(region: WoosmapGeofencing.Region)
   @objc deinit
 }
-public var list_zois: [[Swift.String : Any]]
-public func chi_squared_value(probability: Swift.Double) -> Swift.Double
-public func figmmForVisit(newVisitPoint: WoosmapGeofencing.LoadedVisit) -> [[Swift.String : Any]]
-public func setListZOIsFromDB(zoiFromDB: [[Swift.String : Any]])
-public func update_zois_prior()
-public func deleteVisitOnZoi(visitsToDelete: WoosmapGeofencing.LoadedVisit) -> [[Swift.String : Any]]
 @_hasMissingDesignatedInitializers public class LoadedVisit : Swift.Equatable {
   public var startTime: Foundation.Date?
   public var endTime: Foundation.Date?
@@ -286,35 +229,6 @@ public struct DistanceInfo : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public class Draft201909Validator {
-  required public init(schema: Swift.Bool)
-  required public init(schema: [Swift.String : Any])
-  @objc deinit
-}
-public enum Type : Swift.String {
-  case object
-  case array
-  case string
-  case integer
-  case number
-  case boolean
-  case null
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct Schema {
-  public let title: Swift.String?
-  public let description: Swift.String?
-  public let type: [WoosmapGeofencing.`Type`]?
-  public init(_ schema: [Swift.String : Any])
-  public func validate(_ data: Any) throws -> WoosmapGeofencing.ValidationResult
-  public func validate(_ data: Any) throws -> Swift.AnySequence<WoosmapGeofencing.ValidationError>
-}
-public func validateSchema(_ value: Any, schema: [Swift.String : Any]) throws -> WoosmapGeofencing.ValidationResult
-public func validate(_ value: Any, schema: Swift.Bool) throws -> WoosmapGeofencing.ValidationResult
 public protocol LocationServiceDelegate : AnyObject {
   func tracingLocation(location: WoosmapGeofencing.Location)
   func tracingLocationDidFailWithError(error: any Swift.Error)
@@ -373,23 +287,7 @@ public enum ConfigurationProfile : Swift.String {
 public var SFMCCredentials: [Swift.String : Swift.String]
 public var SFMCAccesToken: Swift.String
 public var optimizeDistanceRequest: Swift.Bool
-@objc @_inheritsConvenienceInitializers public class Distance : RealmSwift.Object {
-  @objc dynamic public var date: Foundation.Date?
-  @objc dynamic public var originLatitude: Swift.Double
-  @objc dynamic public var originLongitude: Swift.Double
-  @objc dynamic public var destinationLatitude: Swift.Double
-  @objc dynamic public var destinationLongitude: Swift.Double
-  @objc dynamic public var distance: Swift.Int
-  @objc dynamic public var distanceText: Swift.String?
-  @objc dynamic public var duration: Swift.Int
-  @objc dynamic public var durationText: Swift.String?
-  @objc dynamic public var mode: Swift.String?
-  @objc dynamic public var units: Swift.String?
-  @objc dynamic public var routing: Swift.String?
-  @objc dynamic public var status: Swift.String?
-  @objc dynamic public var locationId: Swift.String?
-  convenience public init(originLatitude: Swift.Double, originLongitude: Swift.Double, destinationLatitude: Swift.Double, destinationLongitude: Swift.Double, dateCaptured: Foundation.Date, distance: Swift.Int, duration: Swift.Int, mode: Swift.String, units: Swift.String, routing: Swift.String, status: Swift.String, locationId: Swift.String)
-  @objc override dynamic public init()
+@_hasMissingDesignatedInitializers public class Distance {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Distances {
@@ -399,48 +297,18 @@ public var optimizeDistanceRequest: Swift.Bool
   @objc deinit
 }
 infix operator • : MultiplicationPrecedence
-@objc @_inheritsConvenienceInitializers public class LogSearchAPI : RealmSwift.Object {
-  @objc dynamic public var date: Foundation.Date?
-  @objc dynamic public var latitude: Swift.Double
-  @objc dynamic public var longitude: Swift.Double
-  @objc dynamic public var lastSearchLocationLatitude: Swift.Double
-  @objc dynamic public var lastSearchLocationLongitude: Swift.Double
-  @objc dynamic public var lastPOI_distance: Swift.String?
-  @objc dynamic public var distanceLimit: Swift.String?
-  @objc dynamic public var locationDescription: Swift.String?
-  @objc dynamic public var distanceTraveled: Swift.String?
-  @objc dynamic public var distanceToFurthestMonitoredPOI: Swift.String?
-  @objc dynamic public var distanceTraveledLastRefreshPOIRegion: Swift.String?
-  @objc dynamic public var searchAPILastRequestTimeStampValue: Swift.Double
-  @objc dynamic public var sendSearchAPIRequest: Swift.Bool
-  @objc dynamic public var woosmapAPIKey: Swift.String?
-  @objc dynamic public var searchAPIRequestEnable: Swift.Bool
-  @objc override dynamic public init()
+@_hasMissingDesignatedInitializers public class LogSearchAPI {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class LogSearchAPIs {
   public class func add(log: WoosmapGeofencing.LogSearchAPI)
   @objc deinit
 }
-public var list_zois_qualifiers: [[Swift.String : Any]]
-public let EXIT_TYPE: Swift.String
-public let ENTRY_TYPE: Swift.String
-public func updateZoisQualifications(zois: [[Swift.String : Any]]) -> [[Swift.String : Any]]
-public func qualify_recurrent_zoi(zois_gmm_info: inout [Swift.String : Any])
-public func get_periods_length(period_segments: [Swift.String : Any]) -> Swift.Int
-public func get_time_on_period(period_segments: [Swift.String : Any], average_intervals: [[Swift.String : Any]]) -> Swift.Int
-public func intervals_intersection_length(interval1_start: Swift.Int, interval1_end: Swift.Int, interval2_start: Swift.Int, interval2_end: Swift.Int) -> Swift.Int
-public func get_average_presence_intervals(weekly_density: [Swift.Double], zois_gmm_info: inout [Swift.String : Any])
-public func add_first_entry_and_last_exit_to_intervals_if_needed(daily_interval: inout [[Swift.String : Any]])
-public func extract_daily_presence_intervals_from_weekly_density(weekly_density: [Swift.Double]) -> [Swift.String : Any]
-public func extract_time_and_weeks_from_interval(visitPoint: WoosmapGeofencing.LoadedVisit, zoi_gmminfo: inout [Swift.String : Any])
-public func update_weekly_density(visitPoint: WoosmapGeofencing.LoadedVisit, zoi_gmminfo: inout [Swift.String : Any])
 public class DataCleaner {
   public init()
   public func cleanOldGeographicData()
   @objc deinit
 }
-public typealias Draft6Validator = WoosmapGeofencing.Draft7Validator
 public enum RegionType : Swift.String {
   case position
   case custom
@@ -506,6 +374,7 @@ extension WoosmapGeofencing.LocationService {
   public var sphericalMercator: WoosmapGeofencing.SphericalMercator!
   public var visitPoint: WoosmapGeofencing.LoadedVisit!
   @objc public static let shared: WoosmapGeofencing.WoosmapGeofencing
+  @objc public func getDatabaseFileURL() -> Foundation.URL?
   @objc public func getLocationService() -> WoosmapGeofencing.LocationServiceImpl
   public func getSphericalMercator() -> WoosmapGeofencing.SphericalMercator
   public func getVisitPoint() -> WoosmapGeofencing.LoadedVisit
@@ -619,7 +488,7 @@ public struct User_properties : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
-@objc @_inheritsConvenienceInitializers public class Visit : RealmSwift.Object {
+@_hasMissingDesignatedInitializers public class Visit {
   @objc dynamic public var accuracy: Swift.Double
   @objc dynamic public var arrivalDate: Foundation.Date?
   @objc dynamic public var date: Foundation.Date?
@@ -628,7 +497,6 @@ public struct User_properties : Swift.Codable {
   @objc dynamic public var longitude: Swift.Double
   @objc dynamic public var visitId: Swift.String?
   convenience public init(visitId: Swift.String, arrivalDate: Foundation.Date? = nil, departureDate: Foundation.Date? = nil, latitude: Swift.Double, longitude: Swift.Double, dateCaptured: Foundation.Date? = nil, accuracy: Swift.Double)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Visits {
@@ -639,7 +507,7 @@ public struct User_properties : Swift.Codable {
   public class func deleteAll()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class RegionIsochrone : RealmSwift.Object {
+@_hasMissingDesignatedInitializers public class RegionIsochrone {
   @objc dynamic public var date: Foundation.Date?
   @objc dynamic public var didEnter: Swift.Bool
   @objc dynamic public var identifier: Swift.String?
@@ -655,7 +523,6 @@ public struct User_properties : Swift.Codable {
   @objc dynamic public var durationText: Swift.String
   @objc dynamic public var type: Swift.String
   @objc dynamic public var expectedAverageSpeed: Swift.Double
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class RegionIsochrones {
@@ -667,31 +534,29 @@ public struct User_properties : Swift.Codable {
   public class func deleteAll()
   @objc deinit
 }
-extension Swift.ArraySlice : WoosmapGeofencing.UnsafeMemoryAccessible, WoosmapGeofencing.UnsafeMutableMemoryAccessible {
-  public func withUnsafeMemory<Result>(_ action: (WoosmapGeofencing.UnsafeMemory<Element>) throws -> Result) rethrows -> Result
+extension Swift.ArraySlice {
   public mutating func withUnsafeMutableMemory<Result>(_ action: (WoosmapGeofencing.UnsafeMutableMemory<Element>) throws -> Result) rethrows -> Result
 }
-@objc @_inheritsConvenienceInitializers public class POI : RealmSwift.Object {
-  @objc dynamic public var jsonData: Foundation.Data?
-  @objc dynamic public var city: Swift.String?
-  @objc dynamic public var idstore: Swift.String?
-  @objc dynamic public var name: Swift.String?
-  @objc dynamic public var date: Foundation.Date?
-  @objc dynamic public var distance: Swift.Double
-  @objc dynamic public var duration: Swift.String?
-  @objc dynamic public var latitude: Swift.Double
-  @objc dynamic public var locationId: Swift.String?
-  @objc dynamic public var longitude: Swift.Double
-  @objc dynamic public var zipCode: Swift.String?
-  @objc dynamic public var radius: Swift.Double
-  @objc dynamic public var address: Swift.String?
-  @objc dynamic public var openNow: Swift.Bool
-  @objc dynamic public var countryCode: Swift.String?
-  @objc dynamic public var tags: Swift.String?
-  @objc dynamic public var types: Swift.String?
-  @objc dynamic public var contact: Swift.String?
+@_hasMissingDesignatedInitializers public class POI {
+  public var jsonData: Foundation.Data?
+  public var city: Swift.String?
+  public var idstore: Swift.String?
+  public var name: Swift.String?
+  public var date: Foundation.Date?
+  public var distance: Swift.Double
+  public var duration: Swift.String?
+  public var latitude: Swift.Double
+  public var locationId: Swift.String?
+  public var longitude: Swift.Double
+  public var zipCode: Swift.String?
+  public var radius: Swift.Double
+  public var address: Swift.String?
+  public var openNow: Swift.Bool
+  public var countryCode: Swift.String?
+  public var tags: Swift.String?
+  public var types: Swift.String?
+  public var contact: Swift.String?
   convenience public init(locationId: Swift.String? = nil, city: Swift.String? = nil, zipCode: Swift.String? = nil, distance: Swift.Double? = nil, latitude: Swift.Double? = nil, longitude: Swift.Double? = nil, dateCaptured: Foundation.Date? = nil, radius: Swift.Double? = nil, address: Swift.String? = nil, tags: Swift.String? = nil, types: Swift.String? = nil, countryCode: Swift.String? = nil, contact: Swift.String? = nil)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class POIs {
@@ -704,24 +569,6 @@ extension Swift.ArraySlice : WoosmapGeofencing.UnsafeMemoryAccessible, WoosmapGe
   public class func updatePOIWithDistance(distance: Swift.Double, duration: Swift.String, locationId: Swift.String) -> WoosmapGeofencing.POI
   public class func deleteAll()
   @objc deinit
-}
-@_hasMissingDesignatedInitializers public class ValidationError : Swift.Encodable {
-  final public let description: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  final public let instanceLocation: WoosmapGeofencing.JSONPointer
-  final public let keywordLocation: WoosmapGeofencing.JSONPointer
-  @objc deinit
-}
-public enum ValidationResult : Swift.Encodable {
-  case valid
-  case invalid([WoosmapGeofencing.ValidationError])
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var valid: Swift.Bool {
-    get
-  }
-  public var errors: [WoosmapGeofencing.ValidationError]? {
-    get
-  }
 }
 public var trackingEnable: Swift.Bool
 public var WoosmapAPIKey: Swift.String
@@ -818,37 +665,29 @@ public struct UnsafeMutableMemoryIterator<Element> : Swift.IteratorProtocol {
   public init(_ base: WoosmapGeofencing.UnsafeMutableMemory<Element>)
   public mutating func next() -> Element?
 }
-public protocol UnsafeMutableMemoryAccessible : WoosmapGeofencing.UnsafeMemoryAccessible {
-  mutating func withUnsafeMutableMemory<Result>(_ body: (WoosmapGeofencing.UnsafeMutableMemory<Self.Element>) throws -> Result) rethrows -> Result
-}
-public func withUnsafeMutableMemory<L, Result>(_ lhs: inout L, _ body: (WoosmapGeofencing.UnsafeMutableMemory<L.Element>) throws -> Result) rethrows -> Result where L : WoosmapGeofencing.UnsafeMutableMemoryAccessible
-public func withUnsafeMutableMemory<L, R, Result>(_ lhs: inout L, _ rhs: inout R, _ body: (WoosmapGeofencing.UnsafeMutableMemory<L.Element>, WoosmapGeofencing.UnsafeMutableMemory<R.Element>) throws -> Result) rethrows -> Result where L : WoosmapGeofencing.UnsafeMutableMemoryAccessible, R : WoosmapGeofencing.UnsafeMutableMemoryAccessible
-public func withUnsafeMutableMemory<L, R, Z, Result>(_ lhs: inout L, _ rhs: inout R, _ z: inout Z, _ body: (WoosmapGeofencing.UnsafeMutableMemory<L.Element>, WoosmapGeofencing.UnsafeMutableMemory<R.Element>, WoosmapGeofencing.UnsafeMutableMemory<Z.Element>) throws -> Result) rethrows -> Result where L : WoosmapGeofencing.UnsafeMutableMemoryAccessible, R : WoosmapGeofencing.UnsafeMutableMemoryAccessible, Z : WoosmapGeofencing.UnsafeMutableMemoryAccessible
-@objc @_inheritsConvenienceInitializers public class Region : RealmSwift.Object {
-  @objc dynamic public var date: Foundation.Date
-  @objc dynamic public var didEnter: Swift.Bool
-  @objc dynamic public var identifier: Swift.String
-  @objc dynamic public var latitude: Swift.Double
-  @objc dynamic public var longitude: Swift.Double
-  @objc dynamic public var radius: Swift.Double
-  @objc dynamic public var fromPositionDetection: Swift.Bool
-  @objc dynamic public var distance: Swift.Int
-  @objc dynamic public var distanceText: Swift.String
-  @objc dynamic public var duration: Swift.Int
-  @objc dynamic public var durationText: Swift.String
-  @objc dynamic public var type: Swift.String
-  @objc dynamic public var origin: Swift.String
-  @objc dynamic public var eventName: Swift.String
-  @objc dynamic public var spentTime: Swift.Double
+@_hasMissingDesignatedInitializers public class Region {
+  dynamic public var date: Foundation.Date
+  dynamic public var didEnter: Swift.Bool
+  dynamic public var identifier: Swift.String
+  dynamic public var latitude: Swift.Double
+  dynamic public var longitude: Swift.Double
+  dynamic public var radius: Swift.Double
+  dynamic public var fromPositionDetection: Swift.Bool
+  dynamic public var distance: Swift.Int
+  dynamic public var distanceText: Swift.String
+  dynamic public var duration: Swift.Int
+  dynamic public var durationText: Swift.String
+  dynamic public var type: Swift.String
+  dynamic public var origin: Swift.String
+  dynamic public var eventName: Swift.String
+  dynamic public var spentTime: Swift.Double
   convenience public init(latitude: Swift.Double, longitude: Swift.Double, radius: Swift.Double, dateCaptured: Foundation.Date, identifier: Swift.String, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool, eventName: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class DurationLog : RealmSwift.Object {
-  @objc dynamic public var identifier: Swift.String
-  @objc dynamic public var entryTime: Foundation.Date
-  @objc dynamic public var exitTime: Foundation.Date?
-  @objc override dynamic public init()
+@_hasMissingDesignatedInitializers public class DurationLog {
+  dynamic public var identifier: Swift.String
+  dynamic public var entryTime: Foundation.Date
+  dynamic public var exitTime: Foundation.Date?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DurationLogs {
@@ -866,14 +705,14 @@ public func withUnsafeMutableMemory<L, R, Z, Result>(_ lhs: inout L, _ rhs: inou
   public static func deleteAll()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class Location : RealmSwift.Object {
-  @objc dynamic public var date: Foundation.Date?
-  @objc dynamic public var latitude: Swift.Double
-  @objc dynamic public var locationDescription: Swift.String?
-  @objc dynamic public var locationId: Swift.String?
-  @objc dynamic public var longitude: Swift.Double
+@_hasMissingDesignatedInitializers public class Location {
+  public var date: Foundation.Date?
+  public var latitude: Swift.Double
+  public var locationDescription: Swift.String?
+  public var locationId: Swift.String?
+  public var longitude: Swift.Double
+  public init()
   convenience public init(locationId: Swift.String, latitude: Swift.Double, longitude: Swift.Double, dateCaptured: Foundation.Date, descriptionToSave: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Locations {
@@ -886,9 +725,6 @@ public func withUnsafeMutableMemory<L, R, Z, Result>(_ lhs: inout L, _ rhs: inou
 }
 extension WoosmapGeofencing.EigenDecompositionError : Swift.Equatable {}
 extension WoosmapGeofencing.EigenDecompositionError : Swift.Hashable {}
-extension WoosmapGeofencing.`Type` : Swift.Equatable {}
-extension WoosmapGeofencing.`Type` : Swift.Hashable {}
-extension WoosmapGeofencing.`Type` : Swift.RawRepresentable {}
 extension WoosmapGeofencing.ConfigurationProfile : Swift.Equatable {}
 extension WoosmapGeofencing.ConfigurationProfile : Swift.Hashable {}
 extension WoosmapGeofencing.ConfigurationProfile : Swift.RawRepresentable {}
