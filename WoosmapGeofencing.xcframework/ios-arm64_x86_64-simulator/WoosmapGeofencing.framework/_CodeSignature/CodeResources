@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		COHkBbQR6/uOyEllUaGp3ZS69/8=
+		Wsdz4hzvJLgAKlCaBOgUibKE7cQ=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ZqForAj4eROKCzQZE1cATQYkjxM=
+		sHBOOQ4bkqhtyq25eDbbf6y7caI=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		TPsKU58kF5m5py7x25O3YCl/pRk=
+		4rX6OhlyZZXlMzuzkd3CF5JSky8=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2rLgOUFMQTeFNjV0yQ2/VgqNi44=
+		sIxg0aeH+gYUMOc8lVp6QNhoxjM=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DKdjyiF+tHXWThlGuI8m8jPoN7w=
+		q/Ee/y0XJNUO10KtJzGrGvQD/gs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,14 +78,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			faO3cZKA/EYgSaJzS4zUgm7AQ5j5AwrJrQDkyzOK3cc=
+			daevhU+7MwRivy9i0DcPgBAvNnqqXmPeE8LJvDvyjU4=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gDjk7oPbgF+zOZsnbugqEXSuSN+cTF4KkmScp3VFDps=
+			fnlK1Lj2lqiEF4Gs6/43fKVuc98EKurfcmixo86RVxg=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HRV8M9NW3Eqn9HyigqtZe+UGykF8x15qogI0r1E8D1k=
+			o80TezaL3FQwCkPrVlQnrCJNc7IJweLEMgpk2C8LH4E=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FwBdUeVce5bCtFW6IDRxyQaI28jnR9Op5cxDT43Bibs=
+			yH86taTynVw4AlNBL/bpoyK1tmIL40j5O3XMAdQbHOk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
