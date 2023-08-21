@@ -126,6 +126,21 @@
                 "searchAPICreationRegionEnable"
             ]
         },
+        
+        "indoorSearchAPI": {
+            "description": "In this object, find all parameters related to the Woosmap Indoor Search API.",
+            "type": "object",
+            "properties": {
+                "indoorSearchAPIEnable": {
+                    "description": "Enable this parameters to request the Woosmap Search API regularly to retrieve nearest POIs",
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "indoorSearchAPIEnable"
+            ]
+        },
+        
         "distanceAPIEnable": {
             "description": "DEPRECATED - Enable this parameter to automatically send a request to Woosmap Distance API after a request to the Search API.",
             "type": "boolean"
