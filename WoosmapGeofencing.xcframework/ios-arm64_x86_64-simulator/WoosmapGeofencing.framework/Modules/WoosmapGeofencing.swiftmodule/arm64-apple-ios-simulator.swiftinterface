@@ -668,6 +668,7 @@ extension WoosmapGeofencing.WoosmapGeofenceManager {
 @_hasMissingDesignatedInitializers public class RegionIsochrones {
   public class func add(regionIsochrone: WoosmapGeofencing.RegionIsochrone)
   public class func updateRegion(id: Swift.String, didEnter: Swift.Bool, distanceInfo: WoosmapGeofencing.Distance) -> WoosmapGeofencing.RegionIsochrone
+  public class func getRegionFromId(id: Swift.String) -> WoosmapGeofencing.RegionIsochrone?
   public class func removeRegionIsochrone(id: Swift.String)
   public class func getAll() -> [WoosmapGeofencing.RegionIsochrone]
   public class func deleteAll()
