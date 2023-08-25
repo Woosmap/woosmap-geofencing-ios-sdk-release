@@ -641,6 +641,10 @@ extension WoosmapGeofencing.WoosmapGeofenceManager {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Distance {
+  public var distance: Swift.Int
+  public var distanceText: Swift.String?
+  public var duration: Swift.Int
+  public var durationText: Swift.String?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Distances {
