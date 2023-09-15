@@ -34,6 +34,9 @@ import _StringProcessing
   public var types: Swift.String?
   public var contact: Swift.String?
   convenience public init(locationId: Swift.String? = nil, city: Swift.String? = nil, zipCode: Swift.String? = nil, distance: Swift.Double? = nil, latitude: Swift.Double? = nil, longitude: Swift.Double? = nil, dateCaptured: Foundation.Date? = nil, radius: Swift.Double? = nil, address: Swift.String? = nil, tags: Swift.String? = nil, types: Swift.String? = nil, countryCode: Swift.String? = nil, contact: Swift.String? = nil)
+  public var user_properties: [Swift.String : Any] {
+    get
+  }
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class POIs {
