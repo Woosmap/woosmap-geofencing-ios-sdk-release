@@ -263,14 +263,13 @@ public class Draft202012Validator {
   @objc dynamic public var Minor: Swift.String
   @objc dynamic public var latitude: Swift.Double
   @objc dynamic public var longitude: Swift.Double
-  @objc dynamic public var distance: Swift.Double
   dynamic public var properties: [Swift.String : Swift.String]
   @objc dynamic public var venue_id: Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class IndoorBeacons {
   public class func getAll(venue: Swift.String? = nil) -> [WoosmapGeofencing.IndoorBeacon]
-  public class func getByID(id: Swift.String) -> WoosmapGeofencing.IndoorBeacon?
+  public class func deleteAll(venue: Swift.String? = nil)
   public class func clearExplicitCache()
   @objc deinit
 }
@@ -970,10 +969,6 @@ extension WoosmapGeofencing.IndoorBeaconDB {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var distance: Swift.Double {
-    @objc get
-    @objc set
-  }
   @objc @NSManaged dynamic public var identifier: Swift.String? {
     @objc get
     @objc set
@@ -1364,6 +1359,53 @@ extension WoosmapGeofencing.RegionIsochroneDB {
     @objc set
   }
   @objc @NSManaged dynamic public var type: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class VenueBeaconDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.VenueBeaconDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.VenueBeaconDB>
+  @objc @NSManaged dynamic public var beaconID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var identifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var major: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var minor: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var properties: [Swift.String : Swift.String]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var venue_id: Swift.String? {
     @objc get
     @objc set
   }

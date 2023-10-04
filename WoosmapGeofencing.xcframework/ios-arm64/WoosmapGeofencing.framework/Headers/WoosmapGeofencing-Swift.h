@@ -353,7 +353,6 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing14IndoorBeaconDB")
 @interface IndoorBeaconDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSString * _Nullable beaconID;
 @property (nonatomic, copy) NSDate * _Nullable date;
-@property (nonatomic) double distance;
 @property (nonatomic, copy) NSString * _Nullable identifier;
 @property (nonatomic) double latitude;
 @property (nonatomic) double longitude;
@@ -596,6 +595,26 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing17RegionIsochroneDB")
 @property (nonatomic) double longitude;
 @property (nonatomic) int32_t radius;
 @property (nonatomic, copy) NSString * _Nullable type;
+@end
+
+
+SWIFT_CLASS("_TtC17WoosmapGeofencing13VenueBeaconDB")
+@interface VenueBeaconDB : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface VenueBeaconDB (SWIFT_EXTENSION(WoosmapGeofencing))
+@property (nonatomic, copy) NSString * _Nullable beaconID;
+@property (nonatomic, copy) NSDate * _Nullable date;
+@property (nonatomic) double distance;
+@property (nonatomic, copy) NSString * _Nullable identifier;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic, copy) NSString * _Nullable major;
+@property (nonatomic, copy) NSString * _Nullable minor;
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable properties;
+@property (nonatomic, copy) NSString * _Nullable venue_id;
 @end
 
 
