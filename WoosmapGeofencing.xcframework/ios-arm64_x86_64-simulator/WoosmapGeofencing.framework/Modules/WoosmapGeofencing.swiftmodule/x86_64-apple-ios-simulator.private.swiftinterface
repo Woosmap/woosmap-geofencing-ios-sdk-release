@@ -58,7 +58,13 @@ public protocol LocationServiceDelegate : AnyObject {
 }
 public protocol SearchAPIDelegate : AnyObject {
   func searchAPIResponse(poi: WoosmapGeofencing.POI)
+  @available(*, deprecated, renamed: "searchAPIError(error:)")
   func serachAPIError(error: Swift.String)
+  func searchAPIError(error: Swift.String)
+}
+extension WoosmapGeofencing.SearchAPIDelegate {
+  public func serachAPIError(error: Swift.String)
+  public func searchAPIError(error: Swift.String)
 }
 public protocol DistanceAPIDelegate : AnyObject {
   func distanceAPIResponse(distance: [WoosmapGeofencing.Distance])

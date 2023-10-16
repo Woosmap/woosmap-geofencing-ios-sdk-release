@@ -14,15 +14,15 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		0oY67msk7euROIJMCqT2iI3YMRU=
+		W/HdcVVvdlkenKoitgWAyijRaLQ=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		kGwRL+7YWAF86HmN0FQ/Xw1Pz/c=
+		Wu3zPRLBtuf72htpxELNUZLumtw=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		q0jwt2uS4kAQ7ORvoTn+KuA9c6U=
+		Zgx0KeU4xcc1GWVNI4zwwOl5NEQ=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		q0jwt2uS4kAQ7ORvoTn+KuA9c6U=
+		Zgx0KeU4xcc1GWVNI4zwwOl5NEQ=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Vx+IPVcoLgpmTlV5grpB5iaq1w8=
+		/qH6A0ioewDtvKlV9ja7Mrx0fyY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,21 +82,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KKsMrth66E4AN/C0ynoHPvdmwCgSSiFhibjo0cGalOo=
+			lWzpGGgwT2QY3v53l1imRlOwz+7bfGm2ZMfe85su5Dw=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9pIDweRBnMnIjSIe9TdDe4HC5U4uc4bJWkCIwa+IE2Y=
+			Kw8IhYeVmWCGsEkxBT4BKLstSvNFex/ZTTuDnMRwnYI=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Bc/NZs40HmvuPKXyDidWRSWOAJnU95Kp7sbTG15ZGo=
+			Ifrnc+xNfjjSQIWmhoR0l3Sllm/ytkv31EjXwHTJlSI=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -110,14 +110,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Bc/NZs40HmvuPKXyDidWRSWOAJnU95Kp7sbTG15ZGo=
+			Ifrnc+xNfjjSQIWmhoR0l3Sllm/ytkv31EjXwHTJlSI=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SNrXoOl9OjqzO+W83++a+eGGDd6nvB517bpaK5rJW6Y=
+			Q3ru/Nd0AL8imjydndFdpdM9IiehxYHYnOrWJIaxj8A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
