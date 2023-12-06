@@ -1,3 +1,6 @@
+## 4.2.4
+- Enhancement: Release all resources from device once `stopTracking` is called.
+
 ## 4.2.3
 - Bug- unable to restore last saved locations
 
