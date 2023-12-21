@@ -1,3 +1,6 @@
+## 4.2.5
+- Bug: Remove `fatalError` log from source
+
 ## 4.2.4
 - Enhancement: Release all resources from device once `stopTracking` is called.
 
