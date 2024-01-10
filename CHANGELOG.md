@@ -1,3 +1,6 @@
+## 4.2.6
+- Bug: Handled core database concurrency
+
 ## 4.2.5
 - Bug: Remove `fatalError` log from source
 
