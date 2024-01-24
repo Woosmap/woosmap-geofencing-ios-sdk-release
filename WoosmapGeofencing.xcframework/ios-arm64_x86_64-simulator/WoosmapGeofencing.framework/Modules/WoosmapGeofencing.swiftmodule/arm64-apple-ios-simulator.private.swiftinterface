@@ -55,6 +55,10 @@ import os
 public protocol LocationServiceDelegate : AnyObject {
   func tracingLocation(location: WoosmapGeofencing.Location)
   func tracingLocationDidFailWithError(error: any Swift.Error)
+  func sdkErrorOccured(err: any Swift.Error)
+}
+extension WoosmapGeofencing.LocationServiceDelegate {
+  public func sdkErrorOccured(err: any Swift.Error)
 }
 public protocol SearchAPIDelegate : AnyObject {
   func searchAPIResponse(poi: WoosmapGeofencing.POI)
@@ -548,14 +552,11 @@ extension Swift.ArraySlice {
 public typealias Draft6Validator = WoosmapGeofencing.Draft7Validator
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class WoosmapGeofenceManager : ObjectiveC.NSObject {
   public var locationService: (any WoosmapGeofencing.LocationService)!
-  public var sphericalMercator: WoosmapGeofencing.SphericalMercator!
-  public var visitPoint: WoosmapGeofencing.LoadedVisit!
   @objc public static let shared: WoosmapGeofencing.WoosmapGeofenceManager
   public var logLevel: WoosmapGeofencing.WosmapLogEvent {
     get
     set
   }
-  @objc public func getDatabaseFileURL() -> Foundation.URL?
   @objc public func getLocationService() -> WoosmapGeofencing.LocationServiceImpl
   public func getSphericalMercator() -> WoosmapGeofencing.SphericalMercator
   public func getVisitPoint() -> WoosmapGeofencing.LoadedVisit
@@ -563,7 +564,6 @@ public typealias Draft6Validator = WoosmapGeofencing.Draft7Validator
   @objc public func setTrackingEnable(enable: Swift.Bool)
   @objc public func getTrackingState() -> Swift.Bool
   @objc public func setWoosmapAPIKey(key: Swift.String)
-  @objc public func setGMPAPIKey(key: Swift.String)
   @objc public func setSearchWoosmapAPI(api: Swift.String)
   @objc public func setDistanceWoosmapAPI(api: Swift.String)
   @objc @available(*, deprecated, message: "Call distance matrix api with DistanceProvider as woosmapTraffic")
@@ -584,8 +584,6 @@ public typealias Draft6Validator = WoosmapGeofencing.Draft7Validator
   @objc public func getSearchAPIRequestEnable() -> Swift.Bool
   @objc public func setSearchAPICreationRegionEnable(enable: Swift.Bool)
   @objc public func getSearchAPICreationRegionEnable() -> Swift.Bool
-  @objc public func setSearchAPILastRequestTimeStamp(time: Swift.Double)
-  @objc public func getSearchAPILastRequestTimeStamp() -> Swift.Double
   @objc public func setDistanceAPIRequestEnable(enable: Swift.Bool)
   @objc public func getDistanceAPIRequestEnable() -> Swift.Bool
   @objc public func setSearchAPIFilter(distance: Swift.Double, time: Swift.Int)
@@ -597,10 +595,8 @@ public typealias Draft6Validator = WoosmapGeofencing.Draft7Validator
   @objc public func setCreationOfZOIEnable(enable: Swift.Bool)
   @objc public func setClassification(enable: Swift.Bool)
   @objc public func setRadiusDetectionClassifiedZOI(radius: Swift.Double)
-  @objc public func startMonitoringInForeGround()
   @objc public func startMonitoringInBackground()
   @objc public func didBecomeActive()
-  @objc public func trackingChanged(tracking: Swift.Bool)
   @objc public func setModeHighfrequencyLocation(enable: Swift.Bool)
   @objc public func getModeHighfrequencyLocation() -> Swift.Bool
   @objc public func refreshLocation(allTime: Swift.Bool)

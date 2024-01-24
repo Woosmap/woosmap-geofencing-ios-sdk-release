@@ -634,7 +634,6 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing7VisitDB")
 @property (nonatomic, copy) NSString * _Nullable visitId;
 @end
 
-@class NSURL;
 
 /// Woosmap Geofencing SDK
 /// The Woosmap Geofencing SDK allows you to monitor Geofences, track your user’s location and connect with the Woosmap Search and Distance APIs.
@@ -651,11 +650,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 /// Initialize of WoosmapGeofencing
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Gets the current database file URL.
-///
-/// returns:
-/// The file URL.
-- (NSURL * _Nullable)getDatabaseFileURL SWIFT_WARN_UNUSED_RESULT;
 /// Location service Connector
 /// Usage Example:
 /// \code
@@ -697,14 +691,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 /// \endcode\param key API key
 ///
 - (void)setWoosmapAPIKeyWithKey:(NSString * _Nonnull)key;
-/// Configure Google map key with SDK
-/// Usage Example:
-/// \code
-/// WoosmapGeofenceManager.shared.setGMPAPIKey(key: "<custom GMS Key>")
-///
-/// \endcode\param key Google Map key from google api console
-///
-- (void)setGMPAPIKeyWithKey:(NSString * _Nonnull)key;
 /// Custom endpoint for Woosmap Search API
 /// Usage Example:
 /// \code
@@ -805,23 +791,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 /// returns:
 /// True/False
 - (BOOL)getSearchAPICreationRegionEnable SWIFT_WARN_UNUSED_RESULT;
-/// Search API Last Request Time Stamp
-/// Usage Example:
-/// \code
-/// WoosmapGeofenceManager.shared.setSearchAPILastRequestTimeStamp(time:now())
-///
-/// \endcode\param time Capture last search api get caled from SDK
-///
-- (void)setSearchAPILastRequestTimeStampWithTime:(double)time;
-/// Fetch Search API Last Request Time Stamp
-/// Usage Example:
-/// \code
-/// let  lastTimeStamp = WoosmapGeofenceManager.shared.getSearchAPILastRequestTimeStamp()
-///
-/// \endcode
-/// returns:
-/// Capture last search api get caled from SDK
-- (double)getSearchAPILastRequestTimeStamp SWIFT_WARN_UNUSED_RESULT;
 /// Switch Distance API Request Enable
 /// Usage Example:
 /// \code
@@ -915,13 +884,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 /// \endcode\param radius Radius in meter
 ///
 - (void)setRadiusDetectionClassifiedZOIWithRadius:(double)radius;
-/// Enable location monitoring in Foreground
-/// Usage Example:
-/// \code
-///  WoosmapGeofenceManager.shared.startMonitoringInForeGround()
-///
-/// \endcode
-- (void)startMonitoringInForeGround;
 /// Call this method from the DidFinishLaunchWithOptions method of your App Delegate
 /// Usage Example:
 /// \code
@@ -936,14 +898,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 ///
 /// \endcode
 - (void)didBecomeActive;
-/// Switch to change tracking mode
-/// Usage Example:
-/// \code
-///  WoosmapGeofenceManager.shared.trackingChanged(tracking: true)
-///
-/// \endcode\param tracking True / False
-///
-- (void)trackingChangedWithTracking:(BOOL)tracking;
 /// Configure high frequency mode with location service
 /// Usage Example:
 /// \code
