@@ -1,3 +1,7 @@
+## 4.3.0
+- Enhancement: Enhance SDK with proper Error handling in code
+- Enhancement: Fatal error raise with Event (`sdkErrorOccured`)
+
 ## 4.2.6
 - Bug: Handled core database concurrency
 
