@@ -1,0 +1,1562 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WoosmapGeofencing
+import Accelerate
+import AdSupport
+import CoreData
+import CoreFoundation
+import CoreLocation
+import Foundation
+import Network
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+@_hasMissingDesignatedInitializers public class POI {
+  public var jsonData: Foundation.Data?
+  public var city: Swift.String?
+  public var idstore: Swift.String?
+  public var name: Swift.String?
+  public var date: Foundation.Date?
+  public var distance: Swift.Double
+  public var duration: Swift.String?
+  public var latitude: Swift.Double
+  public var locationId: Swift.String?
+  public var longitude: Swift.Double
+  public var zipCode: Swift.String?
+  public var radius: Swift.Double
+  public var address: Swift.String?
+  public var openNow: Swift.Bool
+  public var countryCode: Swift.String?
+  public var tags: Swift.String?
+  public var types: Swift.String?
+  public var contact: Swift.String?
+  convenience public init(locationId: Swift.String? = nil, city: Swift.String? = nil, zipCode: Swift.String? = nil, distance: Swift.Double? = nil, latitude: Swift.Double? = nil, longitude: Swift.Double? = nil, dateCaptured: Foundation.Date? = nil, radius: Swift.Double? = nil, address: Swift.String? = nil, tags: Swift.String? = nil, types: Swift.String? = nil, countryCode: Swift.String? = nil, contact: Swift.String? = nil)
+  public var user_properties: [Swift.String : Any] {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class POIs {
+  public class func addFromResponseJson(searchAPIResponse: Foundation.Data, locationId: Swift.String) -> [WoosmapGeofencing.POI]
+  public class func addTest(poi: WoosmapGeofencing.POI)
+  public class func getAll() -> [WoosmapGeofencing.POI]
+  public class func getPOIbyLocationID(locationId: Swift.String) -> WoosmapGeofencing.POI?
+  public class func getLastPOIsFromLocationID(locationId: Swift.String) -> [WoosmapGeofencing.POI]
+  public class func getPOIbyIdStore(idstore: Swift.String) -> WoosmapGeofencing.POI?
+  public class func deleteAll()
+  @objc deinit
+}
+public protocol LocationServiceDelegate : AnyObject {
+  func tracingLocation(location: WoosmapGeofencing.Location)
+  func tracingLocationDidFailWithError(error: any Swift.Error)
+  func sdkErrorOccured(err: any Swift.Error)
+}
+extension WoosmapGeofencing.LocationServiceDelegate {
+  public func sdkErrorOccured(err: any Swift.Error)
+}
+public protocol SearchAPIDelegate : AnyObject {
+  func searchAPIResponse(poi: WoosmapGeofencing.POI)
+  @available(*, deprecated, renamed: "searchAPIError(error:)")
+  func serachAPIError(error: Swift.String)
+  func searchAPIError(error: Swift.String)
+}
+extension WoosmapGeofencing.SearchAPIDelegate {
+  public func serachAPIError(error: Swift.String)
+  public func searchAPIError(error: Swift.String)
+}
+public protocol DistanceAPIDelegate : AnyObject {
+  func distanceAPIResponse(distance: [WoosmapGeofencing.Distance])
+  func distanceAPIError(error: Swift.String)
+}
+public protocol RegionsServiceDelegate : AnyObject {
+  func updateRegions(regions: Swift.Set<CoreLocation.CLRegion>)
+  func didEnterPOIRegion(POIregion: WoosmapGeofencing.Region)
+  func didExitPOIRegion(POIregion: WoosmapGeofencing.Region)
+  func workZOIEnter(classifiedRegion: WoosmapGeofencing.Region)
+  func homeZOIEnter(classifiedRegion: WoosmapGeofencing.Region)
+}
+public protocol VisitServiceDelegate : AnyObject {
+  func processVisit(visit: WoosmapGeofencing.Visit)
+}
+public protocol LocationManagerProtocol {
+  var desiredAccuracy: CoreLocation.CLLocationAccuracy { get set }
+  var allowsBackgroundLocationUpdates: Swift.Bool { get set }
+  var distanceFilter: CoreLocation.CLLocationDistance { get set }
+  var pausesLocationUpdatesAutomatically: Swift.Bool { get set }
+  var delegate: (any CoreLocation.CLLocationManagerDelegate)? { get set }
+  var monitoredRegions: Swift.Set<CoreLocation.CLRegion> { get }
+  func requestAlwaysAuthorization()
+  func startUpdatingLocation()
+  func stopUpdatingLocation()
+  func startMonitoringSignificantLocationChanges()
+  func stopMonitoringSignificantLocationChanges()
+  func stopMonitoring(for: CoreLocation.CLRegion)
+  func startMonitoring(for: CoreLocation.CLRegion)
+  func startMonitoringVisits()
+}
+extension CoreLocation.CLLocationManager : WoosmapGeofencing.LocationManagerProtocol {
+}
+extension Foundation.Date {
+  public func seconds(from date: Foundation.Date) -> Swift.Int
+  public func stringFromDate() -> Swift.String
+  public func stringFromISO8601Date() -> Swift.String
+}
+public class Draft4Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+public struct UnsafeMutableMemory<Element> {
+  public var pointer: Swift.UnsafeMutablePointer<Element>
+  public var stride: Swift.Int
+  public var count: Swift.Int
+  public init(pointer: Swift.UnsafeMutablePointer<Element>, stride: Swift.Int = 1, count: Swift.Int)
+  public func makeIterator() -> WoosmapGeofencing.UnsafeMutableMemoryIterator<Element>
+}
+public struct UnsafeMutableMemoryIterator<Element> : Swift.IteratorProtocol {
+  public init(_ base: WoosmapGeofencing.UnsafeMutableMemory<Element>)
+  public mutating func next() -> Element?
+}
+@objc @_inheritsConvenienceInitializers public class LocationServiceImpl : WoosmapGeofencing.LocationServiceCoreImpl {
+  weak public var airshipEventsDelegate: (any WoosmapGeofencing.AirshipEventsDelegate)?
+  weak public var marketingCloudEventsDelegate: (any WoosmapGeofencing.MarketingCloudEventsDelegate)?
+  override public func handleRefreshSystemGeofence(addCustomGeofence: Swift.Bool = false, locationId: Swift.String)
+  override public func searchAPIRequest(location: WoosmapGeofencing.Location)
+  override public func removeOldPOIRegions(newPOIS: [WoosmapGeofencing.POI])
+  override public func checkIfUserIsInRegion(region: CoreLocation.CLCircularRegion)
+  override public func addRegionLogTransition(region: CoreLocation.CLRegion, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool)
+  override public func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: Swift.Int, type: Swift.String) -> (isCreate: Swift.Bool, identifier: Swift.String)
+  override public func updateLocation(locations: [CoreLocation.CLLocation])
+  override public func handleZOIClassifiedEvent(region: WoosmapGeofencing.Region)
+  override public func handleVisitEvent(visit: WoosmapGeofencing.Visit)
+  override public func handlePOIEvent(poi: WoosmapGeofencing.POI)
+  required public init(locationManger: (any WoosmapGeofencing.LocationManagerProtocol)?)
+  @objc deinit
+}
+public protocol MarketingCloudEventsDelegate : AnyObject {
+  func poiEvent(POIEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func regionEnterEvent(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func regionExitEvent(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func visitEvent(visitEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func ZOIclassifiedEnter(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func ZOIclassifiedExit(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+}
+public protocol AirshipEventsDelegate : AnyObject {
+  func poiEvent(POIEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func regionEnterEvent(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func regionExitEvent(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func visitEvent(visitEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func ZOIclassifiedEnter(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+  func ZOIclassifiedExit(regionEvent: Swift.Dictionary<Swift.String, Any>, eventName: Swift.String)
+}
+public struct DistanceAPIData : Swift.Codable {
+  public let rows: [WoosmapGeofencing.RowDistance]?
+  public let status: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RowDistance : Swift.Codable {
+  public let elements: [WoosmapGeofencing.ElementDistance]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ElementDistance : Swift.Codable {
+  public let status: Swift.String?
+  public let duration_with_traffic: WoosmapGeofencing.DistanceInfo?
+  public let duration: WoosmapGeofencing.DistanceInfo?
+  public let distance: WoosmapGeofencing.DistanceInfo?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DistanceInfo : Swift.Codable {
+  public let value: Swift.Int?
+  public let text: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ConfigModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DistanceConfig : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SearchAPIConfig : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct IndoorSearchAPIConfig : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SearchAPIParameters : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SFMCConfig : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct JSONPointer {
+  public var path: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class LogSearchAPI {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LogSearchAPIs {
+  public class func add(log: WoosmapGeofencing.LogSearchAPI)
+  @objc deinit
+}
+public class Draft7Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LoadedVisit : Swift.Equatable {
+  public var startTime: Foundation.Date?
+  public var endTime: Foundation.Date?
+  public init()
+  public init(x: Swift.Double, y: Swift.Double, accuracy: Swift.Double, id: Swift.String, startTime: Foundation.Date, endTime: Foundation.Date)
+  public static func == (lhs: WoosmapGeofencing.LoadedVisit, rhs: WoosmapGeofencing.LoadedVisit) -> Swift.Bool
+  public func getX() -> Swift.Double
+  public func getY() -> Swift.Double
+  public func getAccuray() -> Swift.Double
+  public func getId() -> Swift.String
+  @objc deinit
+}
+public class SphericalMercator {
+  public init()
+  public func y2lat(aY: Swift.Double) -> Swift.Double
+  public func x2lon(aX: Swift.Double) -> Swift.Double
+  public func lat2y(aLat: Swift.Double) -> Swift.Double
+  public func lon2x(aLong: Swift.Double) -> Swift.Double
+  @objc deinit
+}
+public class Draft202012Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Visit {
+  @objc dynamic public var accuracy: Swift.Double
+  @objc dynamic public var arrivalDate: Foundation.Date?
+  @objc dynamic public var date: Foundation.Date?
+  @objc dynamic public var departureDate: Foundation.Date?
+  @objc dynamic public var latitude: Swift.Double
+  @objc dynamic public var longitude: Swift.Double
+  @objc dynamic public var visitId: Swift.String?
+  convenience public init(visitId: Swift.String, arrivalDate: Foundation.Date? = nil, departureDate: Foundation.Date? = nil, latitude: Swift.Double, longitude: Swift.Double, dateCaptured: Foundation.Date? = nil, accuracy: Swift.Double)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Visits {
+  public class func add(visit: CoreLocation.CLVisit) -> WoosmapGeofencing.Visit
+  public class func addTest(visit: WoosmapGeofencing.Visit)
+  public class func getAll() -> [WoosmapGeofencing.Visit]
+  public class func getVisitFromUUID(id: Swift.String) -> WoosmapGeofencing.Visit?
+  public class func deleteAll()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class IndoorBeacon {
+  @objc dynamic public var date: Foundation.Date
+  @objc dynamic public var identifier: Swift.String
+  @objc dynamic public var BeaconID: Swift.String
+  @objc dynamic public var Major: Swift.String
+  @objc dynamic public var Minor: Swift.String
+  @objc dynamic public var latitude: Swift.Double
+  @objc dynamic public var longitude: Swift.Double
+  dynamic public var properties: [Swift.String : Swift.String]
+  @objc dynamic public var venue_id: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class IndoorBeacons {
+  public class func getAll(venue: Swift.String? = nil) -> [WoosmapGeofencing.IndoorBeacon]
+  public class func deleteAll(venue: Swift.String? = nil)
+  public class func clearExplicitCache()
+  @objc deinit
+}
+extension Foundation.Data {
+  public func hexEncodedString() -> Swift.String
+  public static func dataWithHexString(hex: Swift.String) -> Foundation.Data
+}
+public enum EigenDecompositionError : Swift.Error {
+  case matrixNotSquare
+  case matrixNotDecomposable
+  public static func == (a: WoosmapGeofencing.EigenDecompositionError, b: WoosmapGeofencing.EigenDecompositionError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc public class LocationServiceCoreImpl : ObjectiveC.NSObject, WoosmapGeofencing.LocationService, CoreLocation.CLLocationManagerDelegate {
+  public var locationManager: (any WoosmapGeofencing.LocationManagerProtocol)?
+  public var currentLocation: CoreLocation.CLLocation?
+  public var lastSearchLocation: WoosmapGeofencing.LastSearhLocation
+  public var lastRefreshRegionPOILocationId: Swift.String
+  public var lastRegionUpdate: Foundation.Date?
+  weak public var locationServiceDelegate: (any WoosmapGeofencing.LocationServiceDelegate)?
+  weak public var searchAPIDataDelegate: (any WoosmapGeofencing.SearchAPIDelegate)?
+  weak public var distanceAPIDataDelegate: (any WoosmapGeofencing.DistanceAPIDelegate)?
+  weak public var regionDelegate: (any WoosmapGeofencing.RegionsServiceDelegate)?
+  weak public var visitDelegate: (any WoosmapGeofencing.VisitServiceDelegate)?
+  required public init(locationManger: (any WoosmapGeofencing.LocationManagerProtocol)?)
+  public func initLocationManager()
+  public func startUpdatingLocation()
+  public func stopUpdatingLocation()
+  public func startMonitoringSignificantLocationChanges()
+  public func stopMonitoringSignificantLocationChanges()
+  public func stopMonitoringCurrentRegions()
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didVisit visit: CoreLocation.CLVisit)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didExitRegion region: CoreLocation.CLRegion)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didEnterRegion region: CoreLocation.CLRegion)
+  open func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: CoreLocation.CLLocationDistance) -> (isCreate: Swift.Bool, identifier: Swift.String)
+  public func removeRegion(identifier: Swift.String)
+  open func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: Swift.Int, type: Swift.String) -> (isCreate: Swift.Bool, identifier: Swift.String)
+  public func removeRegion(center: CoreLocation.CLLocationCoordinate2D)
+  public func removeRegions(type: WoosmapGeofencing.RegionType)
+  open func checkIfUserIsInRegion(region: CoreLocation.CLCircularRegion)
+  @objc public func locationManagerDidPauseLocationUpdates(_ manager: CoreLocation.CLLocationManager)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didStartMonitoringFor region: CoreLocation.CLRegion)
+  open func updateLocation(locations: [CoreLocation.CLLocation])
+  open func searchAPIRequest(location: WoosmapGeofencing.Location)
+  public func sendSearchAPIRequest(location: WoosmapGeofencing.Location)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, monitoringDidFailFor region: CoreLocation.CLRegion?, withError error: any Swift.Error)
+  open func removeOldPOIRegions(newPOIS: [WoosmapGeofencing.POI])
+  public func calculateDistance(locationOrigin: CoreLocation.CLLocation, coordinatesDest: [(Swift.Double, Swift.Double)], locationId: Swift.String)
+  public func calculateDistance(locationOrigin: CoreLocation.CLLocation, coordinatesDest: [(Swift.Double, Swift.Double)], distanceWithTraffic: Swift.Bool = distanceWithTraffic, distanceMode: WoosmapGeofencing.DistanceMode = distanceMode, distanceUnits: WoosmapGeofencing.DistanceUnits = distanceUnits, distanceLanguage: Swift.String = distanceLanguage)
+  public func tracingLocationDidFailWithError(error: any Swift.Error)
+  public func getRegionType(identifier: Swift.String) -> WoosmapGeofencing.RegionType
+  public func checkIfPositionIsInsideGeofencingRegions(location: CoreLocation.CLLocation)
+  open func addRegionLogTransition(region: CoreLocation.CLRegion, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool)
+  public func setDataFromPOI(poi: WoosmapGeofencing.POI, propertyDictionary: inout Swift.Dictionary<Swift.String, Any>)
+  #if compiler(>=5.3) && $Sendable
+  public func woosApiCall(with url: Foundation.URL, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  open func handleRefreshSystemGeofence(addCustomGeofence: Swift.Bool = false, locationId: Swift.String)
+  open func handleVisitEvent(visit: WoosmapGeofencing.Visit)
+  open func handlePOIEvent(poi: WoosmapGeofencing.POI)
+  open func handleZOIClassifiedEvent(region: WoosmapGeofencing.Region)
+  @objc deinit
+}
+public struct SearchAPIData : Swift.Codable {
+  public let type: Swift.String?
+  public let features: [WoosmapGeofencing.Features]?
+  public let pagination: WoosmapGeofencing.Pagination?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Address : Swift.Codable {
+  public let lines: Swift.String?
+  public let country_code: Swift.String?
+  public let city: Swift.String?
+  public let zipcode: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Features : Swift.Codable {
+  public let type: Swift.String?
+  public let properties: WoosmapGeofencing.Properties?
+  public let geometry: WoosmapGeofencing.Geometry?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Geometry : Swift.Codable {
+  public let type: Swift.String?
+  public let coordinates: [Swift.Double]?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Pagination : Swift.Codable {
+  public let page: Swift.Int?
+  public let pageCount: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Properties : Swift.Codable {
+  public let store_id: Swift.String?
+  public let name: Swift.String?
+  public let contact: Swift.String?
+  public let address: WoosmapGeofencing.Address?
+  public let user_properties: WoosmapGeofencing.User_properties?
+  public let tags: [Swift.String]?
+  public let types: [Swift.String]?
+  public let distance: Swift.Double?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct User_properties : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class Region {
+  dynamic public var date: Foundation.Date
+  dynamic public var didEnter: Swift.Bool
+  dynamic public var identifier: Swift.String
+  dynamic public var latitude: Swift.Double
+  dynamic public var longitude: Swift.Double
+  dynamic public var radius: Swift.Double
+  dynamic public var fromPositionDetection: Swift.Bool
+  dynamic public var distance: Swift.Int
+  dynamic public var distanceText: Swift.String
+  dynamic public var duration: Swift.Int
+  dynamic public var durationText: Swift.String
+  dynamic public var type: Swift.String
+  dynamic public var origin: Swift.String
+  dynamic public var eventName: Swift.String
+  dynamic public var spentTime: Swift.Double
+  convenience public init(latitude: Swift.Double, longitude: Swift.Double, radius: Swift.Double, dateCaptured: Foundation.Date, identifier: Swift.String, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool, eventName: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DurationLog {
+  dynamic public var identifier: Swift.String
+  dynamic public var entryTime: Foundation.Date
+  dynamic public var exitTime: Foundation.Date?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DurationLogs {
+  public static func addEntryLog(identifier: Swift.String)
+  public static func addExitLog(identifier: Swift.String) -> Foundation.TimeInterval
+  public static func getAll() -> [WoosmapGeofencing.DurationLog]
+  public static func deleteAll()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Regions {
+  public static func add(POIregion: CoreLocation.CLRegion, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool) -> WoosmapGeofencing.Region
+  public static func add(classifiedRegion: WoosmapGeofencing.Region)
+  public static func getRegionFromId(id: Swift.String) -> WoosmapGeofencing.Region?
+  public static func getAll() -> [WoosmapGeofencing.Region]
+  public static func deleteAll()
+  @objc deinit
+}
+public class Draft201909Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+public enum Type : Swift.String {
+  case object
+  case array
+  case string
+  case integer
+  case number
+  case boolean
+  case null
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Schema {
+  public let title: Swift.String?
+  public let description: Swift.String?
+  public let type: [WoosmapGeofencing.`Type`]?
+  public init(_ schema: [Swift.String : Any])
+  public func validate(_ data: Any) throws -> WoosmapGeofencing.ValidationResult
+  public func validate(_ data: Any) throws -> Swift.AnySequence<WoosmapGeofencing.ValidationError>
+}
+public func validateSchema(_ value: Any, schema: [Swift.String : Any]) throws -> WoosmapGeofencing.ValidationResult
+public func validate(_ value: Any, schema: Swift.Bool) throws -> WoosmapGeofencing.ValidationResult
+public enum ConfigurationProfile : Swift.String {
+  case liveTracking
+  case passiveTracking
+  case visitsTracking
+  case beaconTracking
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public var SFMCCredentials: [Swift.String : Swift.String]
+public var SFMCAccesToken: Swift.String
+public var optimizeDistanceRequest: Swift.Bool
+public var indoorVenueAPI: Swift.String
+public var indoorSearchAPI: Swift.String
+public var indoorVenueAPIRefreshDelayDay: Swift.Int
+public var indoorSearchAPIEnable: Swift.Bool
+public enum RegionType : Swift.String {
+  case position
+  case custom
+  case poi
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class LastSearhLocation {
+  public var date: Foundation.Date
+  public var latitude: Swift.Double
+  public var locationId: Swift.String
+  public var longitude: Swift.Double
+  @objc deinit
+}
+public protocol LocationService : ObjectiveC.NSObject {
+  var locationManager: (any WoosmapGeofencing.LocationManagerProtocol)? { get set }
+  var locationServiceDelegate: (any WoosmapGeofencing.LocationServiceDelegate)? { get set }
+  var searchAPIDataDelegate: (any WoosmapGeofencing.SearchAPIDelegate)? { get set }
+  var distanceAPIDataDelegate: (any WoosmapGeofencing.DistanceAPIDelegate)? { get set }
+  var regionDelegate: (any WoosmapGeofencing.RegionsServiceDelegate)? { get set }
+  var visitDelegate: (any WoosmapGeofencing.VisitServiceDelegate)? { get set }
+  init(locationManger: (any WoosmapGeofencing.LocationManagerProtocol)?)
+  func initLocationManager()
+  func startUpdatingLocation()
+  func stopUpdatingLocation()
+  func startMonitoringSignificantLocationChanges()
+  func stopMonitoringSignificantLocationChanges()
+  func stopMonitoringCurrentRegions()
+  func getRegionType(identifier: Swift.String) -> WoosmapGeofencing.RegionType
+  func searchAPIRequest(location: WoosmapGeofencing.Location)
+  func sendSearchAPIRequest(location: WoosmapGeofencing.Location)
+  func handleRefreshSystemGeofence(addCustomGeofence: Swift.Bool, locationId: Swift.String)
+  func calculateDistance(locationOrigin: CoreLocation.CLLocation, coordinatesDest: [(Swift.Double, Swift.Double)], locationId: Swift.String)
+  func tracingLocationDidFailWithError(error: any Swift.Error)
+  func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: CoreLocation.CLLocationDistance) -> (isCreate: Swift.Bool, identifier: Swift.String)
+  func removeRegion(identifier: Swift.String)
+  func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: Swift.Int, type: Swift.String) -> (isCreate: Swift.Bool, identifier: Swift.String)
+  func removeRegion(center: CoreLocation.CLLocationCoordinate2D)
+  func removeRegions(type: WoosmapGeofencing.RegionType)
+  func checkIfUserIsInRegion(region: CoreLocation.CLCircularRegion)
+  func locationManager(_ manager: CoreLocation.CLLocationManager, monitoringDidFailFor region: CoreLocation.CLRegion?, withError error: any Swift.Error)
+  func locationManager(_ manager: CoreLocation.CLLocationManager, didVisit visit: CoreLocation.CLVisit)
+  func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
+  func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
+  func locationManager(_ manager: CoreLocation.CLLocationManager, didExitRegion region: CoreLocation.CLRegion)
+  func locationManager(_ manager: CoreLocation.CLLocationManager, didEnterRegion region: CoreLocation.CLRegion)
+  func locationManagerDidPauseLocationUpdates(_ manager: CoreLocation.CLLocationManager)
+  func locationManager(_ manager: CoreLocation.CLLocationManager, didStartMonitoringFor region: CoreLocation.CLRegion)
+  #if compiler(>=5.3) && $Sendable
+  func woosApiCall(with url: Foundation.URL, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+}
+extension WoosmapGeofencing.LocationService {
+  public func handleRefreshSystemGeofence(locationId: Swift.String)
+}
+extension Swift.ArraySlice {
+  public mutating func withUnsafeMutableMemory<Result>(_ action: (WoosmapGeofencing.UnsafeMutableMemory<Element>) throws -> Result) rethrows -> Result
+}
+public typealias Draft6Validator = WoosmapGeofencing.Draft7Validator
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class WoosmapGeofenceManager : ObjectiveC.NSObject {
+  public var locationService: (any WoosmapGeofencing.LocationService)!
+  @objc public static let shared: WoosmapGeofencing.WoosmapGeofenceManager
+  public var logLevel: WoosmapGeofencing.WosmapLogEvent {
+    get
+    set
+  }
+  @objc public func getLocationService() -> WoosmapGeofencing.LocationServiceImpl
+  public func getSphericalMercator() -> WoosmapGeofencing.SphericalMercator
+  public func getVisitPoint() -> WoosmapGeofencing.LoadedVisit
+  @objc public func initServices()
+  @objc public func setTrackingEnable(enable: Swift.Bool)
+  @objc public func getTrackingState() -> Swift.Bool
+  @objc public func setWoosmapAPIKey(key: Swift.String)
+  @objc public func setSearchWoosmapAPI(api: Swift.String)
+  @objc public func setDistanceWoosmapAPI(api: Swift.String)
+  @objc @available(*, deprecated, message: "Call distance matrix api with DistanceProvider as woosmapTraffic")
+  public func setTrafficDistanceWoosmapAPI(api: Swift.String)
+  @available(*, deprecated, message: "This feature was disabled; use the setDistanceWithTraffic")
+  public func setDistanceProvider(provider: WoosmapGeofencing.DistanceProvider)
+  @objc public func setDistanceWithTraffic(trafficMode: Swift.Bool)
+  public func setDistanceAPIMode(mode: WoosmapGeofencing.DistanceMode)
+  @available(*, deprecated, message: "This feature was disabled; use the DistanceMethod")
+  public func setTrafficDistanceAPIRouting(routing: WoosmapGeofencing.TrafficDistanceRouting)
+  public func setDistanceMethod(method: WoosmapGeofencing.DistanceMethod)
+  public func setDistanceAPIUnits(units: WoosmapGeofencing.DistanceUnits)
+  @objc public func setDistanceAPILanguage(language: Swift.String)
+  @objc public func setDistanceMaxAirDistanceFilter(distance: Swift.Int)
+  @objc public func setDistanceTimeFilter(time: Swift.Int)
+  @objc public func setCurrentPositionFilter(distance: Swift.Double, time: Swift.Int)
+  @objc public func setSearchAPIRequestEnable(enable: Swift.Bool)
+  @objc public func getSearchAPIRequestEnable() -> Swift.Bool
+  @objc public func setSearchAPICreationRegionEnable(enable: Swift.Bool)
+  @objc public func getSearchAPICreationRegionEnable() -> Swift.Bool
+  @objc public func setDistanceAPIRequestEnable(enable: Swift.Bool)
+  @objc public func getDistanceAPIRequestEnable() -> Swift.Bool
+  @objc public func setSearchAPIFilter(distance: Swift.Double, time: Swift.Int)
+  @objc public func setSearchAPIRefreshDelayDay(day: Swift.Int)
+  @objc public func getSearchAPIRefreshDelayDay() -> Swift.Int
+  @objc public func setVisitEnable(enable: Swift.Bool)
+  @objc public func getVisitEnable() -> Swift.Bool
+  @objc public func setAccuracyVisitFilter(accuracy: Swift.Double)
+  @objc public func setCreationOfZOIEnable(enable: Swift.Bool)
+  @objc public func setClassification(enable: Swift.Bool)
+  @objc public func setRadiusDetectionClassifiedZOI(radius: Swift.Double)
+  @objc public func startMonitoringInBackground()
+  @objc public func didBecomeActive()
+  @objc public func setModeHighfrequencyLocation(enable: Swift.Bool)
+  @objc public func getModeHighfrequencyLocation() -> Swift.Bool
+  @objc public func refreshLocation(allTime: Swift.Bool)
+  @objc public func setSearchAPIParameters(parameters: [Swift.String : Swift.String])
+  @objc public func setUserPropertiesFilter(properties: [Swift.String])
+  @objc public func setSFMCCredentials(credentials: [Swift.String : Swift.String])
+  @objc public func setPoiRadius(radius: Any)
+  @objc public var OptimizeDistanceRequest: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+extension WoosmapGeofencing.WoosmapGeofenceManager {
+  public func startTracking(configurationProfile: WoosmapGeofencing.ConfigurationProfile)
+  @objc dynamic public func stopTracking()
+  public func startCustomTracking(url: Swift.String) -> (status: Swift.Bool, errors: [Swift.String])
+  @objc dynamic public func setIndoorSearchAPIEnable(enable: Swift.Bool)
+  @objc dynamic public func getIndoorSearchAPIEnable() -> Swift.Bool
+  @objc dynamic public func refreshPOI()
+}
+@_hasMissingDesignatedInitializers public class Location {
+  public var date: Foundation.Date?
+  public var latitude: Swift.Double
+  public var locationDescription: Swift.String?
+  public var locationId: Swift.String?
+  public var longitude: Swift.Double
+  public init()
+  convenience public init(locationId: Swift.String, latitude: Swift.Double, longitude: Swift.Double, dateCaptured: Foundation.Date, descriptionToSave: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Locations {
+  public class func add(locations: [CoreLocation.CLLocation]) -> WoosmapGeofencing.Location
+  public class func addTest(location: WoosmapGeofencing.Location)
+  public class func getAll() -> [WoosmapGeofencing.Location]
+  public class func getLocationFromId(id: Swift.String) -> WoosmapGeofencing.Location?
+  public class func deleteAll()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class IndoorVenue {
+  @objc dynamic public var date: Foundation.Date
+  @objc dynamic public var identifier: Swift.String
+  @objc dynamic public var name: Swift.String
+  @objc dynamic public var latitude: Swift.Double
+  @objc dynamic public var longitude: Swift.Double
+  @objc dynamic public var distance: Swift.Double
+  @objc dynamic public var boundingBox: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class IndoorVenues {
+  public class func getVenueFromId(id: Swift.String) -> WoosmapGeofencing.IndoorVenue?
+  public class func getAll() -> [WoosmapGeofencing.IndoorVenue]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Distance {
+  public var distance: Swift.Int
+  public var distanceText: Swift.String?
+  public var duration: Swift.Int
+  public var durationText: Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Distances {
+  public class func addFromResponseJson(APIResponse: Foundation.Data, locationId: Swift.String, origin: CoreLocation.CLLocation, destination: [(Swift.Double, Swift.Double)], distanceMode: WoosmapGeofencing.DistanceMode = distanceMode, distanceUnits: WoosmapGeofencing.DistanceUnits = distanceUnits, distanceLanguage: Swift.String = distanceLanguage, distanceMethod: WoosmapGeofencing.DistanceMethod = distanceMethod) -> [WoosmapGeofencing.Distance]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RegionIsochrone {
+  @objc dynamic public var date: Foundation.Date?
+  @objc dynamic public var didEnter: Swift.Bool
+  @objc dynamic public var identifier: Swift.String?
+  @objc dynamic public var locationId: Swift.String?
+  @objc dynamic public var idStore: Swift.String?
+  @objc dynamic public var latitude: Swift.Double
+  @objc dynamic public var longitude: Swift.Double
+  @objc dynamic public var radius: Swift.Int
+  @objc dynamic public var fromPositionDetection: Swift.Bool
+  @objc dynamic public var distance: Swift.Int
+  @objc dynamic public var distanceText: Swift.String
+  @objc dynamic public var duration: Swift.Int
+  @objc dynamic public var durationText: Swift.String
+  @objc dynamic public var type: Swift.String
+  @objc dynamic public var expectedAverageSpeed: Swift.Double
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RegionIsochrones {
+  public class func add(regionIsochrone: WoosmapGeofencing.RegionIsochrone)
+  public class func updateRegion(id: Swift.String, didEnter: Swift.Bool, distanceInfo: WoosmapGeofencing.Distance) -> WoosmapGeofencing.RegionIsochrone
+  public class func getRegionFromId(id: Swift.String) -> WoosmapGeofencing.RegionIsochrone?
+  public class func removeRegionIsochrone(id: Swift.String)
+  public class func getAll() -> [WoosmapGeofencing.RegionIsochrone]
+  public class func deleteAll()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class LogIndoorAPI : ObjectiveC.NSObject {
+  @objc dynamic public var date: Foundation.Date?
+  @objc dynamic public var message: Swift.String?
+  dynamic public var eventStatus: [Swift.String : Swift.String]
+  dynamic public var log: [Swift.String : Swift.String]
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ValidationError : Swift.Encodable {
+  final public let description: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  final public let instanceLocation: WoosmapGeofencing.JSONPointer
+  final public let keywordLocation: WoosmapGeofencing.JSONPointer
+  @objc deinit
+}
+public enum ValidationResult : Swift.Encodable {
+  case valid
+  case invalid([WoosmapGeofencing.ValidationError])
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var valid: Swift.Bool {
+    get
+  }
+  public var errors: [WoosmapGeofencing.ValidationError]? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class ZOI {
+  public var accumulator: Swift.Double
+  public var age: Swift.Double
+  public var covariance_det: Swift.Double
+  public var duration: Swift.Int64
+  public var endTime: Foundation.Date?
+  public var idVisits: [Swift.String]
+  public var latMean: Swift.Double
+  public var lngMean: Swift.Double
+  public var period: Swift.String?
+  public var prior_probability: Swift.Double
+  public var startTime: Foundation.Date?
+  public var weekly_density: [Swift.Double]
+  public var wktPolygon: Swift.String?
+  public var x00Covariance_matrix_inverse: Swift.Double
+  public var x01Covariance_matrix_inverse: Swift.Double
+  public var x10Covariance_matrix_inverse: Swift.Double
+  public var x11Covariance_matrix_inverse: Swift.Double
+  public var zoiId: Swift.String?
+  public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ZOIs {
+  public class func createZOIFrom(zoi: [Swift.String : Any])
+  public class func saveZoisInDB(zois: [[Swift.String : Any]])
+  public class func createZOIFromVisit(visit: WoosmapGeofencing.Visit)
+  public class func createZOIFromLocation(visit: WoosmapGeofencing.Location)
+  public class func updateZOI(visits: [WoosmapGeofencing.Visit])
+  public class func getAll() -> [WoosmapGeofencing.ZOI]
+  public class func deleteAll()
+  public class func getWorkHomeZOI() -> [WoosmapGeofencing.ZOI]
+  @objc deinit
+}
+public var trackingEnable: Swift.Bool
+public var WoosmapAPIKey: Swift.String {
+  get
+  set
+}
+public var searchWoosmapAPI: Swift.String
+@available(*, deprecated, message: "This feature was disabled; use the distanceWithTraffic flag")
+public enum DistanceProvider : Swift.String {
+  case woosmapTraffic
+  case woosmapDistance
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public var distanceWithTraffic: Swift.Bool
+public enum DistanceMode : Swift.String {
+  case driving
+  case cycling
+  case walking
+  case truck
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public var distanceMode: WoosmapGeofencing.DistanceMode
+public var distanceWoosmapAPI: Swift.String
+@available(*, deprecated, message: "This feature was disabled; use the DistanceMethod")
+public enum TrafficDistanceRouting : Swift.String {
+  case fastest
+  case balanced
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DistanceMethod : Swift.String {
+  case time
+  case distance
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DistanceUnits : Swift.String {
+  case metric
+  case imperial
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public var distanceMethod: WoosmapGeofencing.DistanceMethod
+public var distanceUnits: WoosmapGeofencing.DistanceUnits
+public var distanceLanguage: Swift.String
+public var distanceMaxAirDistanceFilter: Swift.Int
+public var distanceTimeFilter: Swift.Int
+public var currentLocationDistanceFilter: Swift.Double
+public var currentLocationTimeFilter: Swift.Int
+public var modeHighfrequencyLocation: Swift.Bool
+public var searchAPIRequestEnable: Swift.Bool
+public var searchAPIDistanceFilter: Swift.Double
+public var searchAPITimeFilter: Swift.Int
+public var searchAPIRefreshDelayDay: Swift.Int
+public var searchAPICreationRegionEnable: Swift.Bool
+public var searchAPILastRequestTimeStamp: Swift.Double
+public var distanceAPIRequestEnable: Swift.Bool
+public var visitEnable: Swift.Bool
+public var accuracyVisitFilter: Swift.Double
+public var creationOfZOIEnable: Swift.Bool
+public var classificationEnable: Swift.Bool
+public var radiusDetectionClassifiedZOI: Swift.Double
+public var dataDurationDelay: Swift.Int
+public var outOfTimeDelay: Swift.Int
+public var GoogleStaticMapKey: Swift.String
+public let GoogleMapStaticAPIBaseURL: Swift.String
+public let GoogleMapStaticAPIOneMark: Swift.String
+public let GoogleMapStaticAPITwoMark: Swift.String
+public var searchAPIParameters: [Swift.String : Swift.String]
+public var userPropertiesFilter: [Swift.String]
+public var poiRadius: Any
+public enum WosmapLogEvent : Swift.Int {
+  case none
+  case error
+  case warn
+  case info
+  case debug
+  case trace
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+infix operator .+ : AdditionPrecedence
+infix operator .+= : AssignmentPrecedence
+infix operator .- : AdditionPrecedence
+infix operator .-= : AssignmentPrecedence
+infix operator .* : MultiplicationPrecedence
+infix operator .*= : AssignmentPrecedence
+infix operator ./ : MultiplicationPrecedence
+infix operator ./= : AssignmentPrecedence
+infix operator .% : MultiplicationPrecedence
+infix operator .%= : AssignmentPrecedence
+infix operator • : MultiplicationPrecedence
+postfix operator ′
+precedencegroup ExponentiationPrecedence {
+  associativity: right
+  higherThan: MultiplicationPrecedence
+}
+infix operator ** : ExponentiationPrecedence
+infix operator **= : AssignmentPrecedence
+infix operator .** : ExponentiationPrecedence
+infix operator .**= : AssignmentPrecedence
+public class DataCleaner {
+  public init()
+  public func cleanOldGeographicData()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class DistanceDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.DistanceDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.DistanceDB>
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var destinationLatitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var destinationLongitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distanceText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var duration: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var durationText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locationId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var originLatitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var originLongitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var routing: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var units: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class DurationLogDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.DurationLogDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.DurationLogDB>
+  @objc @NSManaged dynamic public var entryTime: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var exitTime: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var identifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class IndoorBeaconDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.IndoorBeaconDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.IndoorBeaconDB>
+  @objc @NSManaged dynamic public var beaconID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var identifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var major: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var minor: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var properties: [Swift.String : Swift.String]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var venue_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class IndoorVenueDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.IndoorVenueDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.IndoorVenueDB>
+  @objc @NSManaged dynamic public var boundingBox: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var identifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class LocationDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.LocationDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.LocationDB>
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locationDescription: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locationId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class LogIndoorAPIDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.LogIndoorAPIDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.LogIndoorAPIDB>
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var eventStatus: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var log: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var message: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class LogSearchAPIDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.LogSearchAPIDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.LogSearchAPIDB>
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distanceLimit: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distanceToFurthestMonitoredPOI: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distanceTraveled: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distanceTraveledLastRefreshPOIRegion: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastPOI_distance: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastSearchLocationLatitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastSearchLocationLongitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locationDescription: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var searchAPILastRequestTimeStampValue: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var searchAPIRequestEnable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sendSearchAPIRequest: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var woosmapAPIKey: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class POIDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.POIDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.POIDB>
+  @objc @NSManaged dynamic public var address: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var city: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var contact: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var countryCode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var duration: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var idstore: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var jsonData: Foundation.Data? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locationId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var openNow: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var radius: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tags: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var types: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var zipCode: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class RegionDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.RegionDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.RegionDB>
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var didEnter: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distanceText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var duration: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var durationText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var eventName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var fromPositionDetection: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var identifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var origin: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var radius: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var spentTime: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var type: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class RegionIsochroneDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.RegionIsochroneDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.RegionIsochroneDB>
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var didEnter: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distanceText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var duration: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var durationText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var expectedAverageSpeed: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var fromPositionDetection: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var identifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var idStore: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locationId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var radius: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var type: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class VenueBeaconDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.VenueBeaconDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.VenueBeaconDB>
+  @objc @NSManaged dynamic public var beaconID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var identifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var major: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var minor: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var properties: [Swift.String : Swift.String]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var venue_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class VisitDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.VisitDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.VisitDB>
+  @objc @NSManaged dynamic public var accuracy: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var arrivalDate: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var departureDate: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var visitId: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class ZOIDB : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WoosmapGeofencing.ZOIDB {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WoosmapGeofencing.ZOIDB>
+  @objc @NSManaged dynamic public var accumulator: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var age: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var covariance_det: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var duration: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var endTime: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var idVisits: [Swift.String]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latMean: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lngMean: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var period: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var prior_probability: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var startTime: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var weekly_density: [Swift.Double]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var wktPolygon: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var x00Covariance_matrix_inverse: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var x01Covariance_matrix_inverse: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var x10Covariance_matrix_inverse: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var x11Covariance_matrix_inverse: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var zoiId: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension WoosmapGeofencing.EigenDecompositionError : Swift.Equatable {}
+extension WoosmapGeofencing.EigenDecompositionError : Swift.Hashable {}
+extension WoosmapGeofencing.`Type` : Swift.Equatable {}
+extension WoosmapGeofencing.`Type` : Swift.Hashable {}
+extension WoosmapGeofencing.`Type` : Swift.RawRepresentable {}
+extension WoosmapGeofencing.ConfigurationProfile : Swift.Equatable {}
+extension WoosmapGeofencing.ConfigurationProfile : Swift.Hashable {}
+extension WoosmapGeofencing.ConfigurationProfile : Swift.RawRepresentable {}
+extension WoosmapGeofencing.RegionType : Swift.Equatable {}
+extension WoosmapGeofencing.RegionType : Swift.Hashable {}
+extension WoosmapGeofencing.RegionType : Swift.RawRepresentable {}
+@available(*, deprecated, message: "This feature was disabled; use the distanceWithTraffic flag")
+extension WoosmapGeofencing.DistanceProvider : Swift.Equatable {}
+@available(*, deprecated, message: "This feature was disabled; use the distanceWithTraffic flag")
+extension WoosmapGeofencing.DistanceProvider : Swift.Hashable {}
+@available(*, deprecated, message: "This feature was disabled; use the distanceWithTraffic flag")
+extension WoosmapGeofencing.DistanceProvider : Swift.RawRepresentable {}
+extension WoosmapGeofencing.DistanceMode : Swift.Equatable {}
+extension WoosmapGeofencing.DistanceMode : Swift.Hashable {}
+extension WoosmapGeofencing.DistanceMode : Swift.RawRepresentable {}
+@available(*, deprecated, message: "This feature was disabled; use the DistanceMethod")
+extension WoosmapGeofencing.TrafficDistanceRouting : Swift.Equatable {}
+@available(*, deprecated, message: "This feature was disabled; use the DistanceMethod")
+extension WoosmapGeofencing.TrafficDistanceRouting : Swift.Hashable {}
+@available(*, deprecated, message: "This feature was disabled; use the DistanceMethod")
+extension WoosmapGeofencing.TrafficDistanceRouting : Swift.RawRepresentable {}
+extension WoosmapGeofencing.DistanceMethod : Swift.Equatable {}
+extension WoosmapGeofencing.DistanceMethod : Swift.Hashable {}
+extension WoosmapGeofencing.DistanceMethod : Swift.RawRepresentable {}
+extension WoosmapGeofencing.DistanceUnits : Swift.Equatable {}
+extension WoosmapGeofencing.DistanceUnits : Swift.Hashable {}
+extension WoosmapGeofencing.DistanceUnits : Swift.RawRepresentable {}
+extension WoosmapGeofencing.WosmapLogEvent : Swift.Equatable {}
+extension WoosmapGeofencing.WosmapLogEvent : Swift.Hashable {}
+extension WoosmapGeofencing.WosmapLogEvent : Swift.RawRepresentable {}
