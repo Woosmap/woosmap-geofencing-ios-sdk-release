@@ -47,7 +47,6 @@ import os
   public class func getPOIbyLocationID(locationId: Swift.String) -> WoosmapGeofencing.POI?
   public class func getLastPOIsFromLocationID(locationId: Swift.String) -> [WoosmapGeofencing.POI]
   public class func getPOIbyIdStore(idstore: Swift.String) -> WoosmapGeofencing.POI?
-  public class func updatePOIWithDistance(distance: Swift.Double, duration: Swift.String, locationId: Swift.String) -> WoosmapGeofencing.POI
   public class func deleteAll()
   @objc deinit
 }
@@ -615,6 +614,7 @@ extension WoosmapGeofencing.WoosmapGeofenceManager {
   public func startCustomTracking(url: Swift.String) -> (status: Swift.Bool, errors: [Swift.String])
   @objc dynamic public func setIndoorSearchAPIEnable(enable: Swift.Bool)
   @objc dynamic public func getIndoorSearchAPIEnable() -> Swift.Bool
+  @objc dynamic public func refreshPOI()
 }
 @_hasMissingDesignatedInitializers public class Location {
   public var date: Foundation.Date?

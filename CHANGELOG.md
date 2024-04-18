@@ -1,3 +1,7 @@
+## 4.3.3
+- Enhancement: Expose new routine `refreshPOI` to clean up POI database explicitly
+- Enhancement: Fine-tune background location update with iOS 17.4
+
 ## 4.3.2
 - Enhancement: Added `PrivacyInfo.xcprivacy` file
 
