@@ -1,3 +1,6 @@
+## 4.3.2
+- Enhancement: Added `PrivacyInfo.xcprivacy` file
+
 ## 4.3.1
 - Enhancement: Added `PrivacyInfo.xcprivacy` file
 
