@@ -1,3 +1,6 @@
+## 4.3.4
+- Bug: Cocopod distribution corrected for error `Multiple commands produce` on PrivacyInfo.xcprivacy
+
 ## 4.3.3
 - Enhancement: Expose new routine `refreshPOI` to clean up POI database explicitly
 - Enhancement: Fine-tune background location update with iOS 17.4
