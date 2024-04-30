@@ -5,9 +5,6 @@
 ## 4.3.2
 - Enhancement: Added `PrivacyInfo.xcprivacy` file
 
-## 4.3.1
-- Enhancement: Added `PrivacyInfo.xcprivacy` file
-
 ## 4.3.0
 - Enhancement: Enhance SDK with proper Error handling in code
 - Enhancement: Fatal error raise with Event (`sdkErrorOccured`)
