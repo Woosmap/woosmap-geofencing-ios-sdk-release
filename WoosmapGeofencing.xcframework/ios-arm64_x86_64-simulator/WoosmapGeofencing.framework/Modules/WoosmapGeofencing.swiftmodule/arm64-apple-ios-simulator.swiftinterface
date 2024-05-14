@@ -606,6 +606,7 @@ public typealias Draft6Validator = WoosmapGeofencing.Draft7Validator
     @objc get
     @objc set
   }
+  @objc public func setProtectedRegionSlot(_ slot: Swift.Int) throws
   @objc deinit
 }
 extension WoosmapGeofencing.WoosmapGeofenceManager {

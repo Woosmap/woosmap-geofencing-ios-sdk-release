@@ -973,6 +973,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 ///
 /// \endcode
 @property (nonatomic) BOOL OptimizeDistanceRequest;
+/// Free up region slots to use for any third party SDK . MAximum 3 slots allows
+/// Usage Example:
+/// \code
+///  try? WoosmapGeofenceManager.shared.setProtectedRegionSlot(3)
+///
+/// \endcode
+- (BOOL)setProtectedRegionSlot:(NSInteger)slot error:(NSError * _Nullable * _Nullable)error;
 @end
 
 

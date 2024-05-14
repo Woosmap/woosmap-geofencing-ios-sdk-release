@@ -1,3 +1,7 @@
+## 4.3.5
+- Enhancement: Release geofence slot for other SDK to use
+- Enhancement: Fetch POI information in densely populated network
+
 ## 4.3.4
 - Bug: Cocopod distribution corrected for error `Multiple commands produce` on PrivacyInfo.xcprivacy
 
