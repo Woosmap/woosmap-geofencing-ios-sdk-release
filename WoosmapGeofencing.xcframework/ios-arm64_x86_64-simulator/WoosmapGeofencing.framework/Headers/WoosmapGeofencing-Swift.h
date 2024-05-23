@@ -1001,7 +1001,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 /// Bool
 - (BOOL)getIndoorSearchAPIEnable SWIFT_WARN_UNUSED_RESULT;
 /// Refresh POI. Fetch new set of information from woosmap and update it in local cache
-- (void)refreshPOI;
+- (void)refreshPOI SWIFT_DEPRECATED_MSG("Call refreshPOIs");
+/// Refresh POI. Fetch new set of information from woosmap and update it in local cache
+- (void)refreshPOIs;
 @end
 
 
@@ -2043,7 +2045,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WoosmapGeofe
 /// Bool
 - (BOOL)getIndoorSearchAPIEnable SWIFT_WARN_UNUSED_RESULT;
 /// Refresh POI. Fetch new set of information from woosmap and update it in local cache
-- (void)refreshPOI;
+- (void)refreshPOI SWIFT_DEPRECATED_MSG("Call refreshPOIs");
+/// Refresh POI. Fetch new set of information from woosmap and update it in local cache
+- (void)refreshPOIs;
 @end
 
 

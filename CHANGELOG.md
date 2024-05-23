@@ -1,3 +1,7 @@
+## 4.3.6
+Enhancement: By default, the radius value for the POI is set to the 'radius' property of the user's asset. If the radius property is missing, it will be set to a default value of 300 meters.
+
+
 ## 4.3.5
 - Enhancement: Release geofence slot for other SDK to use
 - Enhancement: Fetch POI information in densely populated network

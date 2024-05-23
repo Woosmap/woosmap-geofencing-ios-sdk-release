@@ -615,7 +615,9 @@ extension WoosmapGeofencing.WoosmapGeofenceManager {
   public func startCustomTracking(url: Swift.String) -> (status: Swift.Bool, errors: [Swift.String])
   @objc dynamic public func setIndoorSearchAPIEnable(enable: Swift.Bool)
   @objc dynamic public func getIndoorSearchAPIEnable() -> Swift.Bool
-  @objc dynamic public func refreshPOI()
+  @objc @available(*, deprecated, message: "Call refreshPOIs")
+  dynamic public func refreshPOI()
+  @objc dynamic public func refreshPOIs()
 }
 @_hasMissingDesignatedInitializers public class Location {
   public var date: Foundation.Date?
