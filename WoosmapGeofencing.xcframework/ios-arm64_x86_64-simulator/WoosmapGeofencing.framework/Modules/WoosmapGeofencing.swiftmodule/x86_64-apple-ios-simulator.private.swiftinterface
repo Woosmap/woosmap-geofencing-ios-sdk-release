@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WoosmapGeofencing
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WoosmapGeofencing
 import Accelerate
 import AdSupport
 import CoreData
@@ -82,23 +82,11 @@ public protocol RegionsServiceDelegate : AnyObject {
 public protocol VisitServiceDelegate : AnyObject {
   func processVisit(visit: WoosmapGeofencing.Visit)
 }
-public protocol LocationManagerProtocol {
-  var desiredAccuracy: CoreLocation.CLLocationAccuracy { get set }
-  var allowsBackgroundLocationUpdates: Swift.Bool { get set }
-  var distanceFilter: CoreLocation.CLLocationDistance { get set }
-  var pausesLocationUpdatesAutomatically: Swift.Bool { get set }
-  var delegate: (any CoreLocation.CLLocationManagerDelegate)? { get set }
-  var monitoredRegions: Swift.Set<CoreLocation.CLRegion> { get }
-  func requestAlwaysAuthorization()
-  func startUpdatingLocation()
-  func stopUpdatingLocation()
-  func startMonitoringSignificantLocationChanges()
-  func stopMonitoringSignificantLocationChanges()
-  func stopMonitoring(for: CoreLocation.CLRegion)
-  func startMonitoring(for: CoreLocation.CLRegion)
-  func startMonitoringVisits()
-}
-extension CoreLocation.CLLocationManager : WoosmapGeofencing.LocationManagerProtocol {
+@objc @_inheritsConvenienceInitializers public class LocationManagerProtocol : CoreLocation.CLLocationManager {
+  @objc override dynamic public func startUpdatingLocation()
+  @objc override dynamic public func stopUpdatingLocation()
+  @objc override dynamic public init()
+  @objc deinit
 }
 extension Foundation.Date {
   public func seconds(from date: Foundation.Date) -> Swift.Int
@@ -134,7 +122,7 @@ public struct UnsafeMutableMemoryIterator<Element> : Swift.IteratorProtocol {
   override public func handleZOIClassifiedEvent(region: WoosmapGeofencing.Region)
   override public func handleVisitEvent(visit: WoosmapGeofencing.Visit)
   override public func handlePOIEvent(poi: WoosmapGeofencing.POI)
-  required public init(locationManger: (any WoosmapGeofencing.LocationManagerProtocol)?)
+  required public init(locationManger: WoosmapGeofencing.LocationManagerProtocol?)
   @objc deinit
 }
 public protocol MarketingCloudEventsDelegate : AnyObject {
@@ -295,7 +283,7 @@ public enum EigenDecompositionError : Swift.Error {
   }
 }
 @objc public class LocationServiceCoreImpl : ObjectiveC.NSObject, WoosmapGeofencing.LocationService, CoreLocation.CLLocationManagerDelegate {
-  public var locationManager: (any WoosmapGeofencing.LocationManagerProtocol)?
+  public var locationManager: WoosmapGeofencing.LocationManagerProtocol?
   public var currentLocation: CoreLocation.CLLocation?
   public var lastSearchLocation: WoosmapGeofencing.LastSearhLocation
   public var lastRefreshRegionPOILocationId: Swift.String
@@ -305,7 +293,7 @@ public enum EigenDecompositionError : Swift.Error {
   weak public var distanceAPIDataDelegate: (any WoosmapGeofencing.DistanceAPIDelegate)?
   weak public var regionDelegate: (any WoosmapGeofencing.RegionsServiceDelegate)?
   weak public var visitDelegate: (any WoosmapGeofencing.VisitServiceDelegate)?
-  required public init(locationManger: (any WoosmapGeofencing.LocationManagerProtocol)?)
+  required public init(locationManger: WoosmapGeofencing.LocationManagerProtocol?)
   public func initLocationManager()
   public func startUpdatingLocation()
   public func stopUpdatingLocation()
@@ -318,33 +306,33 @@ public enum EigenDecompositionError : Swift.Error {
   @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
   @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didExitRegion region: CoreLocation.CLRegion)
   @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didEnterRegion region: CoreLocation.CLRegion)
-  open func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: CoreLocation.CLLocationDistance) -> (isCreate: Swift.Bool, identifier: Swift.String)
+  public func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: CoreLocation.CLLocationDistance) -> (isCreate: Swift.Bool, identifier: Swift.String)
   public func removeRegion(identifier: Swift.String)
-  open func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: Swift.Int, type: Swift.String) -> (isCreate: Swift.Bool, identifier: Swift.String)
+  public func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: Swift.Int, type: Swift.String) -> (isCreate: Swift.Bool, identifier: Swift.String)
   public func removeRegion(center: CoreLocation.CLLocationCoordinate2D)
   public func removeRegions(type: WoosmapGeofencing.RegionType)
-  open func checkIfUserIsInRegion(region: CoreLocation.CLCircularRegion)
+  public func checkIfUserIsInRegion(region: CoreLocation.CLCircularRegion)
   @objc public func locationManagerDidPauseLocationUpdates(_ manager: CoreLocation.CLLocationManager)
   @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didStartMonitoringFor region: CoreLocation.CLRegion)
-  open func updateLocation(locations: [CoreLocation.CLLocation])
-  open func searchAPIRequest(location: WoosmapGeofencing.Location)
+  public func updateLocation(locations: [CoreLocation.CLLocation])
+  public func searchAPIRequest(location: WoosmapGeofencing.Location)
   public func sendSearchAPIRequest(location: WoosmapGeofencing.Location)
   @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, monitoringDidFailFor region: CoreLocation.CLRegion?, withError error: any Swift.Error)
-  open func removeOldPOIRegions(newPOIS: [WoosmapGeofencing.POI])
+  public func removeOldPOIRegions(newPOIS: [WoosmapGeofencing.POI])
   public func calculateDistance(locationOrigin: CoreLocation.CLLocation, coordinatesDest: [(Swift.Double, Swift.Double)], locationId: Swift.String)
   public func calculateDistance(locationOrigin: CoreLocation.CLLocation, coordinatesDest: [(Swift.Double, Swift.Double)], distanceWithTraffic: Swift.Bool = distanceWithTraffic, distanceMode: WoosmapGeofencing.DistanceMode = distanceMode, distanceUnits: WoosmapGeofencing.DistanceUnits = distanceUnits, distanceLanguage: Swift.String = distanceLanguage)
   public func tracingLocationDidFailWithError(error: any Swift.Error)
   public func getRegionType(identifier: Swift.String) -> WoosmapGeofencing.RegionType
   public func checkIfPositionIsInsideGeofencingRegions(location: CoreLocation.CLLocation)
-  open func addRegionLogTransition(region: CoreLocation.CLRegion, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool)
+  public func addRegionLogTransition(region: CoreLocation.CLRegion, didEnter: Swift.Bool, fromPositionDetection: Swift.Bool)
   public func setDataFromPOI(poi: WoosmapGeofencing.POI, propertyDictionary: inout Swift.Dictionary<Swift.String, Any>)
   #if compiler(>=5.3) && $Sendable
   public func woosApiCall(with url: Foundation.URL, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
   #endif
-  open func handleRefreshSystemGeofence(addCustomGeofence: Swift.Bool = false, locationId: Swift.String)
-  open func handleVisitEvent(visit: WoosmapGeofencing.Visit)
-  open func handlePOIEvent(poi: WoosmapGeofencing.POI)
-  open func handleZOIClassifiedEvent(region: WoosmapGeofencing.Region)
+  public func handleRefreshSystemGeofence(addCustomGeofence: Swift.Bool = false, locationId: Swift.String)
+  public func handleVisitEvent(visit: WoosmapGeofencing.Visit)
+  public func handlePOIEvent(poi: WoosmapGeofencing.POI)
+  public func handleZOIClassifiedEvent(region: WoosmapGeofencing.Region)
   @objc deinit
 }
 public struct SearchAPIData : Swift.Codable {
@@ -503,13 +491,13 @@ public enum RegionType : Swift.String {
   @objc deinit
 }
 public protocol LocationService : ObjectiveC.NSObject {
-  var locationManager: (any WoosmapGeofencing.LocationManagerProtocol)? { get set }
+  var locationManager: WoosmapGeofencing.LocationManagerProtocol? { get set }
   var locationServiceDelegate: (any WoosmapGeofencing.LocationServiceDelegate)? { get set }
   var searchAPIDataDelegate: (any WoosmapGeofencing.SearchAPIDelegate)? { get set }
   var distanceAPIDataDelegate: (any WoosmapGeofencing.DistanceAPIDelegate)? { get set }
   var regionDelegate: (any WoosmapGeofencing.RegionsServiceDelegate)? { get set }
   var visitDelegate: (any WoosmapGeofencing.VisitServiceDelegate)? { get set }
-  init(locationManger: (any WoosmapGeofencing.LocationManagerProtocol)?)
+  init(locationManger: WoosmapGeofencing.LocationManagerProtocol?)
   func initLocationManager()
   func startUpdatingLocation()
   func stopUpdatingLocation()
@@ -523,8 +511,8 @@ public protocol LocationService : ObjectiveC.NSObject {
   func calculateDistance(locationOrigin: CoreLocation.CLLocation, coordinatesDest: [(Swift.Double, Swift.Double)], locationId: Swift.String)
   func tracingLocationDidFailWithError(error: any Swift.Error)
   func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: CoreLocation.CLLocationDistance) -> (isCreate: Swift.Bool, identifier: Swift.String)
-  func removeRegion(identifier: Swift.String)
   func addRegion(identifier: Swift.String, center: CoreLocation.CLLocationCoordinate2D, radius: Swift.Int, type: Swift.String) -> (isCreate: Swift.Bool, identifier: Swift.String)
+  func removeRegion(identifier: Swift.String)
   func removeRegion(center: CoreLocation.CLLocationCoordinate2D)
   func removeRegions(type: WoosmapGeofencing.RegionType)
   func checkIfUserIsInRegion(region: CoreLocation.CLCircularRegion)
@@ -940,6 +928,9 @@ extension WoosmapGeofencing.DistanceDB {
     @objc set
   }
 }
+extension WoosmapGeofencing.DistanceDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class DurationLogDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -958,6 +949,9 @@ extension WoosmapGeofencing.DurationLogDB {
     @objc get
     @objc set
   }
+}
+extension WoosmapGeofencing.DurationLogDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 @objc @_inheritsConvenienceInitializers public class IndoorBeaconDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -1002,6 +996,9 @@ extension WoosmapGeofencing.IndoorBeaconDB {
     @objc set
   }
 }
+extension WoosmapGeofencing.IndoorBeaconDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class IndoorVenueDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1037,6 +1034,9 @@ extension WoosmapGeofencing.IndoorVenueDB {
     @objc set
   }
 }
+extension WoosmapGeofencing.IndoorVenueDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class LocationDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1064,6 +1064,9 @@ extension WoosmapGeofencing.LocationDB {
     @objc set
   }
 }
+extension WoosmapGeofencing.LocationDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class LogIndoorAPIDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1086,6 +1089,9 @@ extension WoosmapGeofencing.LogIndoorAPIDB {
     @objc get
     @objc set
   }
+}
+extension WoosmapGeofencing.LogIndoorAPIDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 @objc @_inheritsConvenienceInitializers public class LogSearchAPIDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -1153,6 +1159,9 @@ extension WoosmapGeofencing.LogSearchAPIDB {
     @objc get
     @objc set
   }
+}
+extension WoosmapGeofencing.LogSearchAPIDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 @objc @_inheritsConvenienceInitializers public class POIDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -1233,6 +1242,9 @@ extension WoosmapGeofencing.POIDB {
     @objc set
   }
 }
+extension WoosmapGeofencing.POIDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class RegionDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1299,6 +1311,9 @@ extension WoosmapGeofencing.RegionDB {
     @objc get
     @objc set
   }
+}
+extension WoosmapGeofencing.RegionDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 @objc @_inheritsConvenienceInitializers public class RegionIsochroneDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -1367,6 +1382,9 @@ extension WoosmapGeofencing.RegionIsochroneDB {
     @objc set
   }
 }
+extension WoosmapGeofencing.RegionIsochroneDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class VenueBeaconDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1414,6 +1432,9 @@ extension WoosmapGeofencing.VenueBeaconDB {
     @objc set
   }
 }
+extension WoosmapGeofencing.VenueBeaconDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class VisitDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1448,6 +1469,9 @@ extension WoosmapGeofencing.VisitDB {
     @objc get
     @objc set
   }
+}
+extension WoosmapGeofencing.VisitDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 @objc @_inheritsConvenienceInitializers public class ZOIDB : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -1527,6 +1551,9 @@ extension WoosmapGeofencing.ZOIDB {
     @objc get
     @objc set
   }
+}
+extension WoosmapGeofencing.ZOIDB : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 extension WoosmapGeofencing.EigenDecompositionError : Swift.Equatable {}
 extension WoosmapGeofencing.EigenDecompositionError : Swift.Hashable {}

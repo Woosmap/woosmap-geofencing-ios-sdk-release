@@ -310,6 +310,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing10DistanceDB")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class NSDate;
 @class NSString;
 
@@ -337,6 +338,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing13DurationLogDB")
 @end
 
 
+
 @interface DurationLogDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSDate * _Nullable entryTime;
 @property (nonatomic, copy) NSDate * _Nullable exitTime;
@@ -348,6 +350,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing14IndoorBeaconDB")
 @interface IndoorBeaconDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface IndoorBeaconDB (SWIFT_EXTENSION(WoosmapGeofencing))
@@ -369,6 +372,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing13IndoorVenueDB")
 @end
 
 
+
 @interface IndoorVenueDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSString * _Nullable boundingBox;
 @property (nonatomic, copy) NSDate * _Nullable date;
@@ -386,6 +390,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing10LocationDB")
 @end
 
 
+
 @interface LocationDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSDate * _Nullable date;
 @property (nonatomic) double latitude;
@@ -394,7 +399,15 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing10LocationDB")
 @property (nonatomic) double longitude;
 @end
 
-@class CLLocationManager;
+
+/// Location manage protocal extend  LocationManagerProtocol
+SWIFT_CLASS("_TtC17WoosmapGeofencing23LocationManagerProtocol")
+@interface LocationManagerProtocol : CLLocationManager
+- (void)startUpdatingLocation;
+- (void)stopUpdatingLocation;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class CLVisit;
 @class CLLocation;
 @class CLRegion;
@@ -461,11 +474,15 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing23LocationServiceCoreImpl")
 @end
 
 
+
+
 /// Interacts with Core Location to collect user location and monitor region.
 /// This class efficiently gathers user location and triggers events based on region monitoring and provides categorised zones of Interests and temporal clusters.
 SWIFT_CLASS("_TtC17WoosmapGeofencing19LocationServiceImpl")
 @interface LocationServiceImpl : LocationServiceCoreImpl
 @end
+
+
 
 
 
@@ -486,6 +503,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing14LogIndoorAPIDB")
 @end
 
 
+
 @interface LogIndoorAPIDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSDate * _Nullable date;
 @property (nonatomic, copy) NSString * _Nullable eventStatus;
@@ -498,6 +516,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing14LogSearchAPIDB")
 @interface LogSearchAPIDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface LogSearchAPIDB (SWIFT_EXTENSION(WoosmapGeofencing))
@@ -523,6 +542,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing5POIDB")
 @interface POIDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 @class NSData;
 
@@ -554,6 +574,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing8RegionDB")
 @end
 
 
+
 @interface RegionDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSDate * _Nullable date;
 @property (nonatomic) BOOL didEnter;
@@ -577,6 +598,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing17RegionIsochroneDB")
 @interface RegionIsochroneDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface RegionIsochroneDB (SWIFT_EXTENSION(WoosmapGeofencing))
@@ -604,6 +626,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing13VenueBeaconDB")
 @end
 
 
+
 @interface VenueBeaconDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSString * _Nullable beaconID;
 @property (nonatomic, copy) NSDate * _Nullable date;
@@ -622,6 +645,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing7VisitDB")
 @interface VisitDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface VisitDB (SWIFT_EXTENSION(WoosmapGeofencing))
@@ -1011,6 +1035,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing5ZOIDB")
 @interface ZOIDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface ZOIDB (SWIFT_EXTENSION(WoosmapGeofencing))
@@ -1354,6 +1379,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing10DistanceDB")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class NSDate;
 @class NSString;
 
@@ -1381,6 +1407,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing13DurationLogDB")
 @end
 
 
+
 @interface DurationLogDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSDate * _Nullable entryTime;
 @property (nonatomic, copy) NSDate * _Nullable exitTime;
@@ -1392,6 +1419,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing14IndoorBeaconDB")
 @interface IndoorBeaconDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface IndoorBeaconDB (SWIFT_EXTENSION(WoosmapGeofencing))
@@ -1413,6 +1441,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing13IndoorVenueDB")
 @end
 
 
+
 @interface IndoorVenueDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSString * _Nullable boundingBox;
 @property (nonatomic, copy) NSDate * _Nullable date;
@@ -1430,6 +1459,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing10LocationDB")
 @end
 
 
+
 @interface LocationDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSDate * _Nullable date;
 @property (nonatomic) double latitude;
@@ -1438,7 +1468,15 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing10LocationDB")
 @property (nonatomic) double longitude;
 @end
 
-@class CLLocationManager;
+
+/// Location manage protocal extend  LocationManagerProtocol
+SWIFT_CLASS("_TtC17WoosmapGeofencing23LocationManagerProtocol")
+@interface LocationManagerProtocol : CLLocationManager
+- (void)startUpdatingLocation;
+- (void)stopUpdatingLocation;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class CLVisit;
 @class CLLocation;
 @class CLRegion;
@@ -1505,11 +1543,15 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing23LocationServiceCoreImpl")
 @end
 
 
+
+
 /// Interacts with Core Location to collect user location and monitor region.
 /// This class efficiently gathers user location and triggers events based on region monitoring and provides categorised zones of Interests and temporal clusters.
 SWIFT_CLASS("_TtC17WoosmapGeofencing19LocationServiceImpl")
 @interface LocationServiceImpl : LocationServiceCoreImpl
 @end
+
+
 
 
 
@@ -1530,6 +1572,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing14LogIndoorAPIDB")
 @end
 
 
+
 @interface LogIndoorAPIDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSDate * _Nullable date;
 @property (nonatomic, copy) NSString * _Nullable eventStatus;
@@ -1542,6 +1585,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing14LogSearchAPIDB")
 @interface LogSearchAPIDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface LogSearchAPIDB (SWIFT_EXTENSION(WoosmapGeofencing))
@@ -1567,6 +1611,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing5POIDB")
 @interface POIDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 @class NSData;
 
@@ -1598,6 +1643,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing8RegionDB")
 @end
 
 
+
 @interface RegionDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSDate * _Nullable date;
 @property (nonatomic) BOOL didEnter;
@@ -1621,6 +1667,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing17RegionIsochroneDB")
 @interface RegionIsochroneDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface RegionIsochroneDB (SWIFT_EXTENSION(WoosmapGeofencing))
@@ -1648,6 +1695,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing13VenueBeaconDB")
 @end
 
 
+
 @interface VenueBeaconDB (SWIFT_EXTENSION(WoosmapGeofencing))
 @property (nonatomic, copy) NSString * _Nullable beaconID;
 @property (nonatomic, copy) NSDate * _Nullable date;
@@ -1666,6 +1714,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing7VisitDB")
 @interface VisitDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface VisitDB (SWIFT_EXTENSION(WoosmapGeofencing))
@@ -2055,6 +2104,7 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing5ZOIDB")
 @interface ZOIDB : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface ZOIDB (SWIFT_EXTENSION(WoosmapGeofencing))
