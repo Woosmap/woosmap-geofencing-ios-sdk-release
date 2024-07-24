@@ -474,15 +474,11 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing23LocationServiceCoreImpl")
 @end
 
 
-
-
 /// Interacts with Core Location to collect user location and monitor region.
 /// This class efficiently gathers user location and triggers events based on region monitoring and provides categorised zones of Interests and temporal clusters.
 SWIFT_CLASS("_TtC17WoosmapGeofencing19LocationServiceImpl")
 @interface LocationServiceImpl : LocationServiceCoreImpl
 @end
-
-
 
 
 
@@ -1543,15 +1539,11 @@ SWIFT_CLASS("_TtC17WoosmapGeofencing23LocationServiceCoreImpl")
 @end
 
 
-
-
 /// Interacts with Core Location to collect user location and monitor region.
 /// This class efficiently gathers user location and triggers events based on region monitoring and provides categorised zones of Interests and temporal clusters.
 SWIFT_CLASS("_TtC17WoosmapGeofencing19LocationServiceImpl")
 @interface LocationServiceImpl : LocationServiceCoreImpl
 @end
-
-
 
 
 
