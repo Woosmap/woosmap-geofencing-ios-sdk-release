@@ -1,3 +1,6 @@
+## 4.3.7
+Enhancement: Battery optimization while running the SDK in the background.
+
 ## 4.3.6
 Enhancement: By default, the radius value for the POI is set to the 'radius' property of the user's asset. If the radius property is missing, it will be set to a default value of 300 meters.
 
