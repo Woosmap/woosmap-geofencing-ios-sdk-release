@@ -6,35 +6,35 @@
 	<dict>
 		<key>Headers/WoosmapGeofencing-Swift.h</key>
 		<data>
-		YGBL3fAeuKHJfFauLe3c/wC82YU=
+		h9XIgOtfz1MiVsBJXrcc1Pl7PVs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5QgtWAfVl0KvP9btXHqCf1fBHYM=
+		oSf6tU2pl8UyjR59CNXpo4idxMU=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		xl1x+5T5BFckA1KDPr7xlkxQqwI=
+		C6R5DGJLFvJ0h5AFKOpyNb+PTrM=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		VtOnB9kqbmbVjOzKqL0/s6rptZ8=
+		FNc+CdUclkVqky7r2AmPnLXkNVQ=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		kQRczzTO2QRP1J214lTZwYbWXPs=
+		lUSb7tP9W5So6rYREcn/XmjTD4Y=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		F5cxApBsJLVfSbDo1xRc+ajmGFw=
+		SRmnUdvh7SzIZHoM1mCtDGDheWU=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		kQRczzTO2QRP1J214lTZwYbWXPs=
+		lUSb7tP9W5So6rYREcn/XmjTD4Y=
 		</data>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		E3Y7r7H+XrIzxBo2uyg/OPSalxM=
+		rsIQfnCDNGOheT64rL6mPa+8ICk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,11 +50,19 @@
 		</data>
 		<key>Woosmap.momd/VersionInfo.plist</key>
 		<data>
-		vfBsI3co/zfEy+TgWctsoqV2XQM=
+		PkocPsimUSVpmessg+m6cMMxCJc=
 		</data>
 		<key>Woosmap.momd/Woosmap.mom</key>
 		<data>
-		5NnYenM53xajZKufqSPBVJNV5Bc=
+		uPUl0GKnxV1p5OoNaB/14StWtEI=
+		</data>
+		<key>Woosmap.momd/dec1924.mom</key>
+		<data>
+		Fo9TDw0cApIrMAeptlLvDbrIKgU=
+		</data>
+		<key>Woosmap.momd/dec1924.omo</key>
+		<data>
+		zip0N3/qCjqN6XJpMcPzmd8S67E=
 		</data>
 		<key>beaconTracking.json</key>
 		<data>
@@ -79,49 +87,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R0/lzfCtgMyT1HgdMNgVV59wbQz5kNYKw7KkIFuABM8=
+			E8dfZh2ScXU+/HlTf3kG32YZL520/OVJDrPhwRgUbfg=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cV4pChac3sqf6ixqQ/zmoso+oF0sUT9U4DR0smJV+sk=
+			kd/y8+hZZYHia13rVjaVKIY3xVtwF8CdrHqjdC6P0SQ=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FATkMtWhDPllME3TuhvG7m/FKl3VMAE4C8QLsYnnBXM=
+			aBqR06/suwjHl6er24oQCvaKnUXaDLAS96pCgOUv+1w=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rxpP8fQ0nqZlNXnHOz4W4BJBnN9QqNnvcQlZuL4p1KA=
+			K5eFMgfbGTbmiEA71xqHPmClYy2UQ7Cy7e6o+onK21M=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Dg14PDFwiv3rj9HFQV/Nw/E9ec4ygiV+SpYEiPd7ng=
+			xRftYZoleWBb7CRuBfmuwezs+I0PAGmQrn/uIfF/+Go=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rxpP8fQ0nqZlNXnHOz4W4BJBnN9QqNnvcQlZuL4p1KA=
+			K5eFMgfbGTbmiEA71xqHPmClYy2UQ7Cy7e6o+onK21M=
 			</data>
 		</dict>
 		<key>Modules/WoosmapGeofencing.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yQc8BocBxcjG89Fv0AgOf8MTgcvRiIcgt+lxXrbs8Hc=
+			ul98wqjEwwsKKYglKJDNETCywF5hQjaXSKxQfDs89b0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -149,14 +157,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSzw/Zo30rxVa9961Jeqr5IFkLIyaZ7Dg9deC0mYXR0=
+			zxfecr1DIAXDHZNB+uVY0ggU/PFYV6CXMjVB9J0DqpE=
 			</data>
 		</dict>
 		<key>Woosmap.momd/Woosmap.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yTdJCmuYyHto0xV8uC4fbU+f5b2G4FLtw9THARqHI/8=
+			in2qgIWHZPvIGXNyoX2qMXcgHgtA+0yE8rIGvQbXRO4=
+			</data>
+		</dict>
+		<key>Woosmap.momd/dec1924.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KHrB5GxmSb+0xweOEV2bMIm8ftpPz9Nf01ZDAKfKm0Y=
+			</data>
+		</dict>
+		<key>Woosmap.momd/dec1924.omo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1uyORlwcsYPOGcAgVxvDpmd7/eZzHGPmCe0NbtBXk9c=
 			</data>
 		</dict>
 		<key>beaconTracking.json</key>
