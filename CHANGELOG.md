@@ -1,3 +1,6 @@
+## 4.3.9
+Enhancement: Battery optimization while running the SDK in the background.
+
 ## 4.3.7
 Enhancement: Battery optimization while running the SDK in the background.
 
