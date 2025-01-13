@@ -1,4 +1,9 @@
 ## 4.3.9
+Fixes: Remove core data warning
+
+Enhancement: Sorted location service thread to interacted with main thread
+
+## 4.3.9
 Enhancement: Battery optimization while running the SDK in the background.
 
 ## 4.3.7
